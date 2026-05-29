@@ -859,8 +859,14 @@ else if(lxValue){
 
     const lxColor = lxData.find(item =>
 
-        item.SheetNumber.toLowerCase() ===
-        lxValue.toLowerCase()
+        item.SheetNumber
+.replace(/\s/g,'')
+.toLowerCase() ===
+
+lxValue
+.replace(/\s/g,'')
+.toLowerCase()
+
 
     )
 
