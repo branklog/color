@@ -779,7 +779,7 @@ button.addEventListener('click', () => {
 
         const hex = hexValue.replace('#','')
 
-        if(hex.length === 6){
+        if(hex.length >= 3){
 
             const r = parseInt(hex.substring(0,2),16)
             const g = parseInt(hex.substring(2,4),16)
@@ -787,6 +787,16 @@ button.addEventListener('click', () => {
 
             const results = []
 
+const hexResults = pantoneData.filter(color =>
+
+    color.Hex
+    .replace('#','')
+    .toLowerCase()
+    .includes(hex.toLowerCase())
+
+)
+
+           
             pantoneData.forEach(color => {
 
                 const pr = Number(color.R)
@@ -806,6 +816,10 @@ button.addEventListener('click', () => {
 
             })
 
+
+
+
+            
             results.sort((a,b)=>a.distance-b.distance)
 
             finalResults = results
@@ -857,18 +871,21 @@ button.addEventListener('click', () => {
 
 else if(lxValue){
 
-    const lxColor = lxData.find(item =>
+const lxColor = lxData.find(item =>
 
-        item.SheetNumber
-.replace(/\s/g,'')
-.toLowerCase() ===
+    item.SheetNumber
+    .replace(/\s/g,'')
+    .toLowerCase()
+    .includes(
 
-lxValue
-.replace(/\s/g,'')
-.toLowerCase()
-
+        lxValue
+        .replace(/\s/g,'')
+        .toLowerCase()
 
     )
+
+)
+
 
     if(lxColor){
 
