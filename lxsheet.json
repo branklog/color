@@ -127,254 +127,254 @@
   },
   {
     "SheetNumber": "LT 4043",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "32",
+    "G": "80",
+    "B": "45",
+    "Hex": "#20502d"
   },
   {
     "SheetNumber": "LT 4045",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "24",
+    "G": "62",
+    "B": "33",
+    "Hex": "#183e21"
   },
   {
     "SheetNumber": "LT 4048",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "47",
+    "G": "162",
+    "B": "94",
+    "Hex": "#2fa25e"
   },
   {
     "SheetNumber": "LT 4049",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "44",
+    "G": "124",
+    "B": "94",
+    "Hex": "#2c7c5e"
   },
   {
     "SheetNumber": "LT 4046",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "41",
+    "G": "105",
+    "B": "81",
+    "Hex": "#296951"
   },
   {
     "SheetNumber": "LT 4041",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "16",
+    "G": "186",
+    "B": "172",
+    "Hex": "#10baac"
   },
   {
     "SheetNumber": "LT 4000",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "39",
+    "G": "163",
+    "B": "169",
+    "Hex": "#27a3a9"
   },
   {
     "SheetNumber": "LT 4040",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "44",
+    "G": "145",
+    "B": "148",
+    "Hex": "#2c9194"
   },
   {
     "SheetNumber": "LT 4047",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
+    "R": "40",
+    "G": "107",
+    "B": "122",
+    "Hex": "#286b7a"
   },
   {
     "SheetNumber": "LT 4050",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4054",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4055",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4060",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4065",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4059",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4058",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4056",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4053",
-    "R": "255",
-    "G": "255",
-    "B": "255",
-    "Hex": "#ffffff"
-  },
-  {
-    "SheetNumber": "LT 4052",
     "R": "99",
     "G": "201",
     "B": "216",
     "Hex": "#63c9d8"
   },
   {
-    "SheetNumber": "LT 4051",
+    "SheetNumber": "LT 4054",
     "R": "31",
     "G": "173",
     "B": "219",
     "Hex": "#1faddb"
   },
   {
-    "SheetNumber": "LT 4057",
+    "SheetNumber": "LT 4055",
     "R": "33",
     "G": "153",
     "B": "214",
     "Hex": "#2199d6"
   },
   {
-    "SheetNumber": "LT 4027",
+    "SheetNumber": "LT 4060",
     "R": "46",
     "G": "125",
     "B": "193",
     "Hex": "#2e7dc1"
   },
   {
-    "SheetNumber": "LT 4028",
+    "SheetNumber": "LT 4065",
     "R": "44",
     "G": "92",
     "B": "146",
     "Hex": "#2c5c92"
   },
   {
-    "SheetNumber": "LT 4024",
+    "SheetNumber": "LT 4059",
     "R": "49",
     "G": "65",
     "B": "114",
     "Hex": "#314172"
   },
   {
-    "SheetNumber": "LT 4019",
+    "SheetNumber": "LT 4058",
     "R": "42",
     "G": "59",
     "B": "124",
     "Hex": "#2a3b7c"
   },
   {
-    "SheetNumber": "LT 4020",
+    "SheetNumber": "LT 4056",
     "R": "53",
     "G": "78",
     "B": "145",
     "Hex": "#354e91"
   },
   {
-    "SheetNumber": "LT 4029",
+    "SheetNumber": "LT 4053",
     "R": "72",
     "G": "49",
     "B": "117",
     "Hex": "#483175"
   },
   {
-    "SheetNumber": "LT 4034",
+    "SheetNumber": "LT 4052",
     "R": "97",
     "G": "45",
     "B": "145",
     "Hex": "#612d91"
   },
   {
-    "SheetNumber": "LT 4510",
+    "SheetNumber": "LT 4051",
     "R": "58",
     "G": "49",
     "B": "147",
     "Hex": "#3a3193"
   },
   {
-    "SheetNumber": "LT 4073",
+    "SheetNumber": "LT 4057",
     "R": "2",
     "G": "40",
     "B": "106",
     "Hex": "#02286a"
   },
   {
-    "SheetNumber": "LT 4075",
+    "SheetNumber": "LT 4027",
     "R": "89",
     "G": "45",
     "B": "31",
     "Hex": "#592d1f"
   },
   {
-    "SheetNumber": "LT 4077",
+    "SheetNumber": "LT 4028",
     "R": "92",
     "G": "32",
     "B": "61",
     "Hex": "#5c203d"
   },
   {
-    "SheetNumber": "LT 4026",
+    "SheetNumber": "LT 4024",
     "R": "91",
     "G": "19",
     "B": "20",
     "Hex": "#5b1314"
   },
   {
-    "SheetNumber": "LT 4081",
+    "SheetNumber": "LT 4019",
     "R": "72",
     "G": "11",
     "B": "13",
     "Hex": "#480b0d"
   },
   {
-    "SheetNumber": "LT 4080",
+    "SheetNumber": "LT 4020",
     "R": "77",
     "G": "14",
     "B": "15",
     "Hex": "#4d0e0f"
   },
   {
-    "SheetNumber": "LT 4071",
+    "SheetNumber": "LT 4029",
     "R": "66",
     "G": "44",
     "B": "42",
     "Hex": "#422c2a"
+  },
+  {
+    "SheetNumber": "LT 4034",
+    "R": "236",
+    "G": "223",
+    "B": "159",
+    "Hex": "#ecdf9f"
+  },
+  {
+    "SheetNumber": "LT 4510",
+    "R": "193",
+    "G": "194",
+    "B": "196",
+    "Hex": "#c1c2c4"
+  },
+  {
+    "SheetNumber": "LT 4073",
+    "R": "124",
+    "G": "126",
+    "B": "129",
+    "Hex": "#7c7e81"
+  },
+  {
+    "SheetNumber": "LT 4075",
+    "R": "104",
+    "G": "119",
+    "B": "127",
+    "Hex": "#68777f"
+  },
+  {
+    "SheetNumber": "LT 4077",
+    "R": "127",
+    "G": "117",
+    "B": "118",
+    "Hex": "#7f7576"
+  },
+  {
+    "SheetNumber": "LT 4026",
+    "R": "58",
+    "G": "48",
+    "B": "40",
+    "Hex": "#3a3028"
+  },
+  {
+    "SheetNumber": "LT 4081",
+    "R": "69",
+    "G": "70",
+    "B": "71",
+    "Hex": "#454647"
+  },
+  {
+    "SheetNumber": "LT 4080",
+    "R": "35",
+    "G": "31",
+    "B": "32",
+    "Hex": "#231f20"
+  },
+  {
+    "SheetNumber": "LT 4071",
+    "R": "255",
+    "G": "255",
+    "B": "255",
+    "Hex": "#ffffff"
   }
 ]
