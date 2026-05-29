@@ -1308,6 +1308,135 @@ imageInput.addEventListener('change', e => {
 })
 
 
+/* DRAG DROP */
+
+uploadBox.addEventListener('dragover', e => {
+
+    e.preventDefault()
+
+    uploadBox.style.background = '#eeeeee'
+
+})
+
+uploadBox.addEventListener('dragleave', () => {
+
+    uploadBox.style.background = '#f8f8f8'
+
+})
+
+uploadBox.addEventListener('drop', e => {
+
+    e.preventDefault()
+
+    uploadBox.style.background = '#f8f8f8'
+
+    const file = e.dataTransfer.files[0]
+
+    if(!file) return
+
+    const reader = new FileReader()
+
+    reader.onload = event => {
+
+        const img = new Image()
+
+        img.onload = () => {
+
+            const canvas = document.createElement('canvas')
+            const ctx = canvas.getContext('2d')
+
+            canvas.width = img.width
+            canvas.height = img.height
+
+            ctx.drawImage(img,0,0)
+
+            const centerX = img.width / 2
+            const centerY = img.height / 2
+
+            const pixel = ctx.getImageData(
+                centerX,
+                centerY,
+                1,
+                1
+            ).data
+
+            const r = pixel[0]
+            const g = pixel[1]
+            const b = pixel[2]
+
+            const results = []
+
+            benjaminData.forEach(color => {
+
+                const pr = Number(color.R)
+                const pg = Number(color.G)
+                const pb = Number(color.B)
+
+                const distance = Math.sqrt(
+                    (r-pr)**2 +
+                    (g-pg)**2 +
+                    (b-pb)**2
+                )
+
+                results.push({
+                    color,
+                    distance
+                })
+
+            })
+
+            results.sort((a,b)=>a.distance-b.distance)
+
+            const finalResults = results
+            .slice(0,4)
+            .map(item => item.color)
+
+            const html = finalResults.map(c => `
+
+                <div class="result-card">
+
+                    <div
+                    class="result-color"
+                    style="background:${c.Hex}">
+                    </div>
+
+                    <div class="result-name">
+                        ${c.Name}
+                    </div>
+
+                    <div class="result-info">
+
+                        <div>
+                            ${c.Code}
+                        </div>
+
+                        <div>
+                            ${c.Group}
+                        </div>
+
+                        <div>
+                            ${c.Hex}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            `).join('')
+
+            document.querySelector('.results').innerHTML = html
+
+        }
+
+        img.src = event.target.result
+
+    }
+
+    reader.readAsDataURL(file)
+
+})
+
+
 
 
 
