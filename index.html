@@ -858,25 +858,25 @@ button.addEventListener('click', () => {
 
     }
 
+
 /* LX SEARCH */
 
 else if(lxValue){
 
-const lxColor = lxData.find(item =>
+    const lxColor = lxData.find(item =>
 
-    item.SheetNumber
-    .replace(/\s/g,'')
-    .toLowerCase()
-    .includes(
-
-        lxValue
+        item.SheetNumber
         .replace(/\s/g,'')
         .toLowerCase()
+        .includes(
+
+            lxValue
+            .replace(/\s/g,'')
+            .toLowerCase()
+
+        )
 
     )
-
-)
-
 
     if(lxColor){
 
@@ -916,6 +916,11 @@ const lxColor = lxData.find(item =>
 }
 
 
+    
+
+
+
+    
 
 
     
