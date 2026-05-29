@@ -8,8 +8,8 @@
 <title>DESIGNDAUM PRINT TOOLS</title>
 
 <link
-rel="stylesheet"
 href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+rel="stylesheet"
 />
 
 <style>
@@ -25,18 +25,17 @@ box-sizing:border-box;
 }
 
 body{
-font-family:'Pretendard',sans-serif;
+font-family:Pretendard,sans-serif;
 background:#8BE86B;
 color:#000;
-min-height:100vh;
-padding:40px 20px 60px;
 overflow-x:hidden;
+padding:40px 20px 60px;
 }
 
 .container{
 width:100%;
 max-width:1200px;
-margin:0 auto;
+margin:auto;
 }
 
 /* =========================
@@ -44,59 +43,72 @@ TOPBAR
 ========================= */
 
 .topbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:20px;
-flex-wrap:wrap;
-margin-bottom:28px;
+margin-bottom:34px;
 }
 
 .brand{
 display:flex;
+gap:14px;
 align-items:center;
-gap:16px;
 }
 
 .logo{
-width:56px;
-height:56px;
-border-radius:18px;
+width:50px;
+height:50px;
+border-radius:14px;
 background:#3461FF;
 display:flex;
 align-items:center;
 justify-content:center;
 font-size:24px;
-font-weight:900;
+font-weight:800;
 color:#fff;
 flex-shrink:0;
 }
 
-.small-title{
+.brand-mini{
 font-size:11px;
-font-weight:700;
+color:#777;
 letter-spacing:2px;
-opacity:0.5;
-margin-bottom:4px;
+margin-bottom:2px;
+font-weight:700;
 }
 
-.big-title{
-font-size:42px;
-font-weight:900;
+.brand-title{
+font-size:20px;
+font-weight:800;
+letter-spacing:-0.6px;
 line-height:1;
-letter-spacing:-2px;
 }
 
-.menu{
+.top-links{
+margin-left:auto;
 display:flex;
-gap:16px;
+gap:14px;
 }
 
-.menu a{
-text-decoration:none;
+.top-links a{
 color:#000;
-font-size:15px;
-font-weight:900;
+text-decoration:none;
+font-size:13px;
+letter-spacing:.3px;
+font-weight:700;
+transition:.2s;
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.top-links a:hover{
+opacity:.6;
+transform:translateY(-1px);
+}
+
+.top-links img{
+width:17px;
+height:17px;
+object-fit:contain;
+display:block;
 }
 
 /* =========================
@@ -140,14 +152,14 @@ flex-direction:column;
 font-size:42px;
 font-weight:900;
 letter-spacing:-2px;
-margin-bottom:12px;
 line-height:1;
+margin-bottom:12px;
 }
 
 .tool-desc{
 font-size:15px;
 font-weight:600;
-opacity:0.5;
+opacity:.5;
 line-height:1.5;
 margin-bottom:28px;
 }
@@ -173,7 +185,7 @@ padding:0 18px;
 font-size:16px;
 font-weight:700;
 outline:none;
-font-family:'Pretendard',sans-serif;
+font-family:Pretendard,sans-serif;
 margin-bottom:16px;
 }
 
@@ -209,7 +221,7 @@ padding:0 14px;
 font-size:15px;
 font-weight:700;
 outline:none;
-font-family:'Pretendard',sans-serif;
+font-family:Pretendard,sans-serif;
 }
 
 .mini-input:focus{
@@ -230,7 +242,7 @@ color:#fff;
 font-size:17px;
 font-weight:900;
 cursor:pointer;
-transition:0.2s;
+transition:.2s;
 margin-top:auto;
 }
 
@@ -280,7 +292,7 @@ gap:8px;
 .result-info div{
 font-size:14px;
 font-weight:700;
-opacity:0.7;
+opacity:.7;
 }
 
 /* =========================
@@ -292,7 +304,7 @@ margin-top:28px;
 text-align:center;
 font-size:13px;
 font-weight:700;
-opacity:0.5;
+opacity:.5;
 }
 
 /* =========================
@@ -309,10 +321,6 @@ grid-template-columns:1fr;
 grid-template-columns:1fr 1fr;
 }
 
-.left-box{
-height:auto;
-}
-
 }
 
 /* =========================
@@ -326,18 +334,38 @@ padding:24px 14px 40px;
 }
 
 .topbar{
-margin-bottom:22px;
+margin-bottom:24px;
 }
 
 .logo{
-width:46px;
-height:46px;
+width:44px;
+height:44px;
 font-size:20px;
-border-radius:16px;
+border-radius:12px;
 }
 
-.big-title{
-font-size:30px;
+.brand-mini{
+font-size:10px;
+letter-spacing:1.5px;
+}
+
+.brand-title{
+font-size:18px;
+}
+
+.top-links{
+gap:10px;
+}
+
+.top-links img{
+width:13px;
+height:13px;
+}
+
+.top-links a{
+font-size:10px;
+gap:4px;
+letter-spacing:0;
 }
 
 .box{
@@ -402,19 +430,49 @@ D
 
 <div>
 
-<div class="small-title">
+<div class="brand-mini">
 DESIGNDAUM
 </div>
 
-<div class="big-title">
+<div class="brand-title">
 PRINT TOOLS.
 </div>
 
 </div>
 
+<div class="top-links">
+
+<a
+href="https://blog.naver.com/designdaum88"
+target="_blank"
+>
+
+<img
+src="./blog-icon.png"
+alt="blog"
+/>
+
+BLOG
+
+</a>
+
+<a
+href="https://open.kakao.com/o/sAK0pH6f"
+target="_blank"
+>
+
+<img
+src="./kakao-icon.png"
+alt="kakao"
+/>
+
+CHAT
+
+</a>
+
 </div>
 
-<div class="menu"> <a href="https://blog.naver.com/designdaum88" target="_blank" > BLOG </a> <a href="https://open.kakao.com/o/sAK0pH6f" target="_blank" > CHAT </a> </div>
+</div>
 
 </div>
 
@@ -632,10 +690,6 @@ Pantone 299 C
 
 <script>
 
-/* =========================
-LOAD JSON
-========================= */
-
 let pantoneData = []
 
 fetch('./pantone.json')
@@ -645,10 +699,6 @@ fetch('./pantone.json')
     pantoneData = data
 
 })
-
-/* =========================
-BUTTON
-========================= */
 
 const button = document.querySelector('.convert-btn')
 
@@ -665,9 +715,7 @@ button.addEventListener('click', () => {
 
     let finalResults = []
 
-    /* =========================
-    HEX SEARCH
-    ========================= */
+    /* HEX SEARCH */
 
     if(hexValue){
 
@@ -710,9 +758,7 @@ button.addEventListener('click', () => {
 
     }
 
-    /* =========================
-    RGB SEARCH
-    ========================= */
+    /* RGB SEARCH */
 
     else if(rValue && gValue && bValue){
 
@@ -749,20 +795,12 @@ button.addEventListener('click', () => {
 
     }
 
-    /* =========================
-    NO RESULT
-    ========================= */
-
     if(finalResults.length === 0){
 
         alert('검색 결과가 없습니다.')
         return
 
     }
-
-    /* =========================
-    RENDER
-    ========================= */
 
     const html = finalResults.map(c => `
 
