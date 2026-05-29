@@ -335,10 +335,7 @@ grid-template-columns:1fr 1fr;
 /* =========================
 MOBILE
 ========================= */
-```css id="u8r4kc"
-/* =========================
-MOBILE
-========================= */
+
 
 @media(max-width:768px){
 
@@ -436,7 +433,7 @@ margin-top:0;
 }
 
 }
-```
+
 
 
 </style>
@@ -601,13 +598,26 @@ placeholder="K"
 
 </div>
 
+<!-- LX SHEET -->
+
+<label class="label">
+LX SHEET NUMBER
+</label>
+
+<input
+type="text"
+class="input lx-input"
+placeholder="LT 4063"
+/>
+
 </div>
 
 <button class="convert-btn">
 Find Pantone
 </button>
-
+    
 </div>
+
 
 <!-- RIGHT CARD -->
 
@@ -723,6 +733,16 @@ Pantone 299 C
 
 let pantoneData = []
 
+let lxData = []
+
+fetch('./lxsheet.json')
+.then(res => res.json())
+.then(data => {
+
+    lxData = data
+
+})
+    
 fetch('./pantone.json')
 .then(res => res.json())
 .then(data => {
@@ -743,6 +763,13 @@ button.addEventListener('click', () => {
     const rValue = document.querySelector('.rgb-r').value
     const gValue = document.querySelector('.rgb-g').value
     const bValue = document.querySelector('.rgb-b').value
+
+    const lxValue = document
+.querySelector('.lx-input')
+.value
+.trim()
+
+
 
     let finalResults = []
 
@@ -826,6 +853,58 @@ button.addEventListener('click', () => {
 
     }
 
+/* LX SEARCH */
+
+else if(lxValue){
+
+    const lxColor = lxData.find(item =>
+
+        item.SheetNumber.toLowerCase() ===
+        lxValue.toLowerCase()
+
+    )
+
+    if(lxColor){
+
+        const r = Number(lxColor.R)
+        const g = Number(lxColor.G)
+        const b = Number(lxColor.B)
+
+        const results = []
+
+        pantoneData.forEach(color => {
+
+            const pr = Number(color.R)
+            const pg = Number(color.G)
+            const pb = Number(color.B)
+
+            const distance = Math.sqrt(
+                (r-pr)**2 +
+                (g-pg)**2 +
+                (b-pb)**2
+            )
+
+            results.push({
+                color,
+                distance
+            })
+
+        })
+
+        results.sort((a,b)=>a.distance-b.distance)
+
+        finalResults = results
+        .slice(0,4)
+        .map(item => item.color)
+
+    }
+
+}
+
+
+
+
+    
     if(finalResults.length === 0){
 
         alert('검색 결과가 없습니다.')
