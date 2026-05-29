@@ -332,13 +332,63 @@ grid-template-columns:1fr 1fr;
 
 }
 
+.tabs{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+.tab-btn{
+height:50px;
+padding:0 22px;
+border:none;
+border-radius:16px;
+background:#ffffff;
+font-size:14px;
+font-weight:800;
+cursor:pointer;
+transition:.2s;
+font-family:Pretendard,sans-serif;
+}
+
+.tab-btn.active{
+background:#000;
+color:#fff;
+}
+
+/* UPLOAD BOX */
+
+.upload-box{
+width:100%;
+height:150px;
+border:2px dashed #dcdcdc;
+border-radius:22px;
+background:#f8f8f8;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+transition:.2s;
+margin-bottom:18px;
+}
+
+.upload-box:hover{
+background:#f2f2f2;
+}
+
+.upload-text{
+font-size:14px;
+font-weight:700;
+opacity:.55;
+text-align:center;
+line-height:1.5;
+}
+
 /* =========================
 MOBILE
 ========================= */
-
-
 @media(max-width:768px){
-
+  
 body{
 padding:22px 14px 40px;
 }
@@ -432,6 +482,7 @@ justify-content:flex-start;
 margin-top:0;
 }
 
+
 }
 
 
@@ -504,15 +555,30 @@ CHAT
 
 </div>
 
+<!-- TABS -->
+
+<div class="tabs">
+
+<button class="tab-btn active" data-tab="pantone">
+Pantone Finder
+</button>
+
+<button class="tab-btn" data-tab="benjamin">
+Benjamin Finder
+</button>
+
+</div>
+
 <!-- =========================
 MAIN
 ========================= -->
-
+ 
 <div class="main">
 
 <!-- LEFT CARD -->
 
-<div class="box left-box">
+
+<div class="box left-box pantone-panel">
 
 <div class="left-inner">
 
@@ -618,6 +684,54 @@ Find Pantone
     
 </div>
 
+
+<!-- BENJAMIN PANEL -->
+
+<div class="box left-box benjamin-panel" style="display:none;">
+
+<div class="left-inner">
+
+<div class="tool-title">
+Benjamin Finder
+</div>
+
+<div class="tool-desc">
+Upload image and find nearest Benjamin Moore color
+</div>
+
+<label class="label">
+UPLOAD IMAGE
+</label>
+
+<div class="upload-box">
+
+<input
+type="file"
+class="image-input"
+accept="image/*"
+hidden
+/>
+
+<div class="upload-text">
+Drag image or click upload
+</div>
+
+</div>
+
+</div>
+
+
+<button class="convert-btn benjamin-btn">
+Find Benjamin
+</button>
+
+
+
+</div>
+
+
+
+    
 
 <!-- RIGHT CARD -->
 
@@ -735,6 +849,17 @@ let pantoneData = []
 
 let lxData = []
 
+let benjaminData = []
+
+fetch('./benjamin-starter.json')
+.then(res => res.json())
+.then(data => {
+
+    benjaminData = data
+
+})
+
+  
 fetch('./lxsheet.json')
 .then(res => res.json())
 .then(data => {
@@ -751,7 +876,8 @@ fetch('./pantone.json')
 
 })
 
-const button = document.querySelector('.convert-btn')
+
+const button = document.querySelector('.pantone-panel .convert-btn')
 
 button.addEventListener('click', () => {
 
@@ -968,6 +1094,229 @@ else if(lxValue){
 
 })
 
+const tabBtns = document.querySelectorAll('.tab-btn')
+
+const pantonePanel = document.querySelector('.pantone-panel')
+const benjaminPanel = document.querySelector('.benjamin-panel')
+
+tabBtns.forEach(btn => {
+
+    btn.addEventListener('click', () => {
+
+        tabBtns.forEach(tab => {
+
+            tab.classList.remove('active')
+
+        })
+
+        btn.classList.add('active')
+
+        const tab = btn.dataset.tab
+
+
+if(tab === 'pantone'){
+
+    pantonePanel.style.display = 'flex'
+    benjaminPanel.style.display = 'none'
+
+    document.querySelector('.results').innerHTML = `
+
+        <div class="result-card">
+
+            <div
+            class="result-color"
+            style="background:#0033A0;">
+            </div>
+
+            <div class="result-name">
+                Pantone 286 C
+            </div>
+
+            <div class="result-info">
+
+                <div>HEX #0033A0</div>
+                <div>RGB 0, 51, 160</div>
+                <div>CMYK 100, 66, 0, 2</div>
+
+            </div>
+
+        </div>
+
+    `
+
+}
+
+
+
+else{
+
+    pantonePanel.style.display = 'none'
+    benjaminPanel.style.display = 'flex'
+
+    document.querySelector('.results').innerHTML = `
+
+        <div class="result-card">
+
+            <div class="result-color"
+            style="background:#f3f3f3;">
+            </div>
+
+            <div class="result-name">
+                Upload Image
+            </div>
+
+            <div class="result-info">
+
+                <div>
+                    Benjamin Finder Ready
+                </div>
+
+                <div>
+                    Upload image to find color
+                </div>
+
+            </div>
+
+        </div>
+
+    `
+
+}
+
+
+
+    })
+
+})
+
+const uploadBox = document.querySelector('.upload-box')
+
+const imageInput = document.querySelector('.image-input')
+
+uploadBox.addEventListener('click', () => {
+
+    imageInput.click()
+
+})
+
+imageInput.addEventListener('change', e => {
+
+    const file = e.target.files[0]
+
+    if(!file) return
+
+    const reader = new FileReader()
+
+    reader.onload = event => {
+
+        const img = new Image()
+
+        img.onload = () => {
+
+            const canvas = document.createElement('canvas')
+            const ctx = canvas.getContext('2d')
+
+            canvas.width = img.width
+            canvas.height = img.height
+
+            ctx.drawImage(img,0,0)
+
+            const centerX = img.width / 2
+            const centerY = img.height / 2
+
+            const pixel = ctx.getImageData(
+                centerX,
+                centerY,
+                1,
+                1
+            ).data
+
+            const r = pixel[0]
+            const g = pixel[1]
+            const b = pixel[2]
+
+            const results = []
+
+            benjaminData.forEach(color => {
+
+                const pr = Number(color.R)
+                const pg = Number(color.G)
+                const pb = Number(color.B)
+
+                const distance = Math.sqrt(
+                    (r-pr)**2 +
+                    (g-pg)**2 +
+                    (b-pb)**2
+                )
+
+                results.push({
+                    color,
+                    distance
+                })
+
+            })
+
+            results.sort((a,b)=>a.distance-b.distance)
+
+            const finalResults = results
+            .slice(0,4)
+            .map(item => item.color)
+
+            const html = finalResults.map(c => `
+
+                <div class="result-card">
+
+                    <div
+                    class="result-color"
+                    style="background:${c.Hex}">
+                    </div>
+
+                    <div class="result-name">
+                        ${c.Name}
+                    </div>
+
+                    <div class="result-info">
+
+                        <div>
+                            ${c.Code}
+                        </div>
+
+                        <div>
+                            ${c.Group}
+                        </div>
+
+                        <div>
+                            ${c.Hex}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            `).join('')
+
+            document.querySelector('.results').innerHTML = html
+
+        }
+
+        img.src = event.target.result
+
+    }
+
+    reader.readAsDataURL(file)
+
+})
+
+
+
+
+
+
+
+
+
+
+    
 </script>
 
 </body>
