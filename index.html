@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 
 <meta charset="UTF-8">
@@ -31,19 +30,13 @@ background:#8BE86B;
 color:#000;
 min-height:100vh;
 padding:40px 20px 60px;
-display:flex;
-align-items:center;
-justify-content:center;
 overflow-x:hidden;
 }
-
-/* =========================
-LAYOUT
-========================= */
 
 .container{
 width:100%;
 max-width:1200px;
+margin:0 auto;
 }
 
 /* =========================
@@ -97,7 +90,6 @@ letter-spacing:-2px;
 .menu{
 display:flex;
 gap:16px;
-flex-wrap:wrap;
 }
 
 .menu a{
@@ -113,7 +105,7 @@ MAIN
 
 .main{
 display:grid;
-grid-template-columns:420px 1fr;
+grid-template-columns:390px 1fr;
 gap:24px;
 align-items:stretch;
 }
@@ -125,7 +117,7 @@ CARD
 .box{
 background:#fff;
 border-radius:32px;
-padding:32px;
+padding:30px;
 height:100%;
 }
 
@@ -157,7 +149,7 @@ font-size:15px;
 font-weight:600;
 opacity:0.5;
 line-height:1.5;
-margin-bottom:36px;
+margin-bottom:28px;
 }
 
 .label{
@@ -167,26 +159,70 @@ font-weight:900;
 margin-bottom:10px;
 }
 
+/* =========================
+INPUT
+========================= */
+
 .input{
 width:100%;
-height:66px;
+height:60px;
 border:none;
 background:#f3f3f3;
 border-radius:18px;
-padding:0 20px;
-font-size:18px;
+padding:0 18px;
+font-size:16px;
 font-weight:700;
 outline:none;
-margin-bottom:18px;
+font-family:'Pretendard',sans-serif;
+margin-bottom:16px;
 }
 
 .input:focus{
 background:#ececec;
 }
 
+/* =========================
+RGB / CMYK
+========================= */
+
+.mini-grid{
+display:grid;
+gap:10px;
+margin-bottom:16px;
+}
+
+.three-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.four-grid{
+grid-template-columns:repeat(4,1fr);
+}
+
+.mini-input{
+width:100%;
+height:48px;
+border:none;
+background:#f3f3f3;
+border-radius:14px;
+padding:0 14px;
+font-size:15px;
+font-weight:700;
+outline:none;
+font-family:'Pretendard',sans-serif;
+}
+
+.mini-input:focus{
+background:#ececec;
+}
+
+/* =========================
+BUTTON
+========================= */
+
 .convert-btn{
 width:100%;
-height:68px;
+height:64px;
 border:none;
 border-radius:20px;
 background:#000;
@@ -195,6 +231,7 @@ font-size:17px;
 font-weight:900;
 cursor:pointer;
 transition:0.2s;
+margin-top:auto;
 }
 
 .convert-btn:hover{
@@ -251,7 +288,7 @@ FOOTER
 ========================= */
 
 .footer{
-margin-top:30px;
+margin-top:28px;
 text-align:center;
 font-size:13px;
 font-weight:700;
@@ -264,17 +301,16 @@ TABLET
 
 @media(max-width:980px){
 
-body{
-display:block;
-padding:30px 16px 40px;
-}
-
 .main{
 grid-template-columns:1fr;
 }
 
 .results{
 grid-template-columns:1fr 1fr;
+}
+
+.left-box{
+height:auto;
 }
 
 }
@@ -284,6 +320,10 @@ MOBILE
 ========================= */
 
 @media(max-width:768px){
+
+body{
+padding:24px 14px 40px;
+}
 
 .topbar{
 margin-bottom:22px;
@@ -298,10 +338,6 @@ border-radius:16px;
 
 .big-title{
 font-size:30px;
-}
-
-.menu{
-width:100%;
 }
 
 .box{
@@ -326,8 +362,20 @@ font-size:22px;
 height:120px;
 }
 
+.three-grid{
+grid-template-columns:1fr;
+}
+
+.four-grid{
+grid-template-columns:1fr 1fr;
+}
+
 .left-box{
 justify-content:flex-start;
+}
+
+.convert-btn{
+margin-top:0;
 }
 
 }
@@ -369,10 +417,12 @@ PRINT TOOLS.
 <div class="menu">
 
 <a href="#">
-BLOG</a>
+BLOG
+</a>
 
 <a href="#">
-CHAT</a>
+CHAT
+</a>
 
 </div>
 
@@ -384,7 +434,6 @@ MAIN
 
 <div class="main">
 
-```html
 <!-- LEFT CARD -->
 
 <div class="box left-box">
@@ -417,23 +466,23 @@ placeholder="#073090"
 RGB CODE
 </label>
 
-<div class="rgb-group">
+<div class="mini-grid three-grid">
 
 <input
 type="number"
-class="rgb-input rgb-r"
+class="mini-input rgb-r"
 placeholder="R"
 />
 
 <input
 type="number"
-class="rgb-input rgb-g"
+class="mini-input rgb-g"
 placeholder="G"
 />
 
 <input
 type="number"
-class="rgb-input rgb-b"
+class="mini-input rgb-b"
 placeholder="B"
 />
 
@@ -445,29 +494,29 @@ placeholder="B"
 CMYK CODE
 </label>
 
-<div class="cmyk-group">
+<div class="mini-grid four-grid">
 
 <input
 type="number"
-class="cmyk-input c-input"
+class="mini-input c-input"
 placeholder="C"
 />
 
 <input
 type="number"
-class="cmyk-input m-input"
+class="mini-input m-input"
 placeholder="M"
 />
 
 <input
 type="number"
-class="cmyk-input y-input"
+class="mini-input y-input"
 placeholder="Y"
 />
 
 <input
 type="number"
-class="cmyk-input k-input"
+class="mini-input k-input"
 placeholder="K"
 />
 
@@ -480,8 +529,6 @@ Find Pantone
 </button>
 
 </div>
-```
-
 
 <!-- RIGHT CARD -->
 
@@ -604,7 +651,7 @@ let pantoneData = []
 fetch('./pantone.json')
 .then(res => res.json())
 .then(data => {
-      console.log(data)
+
     pantoneData = data
 
 })
@@ -617,17 +664,14 @@ const button = document.querySelector('.convert-btn')
 
 button.addEventListener('click', () => {
 
-    const input = document
-    .querySelector('.input')
+    const hexValue = document
+    .querySelector('.hex-input')
     .value
     .trim()
 
-    if(!input){
-
-        alert('HEX 또는 Pantone 코드를 입력하세요')
-        return
-
-    }
+    const rValue = document.querySelector('.rgb-r').value
+    const gValue = document.querySelector('.rgb-g').value
+    const bValue = document.querySelector('.rgb-b').value
 
     let finalResults = []
 
@@ -635,9 +679,9 @@ button.addEventListener('click', () => {
     HEX SEARCH
     ========================= */
 
-    if(input.startsWith('#')){
+    if(hexValue){
 
-        const hex = input.replace('#','')
+        const hex = hexValue.replace('#','')
 
         if(hex.length === 6){
 
@@ -677,20 +721,41 @@ button.addEventListener('click', () => {
     }
 
     /* =========================
-    CODE SEARCH
+    RGB SEARCH
     ========================= */
 
-    else{
+    else if(rValue && gValue && bValue){
 
-        finalResults = pantoneData
-        .filter(color =>
+        const r = Number(rValue)
+        const g = Number(gValue)
+        const b = Number(bValue)
 
-            color.Code
-            .toLowerCase()
-            .includes(input.toLowerCase())
+        const results = []
 
-        )
+        pantoneData.forEach(color => {
+
+            const pr = Number(color.R)
+            const pg = Number(color.G)
+            const pb = Number(color.B)
+
+            const distance = Math.sqrt(
+                (r-pr)**2 +
+                (g-pg)**2 +
+                (b-pb)**2
+            )
+
+            results.push({
+                color,
+                distance
+            })
+
+        })
+
+        results.sort((a,b)=>a.distance-b.distance)
+
+        finalResults = results
         .slice(0,4)
+        .map(item => item.color)
 
     }
 
@@ -700,9 +765,7 @@ button.addEventListener('click', () => {
 
     if(finalResults.length === 0){
 
-        document.querySelector('.results').innerHTML =
-        '<div>검색 결과가 없습니다.</div>'
-
+        alert('검색 결과가 없습니다.')
         return
 
     }
@@ -752,3 +815,4 @@ button.addEventListener('click', () => {
 
 </body>
 </html>
+
