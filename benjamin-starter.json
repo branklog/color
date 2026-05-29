@@ -1,164 +1,4502 @@
 [
   {
     "Group": "WHITE",
-    "Code": "OC-17",
-    "Name": "White Dove",
-    "R": "244",
-    "G": "240",
-    "B": "232",
-    "Hex": "#f4f0e8"
+    "Code": "OC-17-AI1",
+    "Name": "White Dove Variant 1",
+    "R": "236",
+    "G": "228",
+    "B": "222",
+    "Hex": "#ece4de"
   },
   {
     "Group": "WHITE",
-    "Code": "OC-65",
-    "Name": "Chantilly Lace",
-    "R": "248",
-    "G": "247",
-    "B": "242",
-    "Hex": "#f8f7f2"
+    "Code": "OC-17-AI2",
+    "Name": "White Dove Variant 2",
+    "R": "250",
+    "G": "240",
+    "B": "228",
+    "Hex": "#faf0e4"
   },
   {
-    "Group": "WARM WHITE",
-    "Code": "OC-45",
-    "Name": "Swiss Coffee",
-    "R": "241",
-    "G": "236",
-    "B": "226",
-    "Hex": "#f1ece2"
-  },
-  {
-    "Group": "GREIGE",
-    "Code": "HC-173",
-    "Name": "Edgecomb Gray",
-    "R": "214",
-    "G": "206",
-    "B": "194",
-    "Hex": "#d6cec2"
-  },
-  {
-    "Group": "GREIGE",
-    "Code": "HC-172",
-    "Name": "Revere Pewter",
-    "R": "204",
-    "G": "196",
-    "B": "184",
-    "Hex": "#ccc4b8"
-  },
-  {
-    "Group": "LIGHT GRAY",
-    "Code": "OC-23",
-    "Name": "Classic Gray",
+    "Group": "WHITE",
+    "Code": "OC-17-AI3",
+    "Name": "White Dove Variant 3",
     "R": "229",
-    "G": "224",
+    "G": "255",
+    "B": "231",
+    "Hex": "#e5ffe7"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI4",
+    "Name": "White Dove Variant 4",
+    "R": "232",
+    "G": "222",
+    "B": "219",
+    "Hex": "#e8dedb"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI5",
+    "Name": "White Dove Variant 5",
+    "R": "239",
+    "G": "245",
+    "B": "226",
+    "Hex": "#eff5e2"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI6",
+    "Name": "White Dove Variant 6",
+    "R": "231",
+    "G": "244",
+    "B": "238",
+    "Hex": "#e7f4ee"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI7",
+    "Name": "White Dove Variant 7",
+    "R": "255",
+    "G": "232",
+    "B": "233",
+    "Hex": "#ffe8e9"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI8",
+    "Name": "White Dove Variant 8",
+    "R": "255",
+    "G": "235",
+    "B": "230",
+    "Hex": "#ffebe6"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI9",
+    "Name": "White Dove Variant 9",
+    "R": "235",
+    "G": "255",
+    "B": "233",
+    "Hex": "#ebffe9"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI10",
+    "Name": "White Dove Variant 10",
+    "R": "242",
+    "G": "239",
+    "B": "216",
+    "Hex": "#f2efd8"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI11",
+    "Name": "White Dove Variant 11",
+    "R": "230",
+    "G": "222",
+    "B": "237",
+    "Hex": "#e6deed"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI12",
+    "Name": "White Dove Variant 12",
+    "R": "232",
+    "G": "250",
+    "B": "215",
+    "Hex": "#e8fad7"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI13",
+    "Name": "White Dove Variant 13",
+    "R": "228",
+    "G": "240",
     "B": "214",
-    "Hex": "#e5e0d6"
+    "Hex": "#e4f0d6"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI14",
+    "Name": "White Dove Variant 14",
+    "R": "234",
+    "G": "244",
+    "B": "218",
+    "Hex": "#eaf4da"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI15",
+    "Name": "White Dove Variant 15",
+    "R": "255",
+    "G": "246",
+    "B": "245",
+    "Hex": "#fff6f5"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI16",
+    "Name": "White Dove Variant 16",
+    "R": "241",
+    "G": "233",
+    "B": "250",
+    "Hex": "#f1e9fa"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI17",
+    "Name": "White Dove Variant 17",
+    "R": "244",
+    "G": "237",
+    "B": "235",
+    "Hex": "#f4edeb"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI18",
+    "Name": "White Dove Variant 18",
+    "R": "228",
+    "G": "230",
+    "B": "231",
+    "Hex": "#e4e6e7"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI19",
+    "Name": "White Dove Variant 19",
+    "R": "255",
+    "G": "232",
+    "B": "245",
+    "Hex": "#ffe8f5"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI20",
+    "Name": "White Dove Variant 20",
+    "R": "238",
+    "G": "224",
+    "B": "248",
+    "Hex": "#eee0f8"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI21",
+    "Name": "White Dove Variant 21",
+    "R": "227",
+    "G": "255",
+    "B": "242",
+    "Hex": "#e3fff2"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI22",
+    "Name": "White Dove Variant 22",
+    "R": "255",
+    "G": "239",
+    "B": "246",
+    "Hex": "#ffeff6"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI23",
+    "Name": "White Dove Variant 23",
+    "R": "251",
+    "G": "231",
+    "B": "223",
+    "Hex": "#fbe7df"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI24",
+    "Name": "White Dove Variant 24",
+    "R": "236",
+    "G": "238",
+    "B": "233",
+    "Hex": "#eceee9"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI25",
+    "Name": "White Dove Variant 25",
+    "R": "229",
+    "G": "244",
+    "B": "236",
+    "Hex": "#e5f4ec"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI26",
+    "Name": "White Dove Variant 26",
+    "R": "247",
+    "G": "230",
+    "B": "230",
+    "Hex": "#f7e6e6"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI27",
+    "Name": "White Dove Variant 27",
+    "R": "228",
+    "G": "228",
+    "B": "235",
+    "Hex": "#e4e4eb"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI28",
+    "Name": "White Dove Variant 28",
+    "R": "244",
+    "G": "246",
+    "B": "249",
+    "Hex": "#f4f6f9"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI29",
+    "Name": "White Dove Variant 29",
+    "R": "234",
+    "G": "227",
+    "B": "228",
+    "Hex": "#eae3e4"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-17-AI30",
+    "Name": "White Dove Variant 30",
+    "R": "232",
+    "G": "239",
+    "B": "233",
+    "Hex": "#e8efe9"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI1",
+    "Name": "Chantilly Lace Variant 1",
+    "R": "234",
+    "G": "242",
+    "B": "243",
+    "Hex": "#eaf2f3"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI2",
+    "Name": "Chantilly Lace Variant 2",
+    "R": "245",
+    "G": "242",
+    "B": "241",
+    "Hex": "#f5f2f1"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI3",
+    "Name": "Chantilly Lace Variant 3",
+    "R": "247",
+    "G": "238",
+    "B": "247",
+    "Hex": "#f7eef7"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI4",
+    "Name": "Chantilly Lace Variant 4",
+    "R": "252",
+    "G": "255",
+    "B": "229",
+    "Hex": "#fcffe5"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI5",
+    "Name": "Chantilly Lace Variant 5",
+    "R": "255",
+    "G": "249",
+    "B": "232",
+    "Hex": "#fff9e8"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI6",
+    "Name": "Chantilly Lace Variant 6",
+    "R": "248",
+    "G": "233",
+    "B": "255",
+    "Hex": "#f8e9ff"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI7",
+    "Name": "Chantilly Lace Variant 7",
+    "R": "236",
+    "G": "229",
+    "B": "226",
+    "Hex": "#ece5e2"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI8",
+    "Name": "Chantilly Lace Variant 8",
+    "R": "240",
+    "G": "231",
+    "B": "237",
+    "Hex": "#f0e7ed"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI9",
+    "Name": "Chantilly Lace Variant 9",
+    "R": "240",
+    "G": "246",
+    "B": "236",
+    "Hex": "#f0f6ec"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI10",
+    "Name": "Chantilly Lace Variant 10",
+    "R": "239",
+    "G": "242",
+    "B": "244",
+    "Hex": "#eff2f4"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI11",
+    "Name": "Chantilly Lace Variant 11",
+    "R": "243",
+    "G": "244",
+    "B": "234",
+    "Hex": "#f3f4ea"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI12",
+    "Name": "Chantilly Lace Variant 12",
+    "R": "247",
+    "G": "253",
+    "B": "238",
+    "Hex": "#f7fdee"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI13",
+    "Name": "Chantilly Lace Variant 13",
+    "R": "235",
+    "G": "253",
+    "B": "236",
+    "Hex": "#ebfdec"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI14",
+    "Name": "Chantilly Lace Variant 14",
+    "R": "255",
+    "G": "255",
+    "B": "228",
+    "Hex": "#ffffe4"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI15",
+    "Name": "Chantilly Lace Variant 15",
+    "R": "232",
+    "G": "251",
+    "B": "251",
+    "Hex": "#e8fbfb"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI16",
+    "Name": "Chantilly Lace Variant 16",
+    "R": "237",
+    "G": "252",
+    "B": "251",
+    "Hex": "#edfcfb"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI17",
+    "Name": "Chantilly Lace Variant 17",
+    "R": "255",
+    "G": "243",
+    "B": "249",
+    "Hex": "#fff3f9"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI18",
+    "Name": "Chantilly Lace Variant 18",
+    "R": "253",
+    "G": "233",
+    "B": "245",
+    "Hex": "#fde9f5"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI19",
+    "Name": "Chantilly Lace Variant 19",
+    "R": "231",
+    "G": "240",
+    "B": "224",
+    "Hex": "#e7f0e0"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI20",
+    "Name": "Chantilly Lace Variant 20",
+    "R": "251",
+    "G": "255",
+    "B": "255",
+    "Hex": "#fbffff"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI21",
+    "Name": "Chantilly Lace Variant 21",
+    "R": "249",
+    "G": "237",
+    "B": "243",
+    "Hex": "#f9edf3"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI22",
+    "Name": "Chantilly Lace Variant 22",
+    "R": "232",
+    "G": "255",
+    "B": "228",
+    "Hex": "#e8ffe4"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI23",
+    "Name": "Chantilly Lace Variant 23",
+    "R": "241",
+    "G": "230",
+    "B": "236",
+    "Hex": "#f1e6ec"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI24",
+    "Name": "Chantilly Lace Variant 24",
+    "R": "246",
+    "G": "235",
+    "B": "238",
+    "Hex": "#f6ebee"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI25",
+    "Name": "Chantilly Lace Variant 25",
+    "R": "231",
+    "G": "249",
+    "B": "230",
+    "Hex": "#e7f9e6"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI26",
+    "Name": "Chantilly Lace Variant 26",
+    "R": "255",
+    "G": "247",
+    "B": "248",
+    "Hex": "#fff7f8"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI27",
+    "Name": "Chantilly Lace Variant 27",
+    "R": "250",
+    "G": "242",
+    "B": "242",
+    "Hex": "#faf2f2"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI28",
+    "Name": "Chantilly Lace Variant 28",
+    "R": "255",
+    "G": "255",
+    "B": "227",
+    "Hex": "#ffffe3"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI29",
+    "Name": "Chantilly Lace Variant 29",
+    "R": "248",
+    "G": "255",
+    "B": "234",
+    "Hex": "#f8ffea"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65-AI30",
+    "Name": "Chantilly Lace Variant 30",
+    "R": "246",
+    "G": "255",
+    "B": "241",
+    "Hex": "#f6fff1"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI1",
+    "Name": "Edgecomb Gray Variant 1",
+    "R": "206",
+    "G": "220",
+    "B": "184",
+    "Hex": "#cedcb8"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI2",
+    "Name": "Edgecomb Gray Variant 2",
+    "R": "225",
+    "G": "207",
+    "B": "177",
+    "Hex": "#e1cfb1"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI3",
+    "Name": "Edgecomb Gray Variant 3",
+    "R": "216",
+    "G": "208",
+    "B": "212",
+    "Hex": "#d8d0d4"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI4",
+    "Name": "Edgecomb Gray Variant 4",
+    "R": "206",
+    "G": "221",
+    "B": "177",
+    "Hex": "#ceddb1"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI5",
+    "Name": "Edgecomb Gray Variant 5",
+    "R": "204",
+    "G": "200",
+    "B": "201",
+    "Hex": "#ccc8c9"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI6",
+    "Name": "Edgecomb Gray Variant 6",
+    "R": "212",
+    "G": "202",
+    "B": "202",
+    "Hex": "#d4caca"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI7",
+    "Name": "Edgecomb Gray Variant 7",
+    "R": "229",
+    "G": "219",
+    "B": "201",
+    "Hex": "#e5dbc9"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI8",
+    "Name": "Edgecomb Gray Variant 8",
+    "R": "212",
+    "G": "195",
+    "B": "177",
+    "Hex": "#d4c3b1"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI9",
+    "Name": "Edgecomb Gray Variant 9",
+    "R": "197",
+    "G": "205",
+    "B": "196",
+    "Hex": "#c5cdc4"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI10",
+    "Name": "Edgecomb Gray Variant 10",
+    "R": "221",
+    "G": "204",
+    "B": "198",
+    "Hex": "#ddccc6"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI11",
+    "Name": "Edgecomb Gray Variant 11",
+    "R": "214",
+    "G": "203",
+    "B": "204",
+    "Hex": "#d6cbcc"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI12",
+    "Name": "Edgecomb Gray Variant 12",
+    "R": "203",
+    "G": "195",
+    "B": "205",
+    "Hex": "#cbc3cd"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI13",
+    "Name": "Edgecomb Gray Variant 13",
+    "R": "217",
+    "G": "216",
+    "B": "176",
+    "Hex": "#d9d8b0"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI14",
+    "Name": "Edgecomb Gray Variant 14",
+    "R": "222",
+    "G": "224",
+    "B": "205",
+    "Hex": "#dee0cd"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI15",
+    "Name": "Edgecomb Gray Variant 15",
+    "R": "220",
+    "G": "191",
+    "B": "195",
+    "Hex": "#dcbfc3"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI16",
+    "Name": "Edgecomb Gray Variant 16",
+    "R": "221",
+    "G": "190",
+    "B": "200",
+    "Hex": "#ddbec8"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI17",
+    "Name": "Edgecomb Gray Variant 17",
+    "R": "230",
+    "G": "193",
+    "B": "187",
+    "Hex": "#e6c1bb"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI18",
+    "Name": "Edgecomb Gray Variant 18",
+    "R": "196",
+    "G": "217",
+    "B": "198",
+    "Hex": "#c4d9c6"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI19",
+    "Name": "Edgecomb Gray Variant 19",
+    "R": "206",
+    "G": "212",
+    "B": "187",
+    "Hex": "#ced4bb"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI20",
+    "Name": "Edgecomb Gray Variant 20",
+    "R": "201",
+    "G": "224",
+    "B": "195",
+    "Hex": "#c9e0c3"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI21",
+    "Name": "Edgecomb Gray Variant 21",
+    "R": "214",
+    "G": "212",
+    "B": "185",
+    "Hex": "#d6d4b9"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI22",
+    "Name": "Edgecomb Gray Variant 22",
+    "R": "231",
+    "G": "206",
+    "B": "200",
+    "Hex": "#e7cec8"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI23",
+    "Name": "Edgecomb Gray Variant 23",
+    "R": "222",
+    "G": "195",
+    "B": "189",
+    "Hex": "#dec3bd"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI24",
+    "Name": "Edgecomb Gray Variant 24",
+    "R": "209",
+    "G": "194",
+    "B": "185",
+    "Hex": "#d1c2b9"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI25",
+    "Name": "Edgecomb Gray Variant 25",
+    "R": "220",
+    "G": "205",
+    "B": "199",
+    "Hex": "#dccdc7"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI26",
+    "Name": "Edgecomb Gray Variant 26",
+    "R": "221",
+    "G": "205",
+    "B": "186",
+    "Hex": "#ddcdba"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI27",
+    "Name": "Edgecomb Gray Variant 27",
+    "R": "213",
+    "G": "220",
+    "B": "185",
+    "Hex": "#d5dcb9"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI28",
+    "Name": "Edgecomb Gray Variant 28",
+    "R": "221",
+    "G": "219",
+    "B": "211",
+    "Hex": "#dddbd3"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI29",
+    "Name": "Edgecomb Gray Variant 29",
+    "R": "223",
+    "G": "192",
+    "B": "211",
+    "Hex": "#dfc0d3"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173-AI30",
+    "Name": "Edgecomb Gray Variant 30",
+    "R": "217",
+    "G": "198",
+    "B": "180",
+    "Hex": "#d9c6b4"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI1",
+    "Name": "Revere Pewter Variant 1",
+    "R": "202",
+    "G": "196",
+    "B": "182",
+    "Hex": "#cac4b6"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI2",
+    "Name": "Revere Pewter Variant 2",
+    "R": "191",
+    "G": "214",
+    "B": "193",
+    "Hex": "#bfd6c1"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI3",
+    "Name": "Revere Pewter Variant 3",
+    "R": "205",
+    "G": "206",
+    "B": "188",
+    "Hex": "#cdcebc"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI4",
+    "Name": "Revere Pewter Variant 4",
+    "R": "194",
+    "G": "185",
+    "B": "183",
+    "Hex": "#c2b9b7"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI5",
+    "Name": "Revere Pewter Variant 5",
+    "R": "201",
+    "G": "198",
+    "B": "190",
+    "Hex": "#c9c6be"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI6",
+    "Name": "Revere Pewter Variant 6",
+    "R": "202",
+    "G": "203",
+    "B": "198",
+    "Hex": "#cacbc6"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI7",
+    "Name": "Revere Pewter Variant 7",
+    "R": "189",
+    "G": "192",
+    "B": "200",
+    "Hex": "#bdc0c8"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI8",
+    "Name": "Revere Pewter Variant 8",
+    "R": "219",
+    "G": "200",
+    "B": "175",
+    "Hex": "#dbc8af"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI9",
+    "Name": "Revere Pewter Variant 9",
+    "R": "199",
+    "G": "209",
+    "B": "198",
+    "Hex": "#c7d1c6"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI10",
+    "Name": "Revere Pewter Variant 10",
+    "R": "207",
+    "G": "191",
+    "B": "176",
+    "Hex": "#cfbfb0"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI11",
+    "Name": "Revere Pewter Variant 11",
+    "R": "186",
+    "G": "213",
+    "B": "193",
+    "Hex": "#bad5c1"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI12",
+    "Name": "Revere Pewter Variant 12",
+    "R": "214",
+    "G": "203",
+    "B": "194",
+    "Hex": "#d6cbc2"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI13",
+    "Name": "Revere Pewter Variant 13",
+    "R": "190",
+    "G": "196",
+    "B": "178",
+    "Hex": "#bec4b2"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI14",
+    "Name": "Revere Pewter Variant 14",
+    "R": "217",
+    "G": "208",
+    "B": "194",
+    "Hex": "#d9d0c2"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI15",
+    "Name": "Revere Pewter Variant 15",
+    "R": "200",
+    "G": "200",
+    "B": "171",
+    "Hex": "#c8c8ab"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI16",
+    "Name": "Revere Pewter Variant 16",
+    "R": "217",
+    "G": "187",
+    "B": "169",
+    "Hex": "#d9bba9"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI17",
+    "Name": "Revere Pewter Variant 17",
+    "R": "198",
+    "G": "192",
+    "B": "184",
+    "Hex": "#c6c0b8"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI18",
+    "Name": "Revere Pewter Variant 18",
+    "R": "209",
+    "G": "192",
+    "B": "202",
+    "Hex": "#d1c0ca"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI19",
+    "Name": "Revere Pewter Variant 19",
+    "R": "194",
+    "G": "180",
+    "B": "180",
+    "Hex": "#c2b4b4"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI20",
+    "Name": "Revere Pewter Variant 20",
+    "R": "214",
+    "G": "188",
+    "B": "167",
+    "Hex": "#d6bca7"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI21",
+    "Name": "Revere Pewter Variant 21",
+    "R": "187",
+    "G": "178",
+    "B": "173",
+    "Hex": "#bbb2ad"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI22",
+    "Name": "Revere Pewter Variant 22",
+    "R": "199",
+    "G": "185",
+    "B": "193",
+    "Hex": "#c7b9c1"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI23",
+    "Name": "Revere Pewter Variant 23",
+    "R": "211",
+    "G": "199",
+    "B": "195",
+    "Hex": "#d3c7c3"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI24",
+    "Name": "Revere Pewter Variant 24",
+    "R": "197",
+    "G": "184",
+    "B": "175",
+    "Hex": "#c5b8af"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI25",
+    "Name": "Revere Pewter Variant 25",
+    "R": "193",
+    "G": "185",
+    "B": "176",
+    "Hex": "#c1b9b0"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI26",
+    "Name": "Revere Pewter Variant 26",
+    "R": "186",
+    "G": "204",
+    "B": "189",
+    "Hex": "#baccbd"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI27",
+    "Name": "Revere Pewter Variant 27",
+    "R": "210",
+    "G": "191",
+    "B": "182",
+    "Hex": "#d2bfb6"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI28",
+    "Name": "Revere Pewter Variant 28",
+    "R": "189",
+    "G": "181",
+    "B": "182",
+    "Hex": "#bdb5b6"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI29",
+    "Name": "Revere Pewter Variant 29",
+    "R": "193",
+    "G": "204",
+    "B": "193",
+    "Hex": "#c1ccc1"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172-AI30",
+    "Name": "Revere Pewter Variant 30",
+    "R": "196",
+    "G": "202",
+    "B": "191",
+    "Hex": "#c4cabf"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI1",
+    "Name": "Classic Gray Variant 1",
+    "R": "240",
+    "G": "217",
+    "B": "223",
+    "Hex": "#f0d9df"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI2",
+    "Name": "Classic Gray Variant 2",
+    "R": "220",
+    "G": "222",
+    "B": "199",
+    "Hex": "#dcdec7"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI3",
+    "Name": "Classic Gray Variant 3",
+    "R": "232",
+    "G": "224",
+    "B": "208",
+    "Hex": "#e8e0d0"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI4",
+    "Name": "Classic Gray Variant 4",
+    "R": "235",
+    "G": "235",
+    "B": "210",
+    "Hex": "#ebebd2"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI5",
+    "Name": "Classic Gray Variant 5",
+    "R": "215",
+    "G": "221",
+    "B": "207",
+    "Hex": "#d7ddcf"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI6",
+    "Name": "Classic Gray Variant 6",
+    "R": "237",
+    "G": "219",
+    "B": "201",
+    "Hex": "#eddbc9"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI7",
+    "Name": "Classic Gray Variant 7",
+    "R": "229",
+    "G": "222",
+    "B": "200",
+    "Hex": "#e5dec8"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI8",
+    "Name": "Classic Gray Variant 8",
+    "R": "237",
+    "G": "230",
+    "B": "196",
+    "Hex": "#ede6c4"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI9",
+    "Name": "Classic Gray Variant 9",
+    "R": "245",
+    "G": "233",
+    "B": "219",
+    "Hex": "#f5e9db"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI10",
+    "Name": "Classic Gray Variant 10",
+    "R": "211",
+    "G": "220",
+    "B": "212",
+    "Hex": "#d3dcd4"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI11",
+    "Name": "Classic Gray Variant 11",
+    "R": "226",
+    "G": "227",
+    "B": "224",
+    "Hex": "#e2e3e0"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI12",
+    "Name": "Classic Gray Variant 12",
+    "R": "235",
+    "G": "216",
+    "B": "207",
+    "Hex": "#ebd8cf"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI13",
+    "Name": "Classic Gray Variant 13",
+    "R": "213",
+    "G": "222",
+    "B": "207",
+    "Hex": "#d5decf"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI14",
+    "Name": "Classic Gray Variant 14",
+    "R": "234",
+    "G": "238",
+    "B": "196",
+    "Hex": "#eaeec4"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI15",
+    "Name": "Classic Gray Variant 15",
+    "R": "224",
+    "G": "208",
+    "B": "219",
+    "Hex": "#e0d0db"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI16",
+    "Name": "Classic Gray Variant 16",
+    "R": "217",
+    "G": "237",
+    "B": "222",
+    "Hex": "#d9edde"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI17",
+    "Name": "Classic Gray Variant 17",
+    "R": "239",
+    "G": "219",
+    "B": "204",
+    "Hex": "#efdbcc"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI18",
+    "Name": "Classic Gray Variant 18",
+    "R": "227",
+    "G": "218",
+    "B": "216",
+    "Hex": "#e3dad8"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI19",
+    "Name": "Classic Gray Variant 19",
+    "R": "222",
+    "G": "216",
+    "B": "204",
+    "Hex": "#ded8cc"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI20",
+    "Name": "Classic Gray Variant 20",
+    "R": "245",
+    "G": "215",
+    "B": "223",
+    "Hex": "#f5d7df"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI21",
+    "Name": "Classic Gray Variant 21",
+    "R": "224",
+    "G": "208",
+    "B": "199",
+    "Hex": "#e0d0c7"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI22",
+    "Name": "Classic Gray Variant 22",
+    "R": "240",
+    "G": "232",
+    "B": "220",
+    "Hex": "#f0e8dc"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI23",
+    "Name": "Classic Gray Variant 23",
+    "R": "228",
+    "G": "236",
+    "B": "197",
+    "Hex": "#e4ecc5"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI24",
+    "Name": "Classic Gray Variant 24",
+    "R": "230",
+    "G": "236",
+    "B": "200",
+    "Hex": "#e6ecc8"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI25",
+    "Name": "Classic Gray Variant 25",
+    "R": "222",
+    "G": "224",
+    "B": "213",
+    "Hex": "#dee0d5"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI26",
+    "Name": "Classic Gray Variant 26",
+    "R": "237",
+    "G": "232",
+    "B": "199",
+    "Hex": "#ede8c7"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI27",
+    "Name": "Classic Gray Variant 27",
+    "R": "245",
+    "G": "239",
+    "B": "219",
+    "Hex": "#f5efdb"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI28",
+    "Name": "Classic Gray Variant 28",
+    "R": "243",
+    "G": "224",
+    "B": "203",
+    "Hex": "#f3e0cb"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI29",
+    "Name": "Classic Gray Variant 29",
+    "R": "233",
+    "G": "209",
+    "B": "216",
+    "Hex": "#e9d1d8"
+  },
+  {
+    "Group": "GRAY",
+    "Code": "OC-23-AI30",
+    "Name": "Classic Gray Variant 30",
+    "R": "223",
+    "G": "221",
+    "B": "200",
+    "Hex": "#dfddc8"
   },
   {
     "Group": "BEIGE",
-    "Code": "HC-80",
-    "Name": "Bleeker Beige",
+    "Code": "HC-80-AI1",
+    "Name": "Bleeker Beige Variant 1",
+    "R": "202",
+    "G": "183",
+    "B": "165",
+    "Hex": "#cab7a5"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI2",
+    "Name": "Bleeker Beige Variant 2",
+    "R": "213",
+    "G": "197",
+    "B": "149",
+    "Hex": "#d5c595"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI3",
+    "Name": "Bleeker Beige Variant 3",
+    "R": "190",
+    "G": "167",
+    "B": "158",
+    "Hex": "#bea79e"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI4",
+    "Name": "Bleeker Beige Variant 4",
+    "R": "187",
+    "G": "167",
+    "B": "159",
+    "Hex": "#bba79f"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI5",
+    "Name": "Bleeker Beige Variant 5",
+    "R": "195",
+    "G": "175",
+    "B": "151",
+    "Hex": "#c3af97"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI6",
+    "Name": "Bleeker Beige Variant 6",
+    "R": "191",
+    "G": "168",
+    "B": "152",
+    "Hex": "#bfa898"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI7",
+    "Name": "Bleeker Beige Variant 7",
+    "R": "179",
+    "G": "178",
+    "B": "146",
+    "Hex": "#b3b292"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI8",
+    "Name": "Bleeker Beige Variant 8",
+    "R": "210",
+    "G": "169",
+    "B": "151",
+    "Hex": "#d2a997"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI9",
+    "Name": "Bleeker Beige Variant 9",
+    "R": "186",
+    "G": "171",
+    "B": "177",
+    "Hex": "#baabb1"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI10",
+    "Name": "Bleeker Beige Variant 10",
+    "R": "180",
+    "G": "180",
+    "B": "147",
+    "Hex": "#b4b493"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI11",
+    "Name": "Bleeker Beige Variant 11",
+    "R": "204",
+    "G": "198",
+    "B": "176",
+    "Hex": "#ccc6b0"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI12",
+    "Name": "Bleeker Beige Variant 12",
+    "R": "186",
+    "G": "168",
+    "B": "143",
+    "Hex": "#baa88f"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI13",
+    "Name": "Bleeker Beige Variant 13",
+    "R": "214",
+    "G": "164",
+    "B": "159",
+    "Hex": "#d6a49f"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI14",
+    "Name": "Bleeker Beige Variant 14",
     "R": "196",
-    "G": "181",
+    "G": "170",
+    "B": "168",
+    "Hex": "#c4aaa8"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI15",
+    "Name": "Bleeker Beige Variant 15",
+    "R": "196",
+    "G": "194",
+    "B": "159",
+    "Hex": "#c4c29f"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI16",
+    "Name": "Bleeker Beige Variant 16",
+    "R": "187",
+    "G": "172",
+    "B": "144",
+    "Hex": "#bbac90"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI17",
+    "Name": "Bleeker Beige Variant 17",
+    "R": "187",
+    "G": "171",
+    "B": "146",
+    "Hex": "#bbab92"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI18",
+    "Name": "Bleeker Beige Variant 18",
+    "R": "190",
+    "G": "166",
+    "B": "148",
+    "Hex": "#bea694"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI19",
+    "Name": "Bleeker Beige Variant 19",
+    "R": "188",
+    "G": "163",
+    "B": "177",
+    "Hex": "#bca3b1"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI20",
+    "Name": "Bleeker Beige Variant 20",
+    "R": "194",
+    "G": "177",
+    "B": "152",
+    "Hex": "#c2b198"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI21",
+    "Name": "Bleeker Beige Variant 21",
+    "R": "205",
+    "G": "163",
+    "B": "163",
+    "Hex": "#cda3a3"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI22",
+    "Name": "Bleeker Beige Variant 22",
+    "R": "212",
+    "G": "167",
+    "B": "169",
+    "Hex": "#d4a7a9"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI23",
+    "Name": "Bleeker Beige Variant 23",
+    "R": "197",
+    "G": "178",
+    "B": "144",
+    "Hex": "#c5b290"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI24",
+    "Name": "Bleeker Beige Variant 24",
+    "R": "181",
+    "G": "171",
     "B": "160",
-    "Hex": "#c4b5a0"
+    "Hex": "#b5aba0"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI25",
+    "Name": "Bleeker Beige Variant 25",
+    "R": "201",
+    "G": "191",
+    "B": "174",
+    "Hex": "#c9bfae"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI26",
+    "Name": "Bleeker Beige Variant 26",
+    "R": "194",
+    "G": "167",
+    "B": "173",
+    "Hex": "#c2a7ad"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI27",
+    "Name": "Bleeker Beige Variant 27",
+    "R": "189",
+    "G": "171",
+    "B": "144",
+    "Hex": "#bdab90"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI28",
+    "Name": "Bleeker Beige Variant 28",
+    "R": "206",
+    "G": "193",
+    "B": "155",
+    "Hex": "#cec19b"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI29",
+    "Name": "Bleeker Beige Variant 29",
+    "R": "200",
+    "G": "191",
+    "B": "159",
+    "Hex": "#c8bf9f"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80-AI30",
+    "Name": "Bleeker Beige Variant 30",
+    "R": "205",
+    "G": "187",
+    "B": "169",
+    "Hex": "#cdbba9"
   },
   {
     "Group": "TAUPE",
-    "Code": "HC-172",
-    "Name": "Pashmina",
+    "Code": "AF-100-AI1",
+    "Name": "Pashmina Variant 1",
+    "R": "199",
+    "G": "173",
+    "B": "157",
+    "Hex": "#c7ad9d"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI2",
+    "Name": "Pashmina Variant 2",
+    "R": "194",
+    "G": "154",
+    "B": "160",
+    "Hex": "#c29aa0"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI3",
+    "Name": "Pashmina Variant 3",
+    "R": "193",
+    "G": "176",
+    "B": "162",
+    "Hex": "#c1b0a2"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI4",
+    "Name": "Pashmina Variant 4",
+    "R": "199",
+    "G": "180",
+    "B": "144",
+    "Hex": "#c7b490"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI5",
+    "Name": "Pashmina Variant 5",
+    "R": "195",
+    "G": "167",
+    "B": "138",
+    "Hex": "#c3a78a"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI6",
+    "Name": "Pashmina Variant 6",
+    "R": "199",
+    "G": "186",
+    "B": "163",
+    "Hex": "#c7baa3"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI7",
+    "Name": "Pashmina Variant 7",
+    "R": "171",
+    "G": "170",
+    "B": "162",
+    "Hex": "#abaaa2"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI8",
+    "Name": "Pashmina Variant 8",
+    "R": "196",
+    "G": "170",
+    "B": "145",
+    "Hex": "#c4aa91"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI9",
+    "Name": "Pashmina Variant 9",
+    "R": "191",
+    "G": "184",
+    "B": "162",
+    "Hex": "#bfb8a2"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI10",
+    "Name": "Pashmina Variant 10",
+    "R": "164",
+    "G": "159",
+    "B": "148",
+    "Hex": "#a49f94"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI11",
+    "Name": "Pashmina Variant 11",
+    "R": "163",
+    "G": "167",
+    "B": "162",
+    "Hex": "#a3a7a2"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI12",
+    "Name": "Pashmina Variant 12",
+    "R": "171",
+    "G": "155",
+    "B": "158",
+    "Hex": "#ab9b9e"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI13",
+    "Name": "Pashmina Variant 13",
+    "R": "167",
+    "G": "159",
+    "B": "153",
+    "Hex": "#a79f99"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI14",
+    "Name": "Pashmina Variant 14",
+    "R": "164",
+    "G": "174",
+    "B": "161",
+    "Hex": "#a4aea1"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI15",
+    "Name": "Pashmina Variant 15",
+    "R": "170",
+    "G": "168",
+    "B": "160",
+    "Hex": "#aaa8a0"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI16",
+    "Name": "Pashmina Variant 16",
+    "R": "188",
+    "G": "173",
+    "B": "146",
+    "Hex": "#bcad92"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI17",
+    "Name": "Pashmina Variant 17",
+    "R": "167",
+    "G": "183",
+    "B": "151",
+    "Hex": "#a7b797"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI18",
+    "Name": "Pashmina Variant 18",
+    "R": "165",
+    "G": "177",
+    "B": "136",
+    "Hex": "#a5b188"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI19",
+    "Name": "Pashmina Variant 19",
+    "R": "185",
+    "G": "182",
+    "B": "140",
+    "Hex": "#b9b68c"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI20",
+    "Name": "Pashmina Variant 20",
+    "R": "195",
+    "G": "170",
+    "B": "145",
+    "Hex": "#c3aa91"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI21",
+    "Name": "Pashmina Variant 21",
+    "R": "188",
+    "G": "185",
+    "B": "139",
+    "Hex": "#bcb98b"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI22",
+    "Name": "Pashmina Variant 22",
+    "R": "163",
+    "G": "157",
+    "B": "155",
+    "Hex": "#a39d9b"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI23",
+    "Name": "Pashmina Variant 23",
     "R": "181",
-    "G": "169",
-    "B": "154",
-    "Hex": "#b5a99a"
+    "G": "172",
+    "B": "158",
+    "Hex": "#b5ac9e"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI24",
+    "Name": "Pashmina Variant 24",
+    "R": "169",
+    "G": "156",
+    "B": "150",
+    "Hex": "#a99c96"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI25",
+    "Name": "Pashmina Variant 25",
+    "R": "190",
+    "G": "158",
+    "B": "167",
+    "Hex": "#be9ea7"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI26",
+    "Name": "Pashmina Variant 26",
+    "R": "192",
+    "G": "186",
+    "B": "164",
+    "Hex": "#c0baa4"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI27",
+    "Name": "Pashmina Variant 27",
+    "R": "169",
+    "G": "185",
+    "B": "143",
+    "Hex": "#a9b98f"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI28",
+    "Name": "Pashmina Variant 28",
+    "R": "171",
+    "G": "166",
+    "B": "139",
+    "Hex": "#aba68b"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI29",
+    "Name": "Pashmina Variant 29",
+    "R": "174",
+    "G": "164",
+    "B": "165",
+    "Hex": "#aea4a5"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "AF-100-AI30",
+    "Name": "Pashmina Variant 30",
+    "R": "166",
+    "G": "155",
+    "B": "164",
+    "Hex": "#a69ba4"
   },
   {
     "Group": "SAGE",
-    "Code": "HC-114",
-    "Name": "Saybrook Sage",
-    "R": "167",
-    "G": "170",
+    "Code": "HC-114-AI1",
+    "Name": "Saybrook Sage Variant 1",
+    "R": "185",
+    "G": "153",
+    "B": "161",
+    "Hex": "#b999a1"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI2",
+    "Name": "Saybrook Sage Variant 2",
+    "R": "157",
+    "G": "157",
     "B": "150",
-    "Hex": "#a7aa96"
+    "Hex": "#9d9d96"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI3",
+    "Name": "Saybrook Sage Variant 3",
+    "R": "159",
+    "G": "164",
+    "B": "159",
+    "Hex": "#9fa49f"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI4",
+    "Name": "Saybrook Sage Variant 4",
+    "R": "168",
+    "G": "161",
+    "B": "141",
+    "Hex": "#a8a18d"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI5",
+    "Name": "Saybrook Sage Variant 5",
+    "R": "173",
+    "G": "176",
+    "B": "134",
+    "Hex": "#adb086"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI6",
+    "Name": "Saybrook Sage Variant 6",
+    "R": "173",
+    "G": "185",
+    "B": "139",
+    "Hex": "#adb98b"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI7",
+    "Name": "Saybrook Sage Variant 7",
+    "R": "158",
+    "G": "182",
+    "B": "142",
+    "Hex": "#9eb68e"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI8",
+    "Name": "Saybrook Sage Variant 8",
+    "R": "163",
+    "G": "156",
+    "B": "139",
+    "Hex": "#a39c8b"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI9",
+    "Name": "Saybrook Sage Variant 9",
+    "R": "178",
+    "G": "177",
+    "B": "167",
+    "Hex": "#b2b1a7"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI10",
+    "Name": "Saybrook Sage Variant 10",
+    "R": "155",
+    "G": "172",
+    "B": "140",
+    "Hex": "#9bac8c"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI11",
+    "Name": "Saybrook Sage Variant 11",
+    "R": "169",
+    "G": "158",
+    "B": "134",
+    "Hex": "#a99e86"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI12",
+    "Name": "Saybrook Sage Variant 12",
+    "R": "175",
+    "G": "172",
+    "B": "145",
+    "Hex": "#afac91"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI13",
+    "Name": "Saybrook Sage Variant 13",
+    "R": "165",
+    "G": "183",
+    "B": "168",
+    "Hex": "#a5b7a8"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI14",
+    "Name": "Saybrook Sage Variant 14",
+    "R": "163",
+    "G": "166",
+    "B": "146",
+    "Hex": "#a3a692"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI15",
+    "Name": "Saybrook Sage Variant 15",
+    "R": "177",
+    "G": "176",
+    "B": "151",
+    "Hex": "#b1b097"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI16",
+    "Name": "Saybrook Sage Variant 16",
+    "R": "165",
+    "G": "175",
+    "B": "161",
+    "Hex": "#a5afa1"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI17",
+    "Name": "Saybrook Sage Variant 17",
+    "R": "181",
+    "G": "164",
+    "B": "133",
+    "Hex": "#b5a485"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI18",
+    "Name": "Saybrook Sage Variant 18",
+    "R": "182",
+    "G": "155",
+    "B": "135",
+    "Hex": "#b69b87"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI19",
+    "Name": "Saybrook Sage Variant 19",
+    "R": "166",
+    "G": "158",
+    "B": "165",
+    "Hex": "#a69ea5"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI20",
+    "Name": "Saybrook Sage Variant 20",
+    "R": "165",
+    "G": "170",
+    "B": "133",
+    "Hex": "#a5aa85"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI21",
+    "Name": "Saybrook Sage Variant 21",
+    "R": "165",
+    "G": "163",
+    "B": "142",
+    "Hex": "#a5a38e"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI22",
+    "Name": "Saybrook Sage Variant 22",
+    "R": "155",
+    "G": "157",
+    "B": "154",
+    "Hex": "#9b9d9a"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI23",
+    "Name": "Saybrook Sage Variant 23",
+    "R": "178",
+    "G": "182",
+    "B": "135",
+    "Hex": "#b2b687"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI24",
+    "Name": "Saybrook Sage Variant 24",
+    "R": "154",
+    "G": "152",
+    "B": "150",
+    "Hex": "#9a9896"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI25",
+    "Name": "Saybrook Sage Variant 25",
+    "R": "165",
+    "G": "181",
+    "B": "136",
+    "Hex": "#a5b588"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI26",
+    "Name": "Saybrook Sage Variant 26",
+    "R": "156",
+    "G": "181",
+    "B": "146",
+    "Hex": "#9cb592"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI27",
+    "Name": "Saybrook Sage Variant 27",
+    "R": "154",
+    "G": "156",
+    "B": "140",
+    "Hex": "#9a9c8c"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI28",
+    "Name": "Saybrook Sage Variant 28",
+    "R": "164",
+    "G": "164",
+    "B": "157",
+    "Hex": "#a4a49d"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI29",
+    "Name": "Saybrook Sage Variant 29",
+    "R": "170",
+    "G": "166",
+    "B": "147",
+    "Hex": "#aaa693"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114-AI30",
+    "Name": "Saybrook Sage Variant 30",
+    "R": "179",
+    "G": "172",
+    "B": "142",
+    "Hex": "#b3ac8e"
   },
   {
     "Group": "GREEN",
-    "Code": "HC-125",
-    "Name": "Cushing Green",
-    "R": "91",
-    "G": "102",
+    "Code": "HC-125-AI1",
+    "Name": "Cushing Green Variant 1",
+    "R": "99",
+    "G": "111",
+    "B": "97",
+    "Hex": "#636f61"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI2",
+    "Name": "Cushing Green Variant 2",
+    "R": "84",
+    "G": "90",
+    "B": "99",
+    "Hex": "#545a63"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI3",
+    "Name": "Cushing Green Variant 3",
+    "R": "90",
+    "G": "112",
+    "B": "78",
+    "Hex": "#5a704e"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI4",
+    "Name": "Cushing Green Variant 4",
+    "R": "97",
+    "G": "94",
+    "B": "70",
+    "Hex": "#615e46"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI5",
+    "Name": "Cushing Green Variant 5",
+    "R": "78",
+    "G": "119",
+    "B": "72",
+    "Hex": "#4e7748"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI6",
+    "Name": "Cushing Green Variant 6",
+    "R": "78",
+    "G": "98",
+    "B": "87",
+    "Hex": "#4e6257"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI7",
+    "Name": "Cushing Green Variant 7",
+    "R": "80",
+    "G": "92",
+    "B": "90",
+    "Hex": "#505c5a"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI8",
+    "Name": "Cushing Green Variant 8",
+    "R": "109",
+    "G": "96",
     "B": "82",
-    "Hex": "#5b6652"
+    "Hex": "#6d6052"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI9",
+    "Name": "Cushing Green Variant 9",
+    "R": "94",
+    "G": "103",
+    "B": "86",
+    "Hex": "#5e6756"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI10",
+    "Name": "Cushing Green Variant 10",
+    "R": "90",
+    "G": "115",
+    "B": "64",
+    "Hex": "#5a7340"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI11",
+    "Name": "Cushing Green Variant 11",
+    "R": "86",
+    "G": "117",
+    "B": "97",
+    "Hex": "#567561"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI12",
+    "Name": "Cushing Green Variant 12",
+    "R": "82",
+    "G": "112",
+    "B": "82",
+    "Hex": "#527052"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI13",
+    "Name": "Cushing Green Variant 13",
+    "R": "106",
+    "G": "94",
+    "B": "100",
+    "Hex": "#6a5e64"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI14",
+    "Name": "Cushing Green Variant 14",
+    "R": "79",
+    "G": "97",
+    "B": "97",
+    "Hex": "#4f6161"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI15",
+    "Name": "Cushing Green Variant 15",
+    "R": "74",
+    "G": "96",
+    "B": "81",
+    "Hex": "#4a6051"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI16",
+    "Name": "Cushing Green Variant 16",
+    "R": "109",
+    "G": "116",
+    "B": "80",
+    "Hex": "#6d7450"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI17",
+    "Name": "Cushing Green Variant 17",
+    "R": "87",
+    "G": "113",
+    "B": "79",
+    "Hex": "#57714f"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI18",
+    "Name": "Cushing Green Variant 18",
+    "R": "103",
+    "G": "114",
+    "B": "68",
+    "Hex": "#677244"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI19",
+    "Name": "Cushing Green Variant 19",
+    "R": "89",
+    "G": "94",
+    "B": "85",
+    "Hex": "#595e55"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI20",
+    "Name": "Cushing Green Variant 20",
+    "R": "83",
+    "G": "97",
+    "B": "94",
+    "Hex": "#53615e"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI21",
+    "Name": "Cushing Green Variant 21",
+    "R": "106",
+    "G": "110",
+    "B": "98",
+    "Hex": "#6a6e62"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI22",
+    "Name": "Cushing Green Variant 22",
+    "R": "91",
+    "G": "89",
+    "B": "98",
+    "Hex": "#5b5962"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI23",
+    "Name": "Cushing Green Variant 23",
+    "R": "77",
+    "G": "116",
+    "B": "79",
+    "Hex": "#4d744f"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI24",
+    "Name": "Cushing Green Variant 24",
+    "R": "75",
+    "G": "101",
+    "B": "78",
+    "Hex": "#4b654e"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI25",
+    "Name": "Cushing Green Variant 25",
+    "R": "73",
+    "G": "106",
+    "B": "70",
+    "Hex": "#496a46"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI26",
+    "Name": "Cushing Green Variant 26",
+    "R": "102",
+    "G": "119",
+    "B": "85",
+    "Hex": "#667755"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI27",
+    "Name": "Cushing Green Variant 27",
+    "R": "82",
+    "G": "118",
+    "B": "78",
+    "Hex": "#52764e"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI28",
+    "Name": "Cushing Green Variant 28",
+    "R": "95",
+    "G": "114",
+    "B": "76",
+    "Hex": "#5f724c"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI29",
+    "Name": "Cushing Green Variant 29",
+    "R": "73",
+    "G": "85",
+    "B": "72",
+    "Hex": "#495548"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125-AI30",
+    "Name": "Cushing Green Variant 30",
+    "R": "103",
+    "G": "99",
+    "B": "76",
+    "Hex": "#67634c"
   },
   {
     "Group": "NAVY",
-    "Code": "HC-154",
-    "Name": "Hale Navy",
-    "R": "67",
-    "G": "76",
+    "Code": "HC-154-AI1",
+    "Name": "Hale Navy Variant 1",
+    "R": "60",
+    "G": "92",
+    "B": "97",
+    "Hex": "#3c5c61"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI2",
+    "Name": "Hale Navy Variant 2",
+    "R": "74",
+    "G": "61",
     "B": "86",
-    "Hex": "#434c56"
+    "Hex": "#4a3d56"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI3",
+    "Name": "Hale Navy Variant 3",
+    "R": "52",
+    "G": "61",
+    "B": "94",
+    "Hex": "#343d5e"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI4",
+    "Name": "Hale Navy Variant 4",
+    "R": "73",
+    "G": "80",
+    "B": "102",
+    "Hex": "#495066"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI5",
+    "Name": "Hale Navy Variant 5",
+    "R": "74",
+    "G": "73",
+    "B": "79",
+    "Hex": "#4a494f"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI6",
+    "Name": "Hale Navy Variant 6",
+    "R": "63",
+    "G": "69",
+    "B": "99",
+    "Hex": "#3f4563"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI7",
+    "Name": "Hale Navy Variant 7",
+    "R": "56",
+    "G": "80",
+    "B": "92",
+    "Hex": "#38505c"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI8",
+    "Name": "Hale Navy Variant 8",
+    "R": "53",
+    "G": "76",
+    "B": "95",
+    "Hex": "#354c5f"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI9",
+    "Name": "Hale Navy Variant 9",
+    "R": "82",
+    "G": "66",
+    "B": "88",
+    "Hex": "#524258"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI10",
+    "Name": "Hale Navy Variant 10",
+    "R": "70",
+    "G": "62",
+    "B": "74",
+    "Hex": "#463e4a"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI11",
+    "Name": "Hale Navy Variant 11",
+    "R": "53",
+    "G": "86",
+    "B": "87",
+    "Hex": "#355657"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI12",
+    "Name": "Hale Navy Variant 12",
+    "R": "62",
+    "G": "66",
+    "B": "74",
+    "Hex": "#3e424a"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI13",
+    "Name": "Hale Navy Variant 13",
+    "R": "50",
+    "G": "81",
+    "B": "74",
+    "Hex": "#32514a"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI14",
+    "Name": "Hale Navy Variant 14",
+    "R": "69",
+    "G": "84",
+    "B": "93",
+    "Hex": "#45545d"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI15",
+    "Name": "Hale Navy Variant 15",
+    "R": "59",
+    "G": "68",
+    "B": "77",
+    "Hex": "#3b444d"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI16",
+    "Name": "Hale Navy Variant 16",
+    "R": "65",
+    "G": "72",
+    "B": "79",
+    "Hex": "#41484f"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI17",
+    "Name": "Hale Navy Variant 17",
+    "R": "70",
+    "G": "88",
+    "B": "81",
+    "Hex": "#465851"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI18",
+    "Name": "Hale Navy Variant 18",
+    "R": "49",
+    "G": "73",
+    "B": "75",
+    "Hex": "#31494b"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI19",
+    "Name": "Hale Navy Variant 19",
+    "R": "66",
+    "G": "68",
+    "B": "94",
+    "Hex": "#42445e"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI20",
+    "Name": "Hale Navy Variant 20",
+    "R": "81",
+    "G": "75",
+    "B": "73",
+    "Hex": "#514b49"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI21",
+    "Name": "Hale Navy Variant 21",
+    "R": "53",
+    "G": "94",
+    "B": "84",
+    "Hex": "#355e54"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI22",
+    "Name": "Hale Navy Variant 22",
+    "R": "61",
+    "G": "94",
+    "B": "97",
+    "Hex": "#3d5e61"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI23",
+    "Name": "Hale Navy Variant 23",
+    "R": "73",
+    "G": "90",
+    "B": "98",
+    "Hex": "#495a62"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI24",
+    "Name": "Hale Navy Variant 24",
+    "R": "60",
+    "G": "69",
+    "B": "88",
+    "Hex": "#3c4558"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI25",
+    "Name": "Hale Navy Variant 25",
+    "R": "77",
+    "G": "89",
+    "B": "82",
+    "Hex": "#4d5952"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI26",
+    "Name": "Hale Navy Variant 26",
+    "R": "51",
+    "G": "88",
+    "B": "82",
+    "Hex": "#335852"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI27",
+    "Name": "Hale Navy Variant 27",
+    "R": "56",
+    "G": "77",
+    "B": "84",
+    "Hex": "#384d54"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI28",
+    "Name": "Hale Navy Variant 28",
+    "R": "76",
+    "G": "88",
+    "B": "102",
+    "Hex": "#4c5866"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI29",
+    "Name": "Hale Navy Variant 29",
+    "R": "55",
+    "G": "92",
+    "B": "100",
+    "Hex": "#375c64"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154-AI30",
+    "Name": "Hale Navy Variant 30",
+    "R": "75",
+    "G": "88",
+    "B": "98",
+    "Hex": "#4b5862"
   },
   {
     "Group": "BLUE",
-    "Code": "HC-143",
-    "Name": "Wythe Blue",
-    "R": "181",
-    "G": "194",
+    "Code": "HC-143-AI1",
+    "Name": "Wythe Blue Variant 1",
+    "R": "196",
+    "G": "206",
+    "B": "171",
+    "Hex": "#c4ceab"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI2",
+    "Name": "Wythe Blue Variant 2",
+    "R": "190",
+    "G": "201",
+    "B": "183",
+    "Hex": "#bec9b7"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI3",
+    "Name": "Wythe Blue Variant 3",
+    "R": "192",
+    "G": "192",
+    "B": "179",
+    "Hex": "#c0c0b3"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI4",
+    "Name": "Wythe Blue Variant 4",
+    "R": "187",
+    "G": "186",
+    "B": "199",
+    "Hex": "#bbbac7"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI5",
+    "Name": "Wythe Blue Variant 5",
+    "R": "187",
+    "G": "178",
+    "B": "175",
+    "Hex": "#bbb2af"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI6",
+    "Name": "Wythe Blue Variant 6",
+    "R": "165",
+    "G": "199",
+    "B": "189",
+    "Hex": "#a5c7bd"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI7",
+    "Name": "Wythe Blue Variant 7",
+    "R": "172",
+    "G": "206",
+    "B": "187",
+    "Hex": "#accebb"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI8",
+    "Name": "Wythe Blue Variant 8",
+    "R": "164",
+    "G": "207",
+    "B": "184",
+    "Hex": "#a4cfb8"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI9",
+    "Name": "Wythe Blue Variant 9",
+    "R": "176",
+    "G": "185",
+    "B": "177",
+    "Hex": "#b0b9b1"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI10",
+    "Name": "Wythe Blue Variant 10",
+    "R": "192",
+    "G": "209",
+    "B": "197",
+    "Hex": "#c0d1c5"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI11",
+    "Name": "Wythe Blue Variant 11",
+    "R": "180",
+    "G": "199",
     "B": "188",
-    "Hex": "#b5c2bc"
+    "Hex": "#b4c7bc"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI12",
+    "Name": "Wythe Blue Variant 12",
+    "R": "174",
+    "G": "201",
+    "B": "203",
+    "Hex": "#aec9cb"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI13",
+    "Name": "Wythe Blue Variant 13",
+    "R": "191",
+    "G": "176",
+    "B": "206",
+    "Hex": "#bfb0ce"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI14",
+    "Name": "Wythe Blue Variant 14",
+    "R": "192",
+    "G": "211",
+    "B": "171",
+    "Hex": "#c0d3ab"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI15",
+    "Name": "Wythe Blue Variant 15",
+    "R": "193",
+    "G": "198",
+    "B": "171",
+    "Hex": "#c1c6ab"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI16",
+    "Name": "Wythe Blue Variant 16",
+    "R": "186",
+    "G": "205",
+    "B": "200",
+    "Hex": "#bacdc8"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI17",
+    "Name": "Wythe Blue Variant 17",
+    "R": "185",
+    "G": "207",
+    "B": "195",
+    "Hex": "#b9cfc3"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI18",
+    "Name": "Wythe Blue Variant 18",
+    "R": "195",
+    "G": "190",
+    "B": "206",
+    "Hex": "#c3bece"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI19",
+    "Name": "Wythe Blue Variant 19",
+    "R": "182",
+    "G": "202",
+    "B": "182",
+    "Hex": "#b6cab6"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI20",
+    "Name": "Wythe Blue Variant 20",
+    "R": "180",
+    "G": "186",
+    "B": "173",
+    "Hex": "#b4baad"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI21",
+    "Name": "Wythe Blue Variant 21",
+    "R": "199",
+    "G": "209",
+    "B": "206",
+    "Hex": "#c7d1ce"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI22",
+    "Name": "Wythe Blue Variant 22",
+    "R": "169",
+    "G": "198",
+    "B": "177",
+    "Hex": "#a9c6b1"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI23",
+    "Name": "Wythe Blue Variant 23",
+    "R": "197",
+    "G": "184",
+    "B": "206",
+    "Hex": "#c5b8ce"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI24",
+    "Name": "Wythe Blue Variant 24",
+    "R": "197",
+    "G": "209",
+    "B": "186",
+    "Hex": "#c5d1ba"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI25",
+    "Name": "Wythe Blue Variant 25",
+    "R": "197",
+    "G": "203",
+    "B": "195",
+    "Hex": "#c5cbc3"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI26",
+    "Name": "Wythe Blue Variant 26",
+    "R": "172",
+    "G": "205",
+    "B": "181",
+    "Hex": "#accdb5"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI27",
+    "Name": "Wythe Blue Variant 27",
+    "R": "173",
+    "G": "182",
+    "B": "171",
+    "Hex": "#adb6ab"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI28",
+    "Name": "Wythe Blue Variant 28",
+    "R": "191",
+    "G": "210",
+    "B": "181",
+    "Hex": "#bfd2b5"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI29",
+    "Name": "Wythe Blue Variant 29",
+    "R": "197",
+    "G": "191",
+    "B": "188",
+    "Hex": "#c5bfbc"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143-AI30",
+    "Name": "Wythe Blue Variant 30",
+    "R": "183",
+    "G": "196",
+    "B": "193",
+    "Hex": "#b7c4c1"
   },
   {
     "Group": "CHARCOAL",
-    "Code": "HC-166",
-    "Name": "Kendall Charcoal",
-    "R": "104",
-    "G": "102",
+    "Code": "HC-166-AI1",
+    "Name": "Kendall Charcoal Variant 1",
+    "R": "96",
+    "G": "96",
+    "B": "105",
+    "Hex": "#606069"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI2",
+    "Name": "Kendall Charcoal Variant 2",
+    "R": "89",
+    "G": "92",
+    "B": "105",
+    "Hex": "#595c69"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI3",
+    "Name": "Kendall Charcoal Variant 3",
+    "R": "91",
+    "G": "108",
+    "B": "108",
+    "Hex": "#5b6c6c"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI4",
+    "Name": "Kendall Charcoal Variant 4",
+    "R": "109",
+    "G": "118",
+    "B": "111",
+    "Hex": "#6d766f"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI5",
+    "Name": "Kendall Charcoal Variant 5",
+    "R": "110",
+    "G": "116",
+    "B": "97",
+    "Hex": "#6e7461"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI6",
+    "Name": "Kendall Charcoal Variant 6",
+    "R": "93",
+    "G": "98",
+    "B": "110",
+    "Hex": "#5d626e"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI7",
+    "Name": "Kendall Charcoal Variant 7",
+    "R": "117",
+    "G": "109",
+    "B": "81",
+    "Hex": "#756d51"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI8",
+    "Name": "Kendall Charcoal Variant 8",
+    "R": "102",
+    "G": "118",
+    "B": "92",
+    "Hex": "#66765c"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI9",
+    "Name": "Kendall Charcoal Variant 9",
+    "R": "115",
+    "G": "113",
+    "B": "84",
+    "Hex": "#737154"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI10",
+    "Name": "Kendall Charcoal Variant 10",
+    "R": "109",
+    "G": "90",
     "B": "96",
-    "Hex": "#686660"
+    "Hex": "#6d5a60"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI11",
+    "Name": "Kendall Charcoal Variant 11",
+    "R": "95",
+    "G": "110",
+    "B": "108",
+    "Hex": "#5f6e6c"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI12",
+    "Name": "Kendall Charcoal Variant 12",
+    "R": "104",
+    "G": "120",
+    "B": "92",
+    "Hex": "#68785c"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI13",
+    "Name": "Kendall Charcoal Variant 13",
+    "R": "116",
+    "G": "99",
+    "B": "78",
+    "Hex": "#74634e"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI14",
+    "Name": "Kendall Charcoal Variant 14",
+    "R": "94",
+    "G": "97",
+    "B": "102",
+    "Hex": "#5e6166"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI15",
+    "Name": "Kendall Charcoal Variant 15",
+    "R": "114",
+    "G": "99",
+    "B": "93",
+    "Hex": "#72635d"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI16",
+    "Name": "Kendall Charcoal Variant 16",
+    "R": "105",
+    "G": "118",
+    "B": "114",
+    "Hex": "#697672"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI17",
+    "Name": "Kendall Charcoal Variant 17",
+    "R": "109",
+    "G": "99",
+    "B": "85",
+    "Hex": "#6d6355"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI18",
+    "Name": "Kendall Charcoal Variant 18",
+    "R": "107",
+    "G": "87",
+    "B": "94",
+    "Hex": "#6b575e"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI19",
+    "Name": "Kendall Charcoal Variant 19",
+    "R": "94",
+    "G": "102",
+    "B": "112",
+    "Hex": "#5e6670"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI20",
+    "Name": "Kendall Charcoal Variant 20",
+    "R": "120",
+    "G": "119",
+    "B": "104",
+    "Hex": "#787768"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI21",
+    "Name": "Kendall Charcoal Variant 21",
+    "R": "96",
+    "G": "119",
+    "B": "79",
+    "Hex": "#60774f"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI22",
+    "Name": "Kendall Charcoal Variant 22",
+    "R": "114",
+    "G": "86",
+    "B": "114",
+    "Hex": "#725672"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI23",
+    "Name": "Kendall Charcoal Variant 23",
+    "R": "111",
+    "G": "116",
+    "B": "104",
+    "Hex": "#6f7468"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI24",
+    "Name": "Kendall Charcoal Variant 24",
+    "R": "89",
+    "G": "105",
+    "B": "112",
+    "Hex": "#596970"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI25",
+    "Name": "Kendall Charcoal Variant 25",
+    "R": "122",
+    "G": "112",
+    "B": "88",
+    "Hex": "#7a7058"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI26",
+    "Name": "Kendall Charcoal Variant 26",
+    "R": "91",
+    "G": "104",
+    "B": "79",
+    "Hex": "#5b684f"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI27",
+    "Name": "Kendall Charcoal Variant 27",
+    "R": "122",
+    "G": "116",
+    "B": "79",
+    "Hex": "#7a744f"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI28",
+    "Name": "Kendall Charcoal Variant 28",
+    "R": "116",
+    "G": "112",
+    "B": "92",
+    "Hex": "#74705c"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI29",
+    "Name": "Kendall Charcoal Variant 29",
+    "R": "114",
+    "G": "99",
+    "B": "91",
+    "Hex": "#72635b"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166-AI30",
+    "Name": "Kendall Charcoal Variant 30",
+    "R": "120",
+    "G": "110",
+    "B": "105",
+    "Hex": "#786e69"
   },
   {
     "Group": "BLACK",
-    "Code": "2132-10",
-    "Name": "Onyx",
-    "R": "47",
-    "G": "47",
+    "Code": "2132-10-AI1",
+    "Name": "Onyx Variant 1",
+    "R": "48",
+    "G": "44",
+    "B": "61",
+    "Hex": "#302c3d"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI2",
+    "Name": "Onyx Variant 2",
+    "R": "51",
+    "G": "63",
+    "B": "53",
+    "Hex": "#333f35"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI3",
+    "Name": "Onyx Variant 3",
+    "R": "58",
+    "G": "30",
     "B": "47",
-    "Hex": "#2f2f2f"
+    "Hex": "#3a1e2f"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI4",
+    "Name": "Onyx Variant 4",
+    "R": "46",
+    "G": "60",
+    "B": "56",
+    "Hex": "#2e3c38"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI5",
+    "Name": "Onyx Variant 5",
+    "R": "29",
+    "G": "40",
+    "B": "53",
+    "Hex": "#1d2835"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI6",
+    "Name": "Onyx Variant 6",
+    "R": "42",
+    "G": "56",
+    "B": "55",
+    "Hex": "#2a3837"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI7",
+    "Name": "Onyx Variant 7",
+    "R": "60",
+    "G": "43",
+    "B": "40",
+    "Hex": "#3c2b28"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI8",
+    "Name": "Onyx Variant 8",
+    "R": "45",
+    "G": "42",
+    "B": "53",
+    "Hex": "#2d2a35"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI9",
+    "Name": "Onyx Variant 9",
+    "R": "38",
+    "G": "64",
+    "B": "54",
+    "Hex": "#264036"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI10",
+    "Name": "Onyx Variant 10",
+    "R": "62",
+    "G": "35",
+    "B": "40",
+    "Hex": "#3e2328"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI11",
+    "Name": "Onyx Variant 11",
+    "R": "59",
+    "G": "58",
+    "B": "49",
+    "Hex": "#3b3a31"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI12",
+    "Name": "Onyx Variant 12",
+    "R": "65",
+    "G": "34",
+    "B": "33",
+    "Hex": "#412221"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI13",
+    "Name": "Onyx Variant 13",
+    "R": "56",
+    "G": "59",
+    "B": "48",
+    "Hex": "#383b30"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI14",
+    "Name": "Onyx Variant 14",
+    "R": "58",
+    "G": "48",
+    "B": "47",
+    "Hex": "#3a302f"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI15",
+    "Name": "Onyx Variant 15",
+    "R": "59",
+    "G": "36",
+    "B": "53",
+    "Hex": "#3b2435"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI16",
+    "Name": "Onyx Variant 16",
+    "R": "49",
+    "G": "46",
+    "B": "59",
+    "Hex": "#312e3b"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI17",
+    "Name": "Onyx Variant 17",
+    "R": "45",
+    "G": "62",
+    "B": "52",
+    "Hex": "#2d3e34"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI18",
+    "Name": "Onyx Variant 18",
+    "R": "64",
+    "G": "65",
+    "B": "46",
+    "Hex": "#40412e"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI19",
+    "Name": "Onyx Variant 19",
+    "R": "61",
+    "G": "31",
+    "B": "35",
+    "Hex": "#3d1f23"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI20",
+    "Name": "Onyx Variant 20",
+    "R": "54",
+    "G": "61",
+    "B": "53",
+    "Hex": "#363d35"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI21",
+    "Name": "Onyx Variant 21",
+    "R": "35",
+    "G": "51",
+    "B": "49",
+    "Hex": "#233331"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI22",
+    "Name": "Onyx Variant 22",
+    "R": "34",
+    "G": "59",
+    "B": "38",
+    "Hex": "#223b26"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI23",
+    "Name": "Onyx Variant 23",
+    "R": "41",
+    "G": "56",
+    "B": "64",
+    "Hex": "#293840"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI24",
+    "Name": "Onyx Variant 24",
+    "R": "58",
+    "G": "31",
+    "B": "56",
+    "Hex": "#3a1f38"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI25",
+    "Name": "Onyx Variant 25",
+    "R": "32",
+    "G": "47",
+    "B": "59",
+    "Hex": "#202f3b"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI26",
+    "Name": "Onyx Variant 26",
+    "R": "65",
+    "G": "40",
+    "B": "41",
+    "Hex": "#412829"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI27",
+    "Name": "Onyx Variant 27",
+    "R": "42",
+    "G": "64",
+    "B": "38",
+    "Hex": "#2a4026"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI28",
+    "Name": "Onyx Variant 28",
+    "R": "35",
+    "G": "59",
+    "B": "30",
+    "Hex": "#233b1e"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI29",
+    "Name": "Onyx Variant 29",
+    "R": "59",
+    "G": "43",
+    "B": "32",
+    "Hex": "#3b2b20"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10-AI30",
+    "Name": "Onyx Variant 30",
+    "R": "57",
+    "G": "63",
+    "B": "29",
+    "Hex": "#393f1d"
   },
   {
     "Group": "PINK",
-    "Code": "2083-70",
-    "Name": "First Light",
+    "Code": "2083-70-AI1",
+    "Name": "First Light Variant 1",
+    "R": "255",
+    "G": "223",
+    "B": "232",
+    "Hex": "#ffdfe8"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI2",
+    "Name": "First Light Variant 2",
+    "R": "227",
+    "G": "235",
+    "B": "207",
+    "Hex": "#e3ebcf"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI3",
+    "Name": "First Light Variant 3",
+    "R": "248",
+    "G": "232",
+    "B": "238",
+    "Hex": "#f8e8ee"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI4",
+    "Name": "First Light Variant 4",
+    "R": "255",
+    "G": "238",
+    "B": "242",
+    "Hex": "#ffeef2"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI5",
+    "Name": "First Light Variant 5",
+    "R": "227",
+    "G": "216",
+    "B": "221",
+    "Hex": "#e3d8dd"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI6",
+    "Name": "First Light Variant 6",
     "R": "245",
+    "G": "230",
+    "B": "214",
+    "Hex": "#f5e6d6"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI7",
+    "Name": "First Light Variant 7",
+    "R": "246",
+    "G": "205",
+    "B": "238",
+    "Hex": "#f6cdee"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI8",
+    "Name": "First Light Variant 8",
+    "R": "237",
+    "G": "216",
+    "B": "242",
+    "Hex": "#edd8f2"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI9",
+    "Name": "First Light Variant 9",
+    "R": "255",
+    "G": "208",
+    "B": "225",
+    "Hex": "#ffd0e1"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI10",
+    "Name": "First Light Variant 10",
+    "R": "244",
+    "G": "219",
+    "B": "209",
+    "Hex": "#f4dbd1"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI11",
+    "Name": "First Light Variant 11",
+    "R": "249",
+    "G": "238",
+    "B": "217",
+    "Hex": "#f9eed9"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI12",
+    "Name": "First Light Variant 12",
+    "R": "250",
+    "G": "231",
+    "B": "206",
+    "Hex": "#fae7ce"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI13",
+    "Name": "First Light Variant 13",
+    "R": "245",
+    "G": "227",
+    "B": "239",
+    "Hex": "#f5e3ef"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI14",
+    "Name": "First Light Variant 14",
+    "R": "240",
+    "G": "206",
+    "B": "214",
+    "Hex": "#f0ced6"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI15",
+    "Name": "First Light Variant 15",
+    "R": "253",
+    "G": "205",
+    "B": "209",
+    "Hex": "#fdcdd1"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI16",
+    "Name": "First Light Variant 16",
+    "R": "231",
+    "G": "229",
+    "B": "216",
+    "Hex": "#e7e5d8"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI17",
+    "Name": "First Light Variant 17",
+    "R": "253",
+    "G": "206",
+    "B": "211",
+    "Hex": "#fdced3"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI18",
+    "Name": "First Light Variant 18",
+    "R": "255",
+    "G": "236",
+    "B": "208",
+    "Hex": "#ffecd0"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI19",
+    "Name": "First Light Variant 19",
+    "R": "255",
+    "G": "208",
+    "B": "236",
+    "Hex": "#ffd0ec"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI20",
+    "Name": "First Light Variant 20",
+    "R": "247",
+    "G": "230",
+    "B": "206",
+    "Hex": "#f7e6ce"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI21",
+    "Name": "First Light Variant 21",
+    "R": "243",
+    "G": "210",
+    "B": "241",
+    "Hex": "#f3d2f1"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI22",
+    "Name": "First Light Variant 22",
+    "R": "255",
+    "G": "227",
+    "B": "225",
+    "Hex": "#ffe3e1"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI23",
+    "Name": "First Light Variant 23",
+    "R": "255",
+    "G": "230",
+    "B": "235",
+    "Hex": "#ffe6eb"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI24",
+    "Name": "First Light Variant 24",
+    "R": "247",
     "G": "221",
-    "B": "224",
-    "Hex": "#f5dde0"
+    "B": "236",
+    "Hex": "#f7ddec"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI25",
+    "Name": "First Light Variant 25",
+    "R": "240",
+    "G": "223",
+    "B": "233",
+    "Hex": "#f0dfe9"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI26",
+    "Name": "First Light Variant 26",
+    "R": "228",
+    "G": "219",
+    "B": "241",
+    "Hex": "#e4dbf1"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI27",
+    "Name": "First Light Variant 27",
+    "R": "238",
+    "G": "204",
+    "B": "240",
+    "Hex": "#eeccf0"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI28",
+    "Name": "First Light Variant 28",
+    "R": "241",
+    "G": "219",
+    "B": "231",
+    "Hex": "#f1dbe7"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI29",
+    "Name": "First Light Variant 29",
+    "R": "252",
+    "G": "232",
+    "B": "229",
+    "Hex": "#fce8e5"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70-AI30",
+    "Name": "First Light Variant 30",
+    "R": "255",
+    "G": "219",
+    "B": "218",
+    "Hex": "#ffdbda"
   },
   {
     "Group": "RED",
-    "Code": "2000-10",
-    "Name": "Caliente",
-    "R": "167",
+    "Code": "2000-10-AI1",
+    "Name": "Caliente Variant 1",
+    "R": "151",
+    "G": "62",
+    "B": "54",
+    "Hex": "#973e36"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI2",
+    "Name": "Caliente Variant 2",
+    "R": "173",
+    "G": "54",
+    "B": "50",
+    "Hex": "#ad3632"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI3",
+    "Name": "Caliente Variant 3",
+    "R": "162",
+    "G": "56",
+    "B": "33",
+    "Hex": "#a23821"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI4",
+    "Name": "Caliente Variant 4",
+    "R": "175",
+    "G": "58",
+    "B": "45",
+    "Hex": "#af3a2d"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI5",
+    "Name": "Caliente Variant 5",
+    "R": "184",
+    "G": "63",
+    "B": "43",
+    "Hex": "#b83f2b"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI6",
+    "Name": "Caliente Variant 6",
+    "R": "161",
+    "G": "59",
+    "B": "30",
+    "Hex": "#a13b1e"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI7",
+    "Name": "Caliente Variant 7",
+    "R": "173",
+    "G": "63",
+    "B": "31",
+    "Hex": "#ad3f1f"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI8",
+    "Name": "Caliente Variant 8",
+    "R": "176",
+    "G": "59",
+    "B": "61",
+    "Hex": "#b03b3d"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI9",
+    "Name": "Caliente Variant 9",
+    "R": "181",
+    "G": "56",
+    "B": "59",
+    "Hex": "#b5383b"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI10",
+    "Name": "Caliente Variant 10",
+    "R": "173",
+    "G": "61",
+    "B": "44",
+    "Hex": "#ad3d2c"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI11",
+    "Name": "Caliente Variant 11",
+    "R": "151",
+    "G": "65",
+    "B": "53",
+    "Hex": "#974135"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI12",
+    "Name": "Caliente Variant 12",
+    "R": "185",
+    "G": "64",
+    "B": "30",
+    "Hex": "#b9401e"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI13",
+    "Name": "Caliente Variant 13",
+    "R": "157",
+    "G": "69",
+    "B": "43",
+    "Hex": "#9d452b"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI14",
+    "Name": "Caliente Variant 14",
+    "R": "156",
+    "G": "55",
+    "B": "35",
+    "Hex": "#9c3723"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI15",
+    "Name": "Caliente Variant 15",
+    "R": "151",
     "G": "52",
-    "B": "47",
-    "Hex": "#a7342f"
+    "B": "31",
+    "Hex": "#97341f"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI16",
+    "Name": "Caliente Variant 16",
+    "R": "162",
+    "G": "46",
+    "B": "49",
+    "Hex": "#a22e31"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI17",
+    "Name": "Caliente Variant 17",
+    "R": "169",
+    "G": "47",
+    "B": "57",
+    "Hex": "#a92f39"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI18",
+    "Name": "Caliente Variant 18",
+    "R": "159",
+    "G": "66",
+    "B": "49",
+    "Hex": "#9f4231"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI19",
+    "Name": "Caliente Variant 19",
+    "R": "153",
+    "G": "41",
+    "B": "35",
+    "Hex": "#992923"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI20",
+    "Name": "Caliente Variant 20",
+    "R": "182",
+    "G": "64",
+    "B": "29",
+    "Hex": "#b6401d"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI21",
+    "Name": "Caliente Variant 21",
+    "R": "172",
+    "G": "46",
+    "B": "46",
+    "Hex": "#ac2e2e"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI22",
+    "Name": "Caliente Variant 22",
+    "R": "181",
+    "G": "54",
+    "B": "30",
+    "Hex": "#b5361e"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI23",
+    "Name": "Caliente Variant 23",
+    "R": "150",
+    "G": "39",
+    "B": "32",
+    "Hex": "#962720"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI24",
+    "Name": "Caliente Variant 24",
+    "R": "185",
+    "G": "54",
+    "B": "37",
+    "Hex": "#b93625"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI25",
+    "Name": "Caliente Variant 25",
+    "R": "163",
+    "G": "41",
+    "B": "44",
+    "Hex": "#a3292c"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI26",
+    "Name": "Caliente Variant 26",
+    "R": "165",
+    "G": "39",
+    "B": "37",
+    "Hex": "#a52725"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI27",
+    "Name": "Caliente Variant 27",
+    "R": "156",
+    "G": "43",
+    "B": "53",
+    "Hex": "#9c2b35"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI28",
+    "Name": "Caliente Variant 28",
+    "R": "185",
+    "G": "39",
+    "B": "46",
+    "Hex": "#b9272e"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI29",
+    "Name": "Caliente Variant 29",
+    "R": "168",
+    "G": "34",
+    "B": "58",
+    "Hex": "#a8223a"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10-AI30",
+    "Name": "Caliente Variant 30",
+    "R": "169",
+    "G": "56",
+    "B": "54",
+    "Hex": "#a93836"
   },
   {
     "Group": "YELLOW",
-    "Code": "2021-50",
-    "Name": "Hawthorne Yellow",
-    "R": "219",
-    "G": "173",
+    "Code": "2021-50-AI1",
+    "Name": "Hawthorne Yellow Variant 1",
+    "R": "217",
+    "G": "171",
+    "B": "67",
+    "Hex": "#d9ab43"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI2",
+    "Name": "Hawthorne Yellow Variant 2",
+    "R": "213",
+    "G": "167",
+    "B": "83",
+    "Hex": "#d5a753"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI3",
+    "Name": "Hawthorne Yellow Variant 3",
+    "R": "201",
+    "G": "182",
+    "B": "82",
+    "Hex": "#c9b652"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI4",
+    "Name": "Hawthorne Yellow Variant 4",
+    "R": "237",
+    "G": "162",
+    "B": "60",
+    "Hex": "#eda23c"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI5",
+    "Name": "Hawthorne Yellow Variant 5",
+    "R": "223",
+    "G": "167",
+    "B": "77",
+    "Hex": "#dfa74d"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI6",
+    "Name": "Hawthorne Yellow Variant 6",
+    "R": "216",
+    "G": "169",
+    "B": "82",
+    "Hex": "#d8a952"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI7",
+    "Name": "Hawthorne Yellow Variant 7",
+    "R": "214",
+    "G": "156",
+    "B": "70",
+    "Hex": "#d69c46"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI8",
+    "Name": "Hawthorne Yellow Variant 8",
+    "R": "204",
+    "G": "181",
+    "B": "73",
+    "Hex": "#ccb549"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI9",
+    "Name": "Hawthorne Yellow Variant 9",
+    "R": "221",
+    "G": "180",
+    "B": "61",
+    "Hex": "#ddb43d"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI10",
+    "Name": "Hawthorne Yellow Variant 10",
+    "R": "227",
+    "G": "155",
+    "B": "56",
+    "Hex": "#e39b38"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI11",
+    "Name": "Hawthorne Yellow Variant 11",
+    "R": "232",
+    "G": "184",
+    "B": "67",
+    "Hex": "#e8b843"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI12",
+    "Name": "Hawthorne Yellow Variant 12",
+    "R": "204",
+    "G": "165",
     "B": "74",
-    "Hex": "#dbad4a"
+    "Hex": "#cca54a"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI13",
+    "Name": "Hawthorne Yellow Variant 13",
+    "R": "217",
+    "G": "177",
+    "B": "64",
+    "Hex": "#d9b140"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI14",
+    "Name": "Hawthorne Yellow Variant 14",
+    "R": "220",
+    "G": "171",
+    "B": "92",
+    "Hex": "#dcab5c"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI15",
+    "Name": "Hawthorne Yellow Variant 15",
+    "R": "232",
+    "G": "187",
+    "B": "71",
+    "Hex": "#e8bb47"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI16",
+    "Name": "Hawthorne Yellow Variant 16",
+    "R": "206",
+    "G": "170",
+    "B": "79",
+    "Hex": "#ceaa4f"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI17",
+    "Name": "Hawthorne Yellow Variant 17",
+    "R": "220",
+    "G": "157",
+    "B": "75",
+    "Hex": "#dc9d4b"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI18",
+    "Name": "Hawthorne Yellow Variant 18",
+    "R": "226",
+    "G": "191",
+    "B": "65",
+    "Hex": "#e2bf41"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI19",
+    "Name": "Hawthorne Yellow Variant 19",
+    "R": "225",
+    "G": "162",
+    "B": "85",
+    "Hex": "#e1a255"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI20",
+    "Name": "Hawthorne Yellow Variant 20",
+    "R": "212",
+    "G": "187",
+    "B": "64",
+    "Hex": "#d4bb40"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI21",
+    "Name": "Hawthorne Yellow Variant 21",
+    "R": "203",
+    "G": "185",
+    "B": "72",
+    "Hex": "#cbb948"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI22",
+    "Name": "Hawthorne Yellow Variant 22",
+    "R": "229",
+    "G": "175",
+    "B": "77",
+    "Hex": "#e5af4d"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI23",
+    "Name": "Hawthorne Yellow Variant 23",
+    "R": "227",
+    "G": "189",
+    "B": "59",
+    "Hex": "#e3bd3b"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI24",
+    "Name": "Hawthorne Yellow Variant 24",
+    "R": "206",
+    "G": "188",
+    "B": "77",
+    "Hex": "#cebc4d"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI25",
+    "Name": "Hawthorne Yellow Variant 25",
+    "R": "216",
+    "G": "169",
+    "B": "58",
+    "Hex": "#d8a93a"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI26",
+    "Name": "Hawthorne Yellow Variant 26",
+    "R": "234",
+    "G": "173",
+    "B": "91",
+    "Hex": "#eaad5b"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI27",
+    "Name": "Hawthorne Yellow Variant 27",
+    "R": "226",
+    "G": "156",
+    "B": "87",
+    "Hex": "#e29c57"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI28",
+    "Name": "Hawthorne Yellow Variant 28",
+    "R": "208",
+    "G": "179",
+    "B": "77",
+    "Hex": "#d0b34d"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI29",
+    "Name": "Hawthorne Yellow Variant 29",
+    "R": "228",
+    "G": "174",
+    "B": "64",
+    "Hex": "#e4ae40"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50-AI30",
+    "Name": "Hawthorne Yellow Variant 30",
+    "R": "236",
+    "G": "172",
+    "B": "88",
+    "Hex": "#ecac58"
   },
   {
     "Group": "ORANGE",
-    "Code": "2014-20",
-    "Name": "Golden Retriever",
-    "R": "193",
-    "G": "121",
+    "Code": "2014-20-AI1",
+    "Name": "Golden Retriever Variant 1",
+    "R": "178",
+    "G": "122",
+    "B": "55",
+    "Hex": "#b27a37"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI2",
+    "Name": "Golden Retriever Variant 2",
+    "R": "192",
+    "G": "106",
+    "B": "37",
+    "Hex": "#c06a25"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI3",
+    "Name": "Golden Retriever Variant 3",
+    "R": "189",
+    "G": "118",
+    "B": "45",
+    "Hex": "#bd762d"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI4",
+    "Name": "Golden Retriever Variant 4",
+    "R": "203",
+    "G": "103",
+    "B": "64",
+    "Hex": "#cb6740"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI5",
+    "Name": "Golden Retriever Variant 5",
+    "R": "191",
+    "G": "129",
+    "B": "42",
+    "Hex": "#bf812a"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI6",
+    "Name": "Golden Retriever Variant 6",
+    "R": "210",
+    "G": "118",
     "B": "54",
-    "Hex": "#c17936"
+    "Hex": "#d27636"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI7",
+    "Name": "Golden Retriever Variant 7",
+    "R": "202",
+    "G": "104",
+    "B": "68",
+    "Hex": "#ca6844"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI8",
+    "Name": "Golden Retriever Variant 8",
+    "R": "209",
+    "G": "133",
+    "B": "44",
+    "Hex": "#d1852c"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI9",
+    "Name": "Golden Retriever Variant 9",
+    "R": "183",
+    "G": "124",
+    "B": "58",
+    "Hex": "#b77c3a"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI10",
+    "Name": "Golden Retriever Variant 10",
+    "R": "186",
+    "G": "130",
+    "B": "71",
+    "Hex": "#ba8247"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI11",
+    "Name": "Golden Retriever Variant 11",
+    "R": "189",
+    "G": "138",
+    "B": "64",
+    "Hex": "#bd8a40"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI12",
+    "Name": "Golden Retriever Variant 12",
+    "R": "193",
+    "G": "119",
+    "B": "60",
+    "Hex": "#c1773c"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI13",
+    "Name": "Golden Retriever Variant 13",
+    "R": "194",
+    "G": "104",
+    "B": "48",
+    "Hex": "#c26830"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI14",
+    "Name": "Golden Retriever Variant 14",
+    "R": "184",
+    "G": "105",
+    "B": "43",
+    "Hex": "#b8692b"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI15",
+    "Name": "Golden Retriever Variant 15",
+    "R": "180",
+    "G": "130",
+    "B": "56",
+    "Hex": "#b48238"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI16",
+    "Name": "Golden Retriever Variant 16",
+    "R": "183",
+    "G": "132",
+    "B": "52",
+    "Hex": "#b78434"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI17",
+    "Name": "Golden Retriever Variant 17",
+    "R": "210",
+    "G": "133",
+    "B": "36",
+    "Hex": "#d28524"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI18",
+    "Name": "Golden Retriever Variant 18",
+    "R": "210",
+    "G": "105",
+    "B": "50",
+    "Hex": "#d26932"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI19",
+    "Name": "Golden Retriever Variant 19",
+    "R": "206",
+    "G": "117",
+    "B": "38",
+    "Hex": "#ce7526"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20-AI20",
+    "Name": "Golden Retriever Variant 20",
+    "R": "205",
+    "G": "107",
+    "B": "64",
+    "Hex": "#cd6b40"
   }
 ]
