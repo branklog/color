@@ -1,0 +1,10 @@
+let lxData = []
+
+fetch('./lxsheet.json')
+.then(res => res.json())
+.then(data => {
+
+    lxData = data
+
+})
+
