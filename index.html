@@ -384,6 +384,7 @@ MAIN
 
 <div class="main">
 
+```html
 <!-- LEFT CARD -->
 
 <div class="box left-box">
@@ -398,15 +399,79 @@ Pantone Finder
 HEX · RGB · CMYK to nearest pantone color
 </div>
 
+<!-- HEX -->
+
 <label class="label">
 HEX CODE
 </label>
 
 <input
 type="text"
-class="input"
+class="input hex-input"
 placeholder="#073090"
 />
+
+<!-- RGB -->
+
+<label class="label">
+RGB CODE
+</label>
+
+<div class="rgb-group">
+
+<input
+type="number"
+class="rgb-input rgb-r"
+placeholder="R"
+/>
+
+<input
+type="number"
+class="rgb-input rgb-g"
+placeholder="G"
+/>
+
+<input
+type="number"
+class="rgb-input rgb-b"
+placeholder="B"
+/>
+
+</div>
+
+<!-- CMYK -->
+
+<label class="label">
+CMYK CODE
+</label>
+
+<div class="cmyk-group">
+
+<input
+type="number"
+class="cmyk-input c-input"
+placeholder="C"
+/>
+
+<input
+type="number"
+class="cmyk-input m-input"
+placeholder="M"
+/>
+
+<input
+type="number"
+class="cmyk-input y-input"
+placeholder="Y"
+/>
+
+<input
+type="number"
+class="cmyk-input k-input"
+placeholder="K"
+/>
+
+</div>
 
 </div>
 
@@ -415,6 +480,8 @@ Find Pantone
 </button>
 
 </div>
+```
+
 
 <!-- RIGHT CARD -->
 
