@@ -1,1105 +1,164 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>DESIGNDAUM PRINT TOOLS</title>
-
-<link
-href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
-rel="stylesheet"
-/>
-
-<style>
-
-/* =========================
-RESET
-========================= */
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Pretendard,sans-serif;
-background:#8BE86B;
-color:#000;
-overflow-x:hidden;
-padding:40px 20px 60px;
-}
-
-.container{
-width:100%;
-max-width:1200px;
-margin:auto;
-}
-
-/* =========================
-TOPBAR
-========================= */
-
-.topbar{
-margin-bottom:34px;
-}
-
-.brand{
-display:flex;
-gap:14px;
-align-items:center;
-}
-
-.logo{
-width:50px;
-height:50px;
-border-radius:14px;
-background:#3461FF;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:24px;
-font-weight:800;
-color:#fff;
-flex-shrink:0;
-}
-
-.brand-mini{
-font-size:11px;
-color:#777;
-letter-spacing:2px;
-margin-bottom:2px;
-font-weight:700;
-}
-
-.brand-title{
-font-size:20px;
-font-weight:800;
-letter-spacing:-0.6px;
-line-height:1;
-}
-
-.top-links{
-margin-left:auto;
-display:flex;
-gap:14px;
-}
-
-.top-links a{
-color:#1f1f1f;
-text-decoration:none;
-font-size:12px;
-letter-spacing:.2px;
-font-weight:600;
-transition:.2s;
-display:flex;
-align-items:center;
-gap:5px;
-line-height:1;
-opacity:.72;
-}
-
-.top-links a:hover{
-opacity:1;
-transform:translateY(-1px);
-}
-
-
-
-.top-links a:hover{
-opacity:.6;
-transform:translateY(-1px);
-}
-
-.top-links img{
-width:17px;
-height:17px;
-object-fit:contain;
-display:block;
-}
-
-/* =========================
-MAIN
-========================= */
-
-.main{
-display:grid;
-grid-template-columns:390px 1fr;
-gap:24px;
-align-items:stretch;
-}
-
-/* =========================
-CARD
-========================= */
-
-.box{
-background:#fff;
-border-radius:32px;
-padding:30px;
-height:100%;
-}
-
-/* =========================
-LEFT CARD
-========================= */
-
-.left-box{
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-}
-
-.left-inner{
-display:flex;
-flex-direction:column;
-}
-
-.tool-title{
-font-size:42px;
-font-weight:900;
-letter-spacing:-2px;
-line-height:1;
-margin-bottom:12px;
-}
-
-.tool-desc{
-font-size:15px;
-font-weight:600;
-opacity:.5;
-line-height:1.5;
-margin-bottom:28px;
-}
-
-.label{
-display:block;
-font-size:13px;
-font-weight:900;
-margin-bottom:10px;
-}
-
-/* =========================
-INPUT
-========================= */
-
-.input{
-width:100%;
-height:60px;
-border:none;
-background:#f3f3f3;
-border-radius:18px;
-padding:0 18px;
-font-size:16px;
-font-weight:700;
-outline:none;
-font-family:Pretendard,sans-serif;
-margin-bottom:16px;
-}
-
-.input:focus{
-background:#ececec;
-}
-
-/* =========================
-RGB / CMYK
-========================= */
-
-.mini-grid{
-display:grid;
-gap:10px;
-margin-bottom:16px;
-}
-
-.three-grid{
-grid-template-columns:repeat(3,1fr);
-}
-
-.four-grid{
-grid-template-columns:repeat(4,1fr);
-}
-
-.mini-input{
-width:100%;
-height:48px;
-border:none;
-background:#f3f3f3;
-border-radius:14px;
-padding:0 14px;
-font-size:15px;
-font-weight:700;
-outline:none;
-font-family:Pretendard,sans-serif;
-}
-
-.mini-input:focus{
-background:#ececec;
-}
-
-/* =========================
-BUTTON
-========================= */
-
-.convert-btn{
-width:100%;
-height:64px;
-border:none;
-border-radius:20px;
-background:#000;
-color:#fff;
-font-size:17px;
-font-weight:900;
-cursor:pointer;
-transition:.2s;
-margin-top:auto;
-}
-
-.convert-btn:hover{
-transform:translateY(-2px);
-}
-
-/* =========================
-RIGHT CARD
-========================= */
-
-.results{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:18px;
-height:100%;
-}
-
-.result-card{
-background:#f7f7f7;
-border-radius:22px;
-padding:18px;
-display:flex;
-flex-direction:column;
-}
-
-.result-color{
-width:100%;
-height:130px;
-border-radius:18px;
-margin-bottom:18px;
-}
-
-.result-name{
-font-size:24px;
-font-weight:900;
-letter-spacing:-1px;
-margin-bottom:14px;
-}
-
-.result-info{
-display:flex;
-flex-direction:column;
-gap:8px;
-}
-
-.result-info div{
-font-size:14px;
-font-weight:700;
-opacity:.7;
-}
-
-/* =========================
-FOOTER
-========================= */
-
-.footer{
-margin-top:28px;
-text-align:center;
-font-size:13px;
-font-weight:700;
-opacity:.5;
-}
-
-/* =========================
-TABLET
-========================= */
-
-@media(max-width:980px){
-
-.main{
-grid-template-columns:1fr;
-}
-
-.results{
-grid-template-columns:1fr 1fr;
-}
-
-}
-
-/* =========================
-MOBILE
-========================= */
-
-
-@media(max-width:768px){
-
-body{
-padding:22px 14px 40px;
-}
-
-/* TOPBAR */
-
-.topbar{
-margin-bottom:24px;
-}
-
-.brand{
-gap:10px;
-align-items:center;
-}
-
-.logo{
-width:42px;
-height:42px;
-border-radius:12px;
-font-size:18px;
-}
-
-.brand-mini{
-font-size:9px;
-letter-spacing:1.6px;
-margin-bottom:1px;
-}
-
-.brand-title{
-font-size:17px;
-letter-spacing:-0.5px;
-}
-
-.top-links{
-gap:10px;
-margin-left:auto;
-}
-
-.top-links img{
-width:13px;
-height:13px;
-}
-
-
-.top-links a{
-font-size:10px;
-gap:4px;
-letter-spacing:0;
-font-weight:600;
-}
-
-/* CARD */
-
-.box{
-padding:22px;
-border-radius:24px;
-height:auto;
-}
-
-.tool-title{
-font-size:34px;
-}
-
-.results{
-grid-template-columns:1fr;
-}
-
-.result-name{
-font-size:22px;
-}
-
-.result-color{
-height:120px;
-}
-
-/* INPUT */
-
-.three-grid{
-grid-template-columns:1fr;
-}
-
-.four-grid{
-grid-template-columns:1fr 1fr;
-}
-
-.left-box{
-justify-content:flex-start;
-}
-
-.convert-btn{
-margin-top:0;
-}
-
-.tabs{
-display:flex;
-gap:10px;
-margin-bottom:20px;
-}
-
-.tab-btn{
-height:50px;
-padding:0 22px;
-border:none;
-border-radius:16px;
-background:#ffffff;
-font-size:14px;
-font-weight:800;
-cursor:pointer;
-transition:.2s;
-font-family:Pretendard,sans-serif;
-}
-
-.tab-btn.active{
-background:#000;
-color:#fff;
-}
-  
-}
-
-
-
-</style>
-
-</head>
-
-<body>
-
-<div class="container">
-
-<!-- =========================
-TOPBAR
-========================= -->
-
-<div class="topbar">
-
-<div class="brand">
-
-<div class="logo">
-D
-</div>
-
-<div>
-
-<div class="brand-mini">
-DESIGNDAUM
-</div>
-
-<div class="brand-title">
-PRINT TOOLS.
-</div>
-
-</div>
-
-<div class="top-links">
-
-<a
-href="https://blog.naver.com/designdaum88"
-target="_blank"
->
-
-<img
-src="./blog-icon.png"
-alt="blog"
-/>
-
-BLOG
-
-</a>
-
-<a
-href="https://open.kakao.com/o/sAK0pH6f"
-target="_blank"
->
-
-<img
-src="./kakao-icon.png"
-alt="kakao"
-/>
-
-CHAT
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- TABS -->
-
-<div class="tabs">
-
-<button class="tab-btn active" data-tab="pantone">
-Pantone Finder
-</button>
-
-<button class="tab-btn" data-tab="benjamin">
-Benjamin Finder
-</button>
-
-</div>
-
-<!-- =========================
-MAIN
-========================= -->
- 
-<div class="main">
-
-<!-- LEFT CARD -->
-
-
-<div class="box left-box pantone-panel">
-
-<div class="left-inner">
-
-<div class="tool-title">
-Pantone Finder
-</div>
-
-<div class="tool-desc">
-HEX · RGB · CMYK to nearest pantone color
-</div>
-
-<!-- HEX -->
-
-<label class="label">
-HEX CODE
-</label>
-
-<input
-type="text"
-class="input hex-input"
-placeholder="#073090"
-/>
-
-<!-- RGB -->
-
-<label class="label">
-RGB CODE
-</label>
-
-<div class="mini-grid three-grid">
-
-<input
-type="number"
-class="mini-input rgb-r"
-placeholder="R"
-/>
-
-<input
-type="number"
-class="mini-input rgb-g"
-placeholder="G"
-/>
-
-<input
-type="number"
-class="mini-input rgb-b"
-placeholder="B"
-/>
-
-</div>
-
-<!-- CMYK -->
-
-<label class="label">
-CMYK CODE
-</label>
-
-<div class="mini-grid four-grid">
-
-<input
-type="number"
-class="mini-input c-input"
-placeholder="C"
-/>
-
-<input
-type="number"
-class="mini-input m-input"
-placeholder="M"
-/>
-
-<input
-type="number"
-class="mini-input y-input"
-placeholder="Y"
-/>
-
-<input
-type="number"
-class="mini-input k-input"
-placeholder="K"
-/>
-
-</div>
-
-<!-- LX SHEET -->
-
-<label class="label">
-LX SHEET NUMBER
-</label>
-
-<input
-type="text"
-class="input lx-input"
-placeholder="LT 4063"
-/>
-
-</div>
-
-<button class="convert-btn">
-Find Pantone
-</button>
-    
-</div>
-
-
-<!-- BENJAMIN PANEL -->
-
-<div class="box left-box benjamin-panel" style="display:none;">
-
-<div class="left-inner">
-
-<div class="tool-title">
-Benjamin Finder
-</div>
-
-<div class="tool-desc">
-Upload image and find nearest Benjamin Moore color
-</div>
-
-<label class="label">
-UPLOAD IMAGE
-</label>
-
-<div class="upload-box">
-
-<input
-type="file"
-class="image-input"
-accept="image/*"
-hidden
-/>
-
-<div class="upload-text">
-Drag image or click upload
-</div>
-
-</div>
-
-</div>
-
-<button class="convert-btn">
-Find Benjamin
-</button>
-
-</div>
-
-
-
-    
-
-<!-- RIGHT CARD -->
-
-<div class="box">
-
-<div class="results">
-
-<!-- CARD 1 -->
-
-<div class="result-card">
-
-<div
-class="result-color"
-style="background:#0033A0;">
-</div>
-
-<div class="result-name">
-Pantone 286 C
-</div>
-
-<div class="result-info">
-
-<div>HEX #0033A0</div>
-<div>RGB 0, 51, 160</div>
-<div>CMYK 100, 66, 0, 2</div>
-
-</div>
-
-</div>
-
-<!-- CARD 2 -->
-
-<div class="result-card">
-
-<div
-class="result-color"
-style="background:#0057B8;">
-</div>
-
-<div class="result-name">
-Pantone 300 C
-</div>
-
-<div class="result-info">
-
-<div>HEX #0057B8</div>
-<div>RGB 0, 87, 184</div>
-<div>CMYK 100, 44, 0, 0</div>
-
-</div>
-
-</div>
-
-<!-- CARD 3 -->
-
-<div class="result-card">
-
-<div
-class="result-color"
-style="background:#0072CE;">
-</div>
-
-<div class="result-name">
-Pantone 285 C
-</div>
-
-<div class="result-info">
-
-<div>HEX #0072CE</div>
-<div>RGB 0, 114, 206</div>
-<div>CMYK 91, 43, 0, 0</div>
-
-</div>
-
-</div>
-
-<!-- CARD 4 -->
-
-<div class="result-card">
-
-<div
-class="result-color"
-style="background:#00A3E0;">
-</div>
-
-<div class="result-name">
-Pantone 299 C
-</div>
-
-<div class="result-info">
-
-<div>HEX #00A3E0</div>
-<div>RGB 0, 163, 224</div>
-<div>CMYK 85, 19, 0, 0</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="footer">
-© DESIGNDAUM PRINT TOOLS.
-</div>
-
-</div>
-
-<script>
-
-let pantoneData = []
-
-let lxData = []
-
-fetch('./lxsheet.json')
-.then(res => res.json())
-.then(data => {
-
-    lxData = data
-
-})
-    
-fetch('./pantone.json')
-.then(res => res.json())
-.then(data => {
-
-    pantoneData = data
-
-})
-
-const button = document.querySelector('.convert-btn')
-
-button.addEventListener('click', () => {
-
-    const hexValue = document
-    .querySelector('.hex-input')
-    .value
-    .trim()
-
-    const rValue = document.querySelector('.rgb-r').value
-    const gValue = document.querySelector('.rgb-g').value
-    const bValue = document.querySelector('.rgb-b').value
-
-    const lxValue = document
-.querySelector('.lx-input')
-.value
-.trim()
-
-
-
-    let finalResults = []
-
-    /* HEX SEARCH */
-
-    if(hexValue){
-
-        const hex = hexValue.replace('#','')
-
-        if(hex.length >= 3){
-
-            const r = parseInt(hex.substring(0,2),16)
-            const g = parseInt(hex.substring(2,4),16)
-            const b = parseInt(hex.substring(4,6),16)
-
-            const results = []
-
-           
-            pantoneData.forEach(color => {
-
-                const pr = Number(color.R)
-                const pg = Number(color.G)
-                const pb = Number(color.B)
-
-                const distance = Math.sqrt(
-                    (r-pr)**2 +
-                    (g-pg)**2 +
-                    (b-pb)**2
-                )
-
-                results.push({
-                    color,
-                    distance
-                })
-
-            })
-
-
-
-
-            
-            results.sort((a,b)=>a.distance-b.distance)
-
-            finalResults = results
-            .slice(0,4)
-            .map(item => item.color)
-
-        }
-
-    }
-
-    /* RGB SEARCH */
-
-    else if(rValue && gValue && bValue){
-
-        const r = Number(rValue)
-        const g = Number(gValue)
-        const b = Number(bValue)
-
-        const results = []
-
-        pantoneData.forEach(color => {
-
-            const pr = Number(color.R)
-            const pg = Number(color.G)
-            const pb = Number(color.B)
-
-            const distance = Math.sqrt(
-                (r-pr)**2 +
-                (g-pg)**2 +
-                (b-pb)**2
-            )
-
-            results.push({
-                color,
-                distance
-            })
-
-        })
-
-        results.sort((a,b)=>a.distance-b.distance)
-
-        finalResults = results
-        .slice(0,4)
-        .map(item => item.color)
-
-    }
-
-
-/* LX SEARCH */
-
-else if(lxValue){
-
-    const lxColor = lxData.find(item =>
-
-        item.SheetNumber
-        .replace(/\s/g,'')
-        .toLowerCase()
-        .includes(
-
-            lxValue
-            .replace(/\s/g,'')
-            .toLowerCase()
-
-        )
-
-    )
-
-    if(lxColor){
-
-        const r = Number(lxColor.R)
-        const g = Number(lxColor.G)
-        const b = Number(lxColor.B)
-
-        const results = []
-
-        pantoneData.forEach(color => {
-
-            const pr = Number(color.R)
-            const pg = Number(color.G)
-            const pb = Number(color.B)
-
-            const distance = Math.sqrt(
-                (r-pr)**2 +
-                (g-pg)**2 +
-                (b-pb)**2
-            )
-
-            results.push({
-                color,
-                distance
-            })
-
-        })
-
-        results.sort((a,b)=>a.distance-b.distance)
-
-        finalResults = results
-        .slice(0,4)
-        .map(item => item.color)
-
-    }
-
-}
-
-
-    
-
-
-
-    
-
-
-    
-    if(finalResults.length === 0){
-
-        alert('검색 결과가 없습니다.')
-        return
-
-    }
-
-    const html = finalResults.map(c => `
-
-        <div class="result-card">
-
-            <div
-            class="result-color"
-            style="background:${c.Hex}">
-            </div>
-
-            <div class="result-name">
-                Pantone ${c.Code}
-            </div>
-
-            <div class="result-info">
-
-                <div>
-                    HEX ${c.Hex}
-                </div>
-
-                <div>
-                    RGB ${c.R}, ${c.G}, ${c.B}
-                </div>
-
-                <div>
-                    CMYK ${c.C}, ${c.M}, ${c.Y}, ${c.K}
-                </div>
-
-            </div>
-
-        </div>
-
-    `).join('')
-
-    document.querySelector('.results').innerHTML = html
-
-})
-
-const tabBtns = document.querySelectorAll('.tab-btn')
-
-const pantonePanel = document.querySelector('.pantone-panel')
-const benjaminPanel = document.querySelector('.benjamin-panel')
-
-tabBtns.forEach(btn => {
-
-    btn.addEventListener('click', () => {
-
-        tabBtns.forEach(tab => {
-
-            tab.classList.remove('active')
-
-        })
-
-        btn.classList.add('active')
-
-        const tab = btn.dataset.tab
-
-        if(tab === 'pantone'){
-
-            pantonePanel.style.display = 'flex'
-            benjaminPanel.style.display = 'none'
-
-        }
-
-        else{
-
-            pantonePanel.style.display = 'none'
-            benjaminPanel.style.display = 'flex'
-
-        }
-
-    })
-
-})
-
-
-
-
-
-
-
-
-
-    
-</script>
-
-</body>
-</html>
-
+[
+  {
+    "Group": "WHITE",
+    "Code": "OC-17",
+    "Name": "White Dove",
+    "R": "244",
+    "G": "240",
+    "B": "232",
+    "Hex": "#f4f0e8"
+  },
+  {
+    "Group": "WHITE",
+    "Code": "OC-65",
+    "Name": "Chantilly Lace",
+    "R": "248",
+    "G": "247",
+    "B": "242",
+    "Hex": "#f8f7f2"
+  },
+  {
+    "Group": "WARM WHITE",
+    "Code": "OC-45",
+    "Name": "Swiss Coffee",
+    "R": "241",
+    "G": "236",
+    "B": "226",
+    "Hex": "#f1ece2"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-173",
+    "Name": "Edgecomb Gray",
+    "R": "214",
+    "G": "206",
+    "B": "194",
+    "Hex": "#d6cec2"
+  },
+  {
+    "Group": "GREIGE",
+    "Code": "HC-172",
+    "Name": "Revere Pewter",
+    "R": "204",
+    "G": "196",
+    "B": "184",
+    "Hex": "#ccc4b8"
+  },
+  {
+    "Group": "LIGHT GRAY",
+    "Code": "OC-23",
+    "Name": "Classic Gray",
+    "R": "229",
+    "G": "224",
+    "B": "214",
+    "Hex": "#e5e0d6"
+  },
+  {
+    "Group": "BEIGE",
+    "Code": "HC-80",
+    "Name": "Bleeker Beige",
+    "R": "196",
+    "G": "181",
+    "B": "160",
+    "Hex": "#c4b5a0"
+  },
+  {
+    "Group": "TAUPE",
+    "Code": "HC-172",
+    "Name": "Pashmina",
+    "R": "181",
+    "G": "169",
+    "B": "154",
+    "Hex": "#b5a99a"
+  },
+  {
+    "Group": "SAGE",
+    "Code": "HC-114",
+    "Name": "Saybrook Sage",
+    "R": "167",
+    "G": "170",
+    "B": "150",
+    "Hex": "#a7aa96"
+  },
+  {
+    "Group": "GREEN",
+    "Code": "HC-125",
+    "Name": "Cushing Green",
+    "R": "91",
+    "G": "102",
+    "B": "82",
+    "Hex": "#5b6652"
+  },
+  {
+    "Group": "NAVY",
+    "Code": "HC-154",
+    "Name": "Hale Navy",
+    "R": "67",
+    "G": "76",
+    "B": "86",
+    "Hex": "#434c56"
+  },
+  {
+    "Group": "BLUE",
+    "Code": "HC-143",
+    "Name": "Wythe Blue",
+    "R": "181",
+    "G": "194",
+    "B": "188",
+    "Hex": "#b5c2bc"
+  },
+  {
+    "Group": "CHARCOAL",
+    "Code": "HC-166",
+    "Name": "Kendall Charcoal",
+    "R": "104",
+    "G": "102",
+    "B": "96",
+    "Hex": "#686660"
+  },
+  {
+    "Group": "BLACK",
+    "Code": "2132-10",
+    "Name": "Onyx",
+    "R": "47",
+    "G": "47",
+    "B": "47",
+    "Hex": "#2f2f2f"
+  },
+  {
+    "Group": "PINK",
+    "Code": "2083-70",
+    "Name": "First Light",
+    "R": "245",
+    "G": "221",
+    "B": "224",
+    "Hex": "#f5dde0"
+  },
+  {
+    "Group": "RED",
+    "Code": "2000-10",
+    "Name": "Caliente",
+    "R": "167",
+    "G": "52",
+    "B": "47",
+    "Hex": "#a7342f"
+  },
+  {
+    "Group": "YELLOW",
+    "Code": "2021-50",
+    "Name": "Hawthorne Yellow",
+    "R": "219",
+    "G": "173",
+    "B": "74",
+    "Hex": "#dbad4a"
+  },
+  {
+    "Group": "ORANGE",
+    "Code": "2014-20",
+    "Name": "Golden Retriever",
+    "R": "193",
+    "G": "121",
+    "B": "54",
+    "Hex": "#c17936"
+  }
+]
