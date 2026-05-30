@@ -479,17 +479,6 @@ z-index:10;
 }
 
 
-
-  
-
-/* 추가 */
-margin-bottom:25px;
-
-border-radius:18px;
-object-fit:cover;
-background:#f3f3f3;
-border:1px solid #ececec;
-}
 /* =========================
 MOBILE
 ========================= */
@@ -949,9 +938,14 @@ Drag image or click upload
 
 </div>
   
+<div style="position:relative;">
+
 <img class="preview-image" />
+
 <div class="remove-image-btn">
 ✕
+</div>
+
 </div>
 
   
@@ -1555,34 +1549,42 @@ imageInput.addEventListener('change', e => {
     const file = e.target.files[0]
 
     if(!file) return
+  
+const reader = new FileReader()
 
-    const reader = new FileReader()
+reader.onload = event => {
 
-    reader.onload = event => {
-previewImage.src = event.target.result
-previewImage.style.display = 'block'
-document.querySelector('.remove-image-btn').style.display = 'flex'
-        const img = new Image()
+    previewImage.src = event.target.result
+    previewImage.style.display = 'block'
+    removeImageBtn.style.display = 'flex'
 
-        img.onload = () => {
+    const img = new Image()
 
-            const canvas = document.createElement('canvas')
-            const ctx = canvas.getContext('2d')
+    img.onload = () => {
 
-            canvas.width = img.width
-            canvas.height = img.height
+        const canvas = document.createElement('canvas')
+        const ctx = canvas.getContext('2d')
 
-            ctx.drawImage(img,0,0)
+        canvas.width = img.width
+        canvas.height = img.height
 
-            const centerX = img.width / 2
-            const centerY = img.height / 2
+        ctx.drawImage(img,0,0)
 
-            const pixel = ctx.getImageData(
-                centerX,
-                centerY,
-                1,
-                1
-            ).data
+        const centerX = img.width / 2
+        const centerY = img.height / 2
+
+        const pixel = ctx.getImageData(
+            centerX,
+            centerY,
+            1,
+            1
+        ).data
+
+        // 아래 기존 코드 그대로
+
+
+
+  
 
             const r = pixel[0]
             const g = pixel[1]
