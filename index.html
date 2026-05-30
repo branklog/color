@@ -1406,6 +1406,18 @@ Benjamin Moore®, Pantone® 등의 상표 및 컬러명에 대한 권리는 각 
 `
 
 document.querySelector('.results').innerHTML = html
+
+if(window.innerWidth <= 768){
+
+    document.querySelector('.results')
+    .scrollIntoView({
+        behavior:'smooth',
+        block:'start'
+    })
+
+}
+
+  
 document.querySelector('.hex-input').value = ''
 document.querySelector('.rgb-r').value = ''
 document.querySelector('.rgb-g').value = ''
