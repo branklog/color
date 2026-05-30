@@ -765,7 +765,7 @@ SEARCH RANGE
 </div>
 
 <button class="convert-btn">
-Find Pantone
+팬톤변환
 </button>
 
 </div>
@@ -1153,8 +1153,7 @@ const distanceLimit =
 Number(document.querySelector('.distance-select').value)
 
 finalResults = results
-.filter(item => item.distance <= distanceLimit)
-.slice(0,4)
+.slice(0, Math.max(1, Math.floor(distanceLimit / 4)))
 .map(item => item.color)
 
         }
@@ -1196,8 +1195,7 @@ const distanceLimit =
 Number(document.querySelector('.distance-select').value)
 
 finalResults = results
-.filter(item => item.distance <= distanceLimit)
-.slice(0,4)
+.slice(0, Math.max(1, Math.floor(distanceLimit / 16)))
 .map(item => item.color)
 
     }
@@ -1248,12 +1246,14 @@ else if(lxValue){
             })
 
         })
+results.sort((a,b)=>a.distance-b.distance)
 
-        results.sort((a,b)=>a.distance-b.distance)
+const distanceLimit =
+Number(document.querySelector('.distance-select').value)
 
-        finalResults = results
-        .slice(0,4)
-        .map(item => item.color)
+finalResults = results
+.slice(0, Math.max(1, Math.floor(distanceLimit / 8)))
+.map(item => item.color)
 
     }
 
