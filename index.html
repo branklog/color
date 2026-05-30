@@ -1132,23 +1132,30 @@ const colorPicker = new iro.ColorPicker("#iro-picker", {
 
 });
 
+  let pickerScrolled = false
+
 colorPicker.on("color:change", (color) => {
 
     document.querySelector('.hex-input').value =
     color.hexString;
 
-    if(window.innerWidth <= 768){
+    if(
+        window.innerWidth <= 768 &&
+        !pickerScrolled
+    ){
 
-        window.scrollTo({
-            top: document.querySelector('.rgb-r')
-            .getBoundingClientRect().top + window.pageYOffset - 120,
-            behavior:'smooth'
+        pickerScrolled = true
+
+        document.querySelector('.rgb-r')
+        .scrollIntoView({
+            behavior:'smooth',
+            block:'center'
         })
 
     }
 
 });
-
+  
 const button = document.querySelector('.pantone-panel .convert-btn')
 
 button.addEventListener('click', () => {
