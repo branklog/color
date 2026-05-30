@@ -1649,7 +1649,12 @@ if(hex){
     }
 
 }
-else if(c || m || y || k){
+else if(
+    document.querySelector('.converter-c').value !== '' ||
+    document.querySelector('.converter-m').value !== '' ||
+    document.querySelector('.converter-y').value !== '' ||
+    document.querySelector('.converter-k').value !== ''
+){
 
     const rgb = cmykToRgb(c,m,y,k);
 
@@ -1665,11 +1670,19 @@ else if(c || m || y || k){
 
   
    
- if(!r && !g && !b && !hex){
+if(
+    !hex &&
+    r === 0 &&
+    g === 0 &&
+    b === 0 &&
+    c === 0 &&
+    m === 0 &&
+    y === 0 &&
+    k === 0
+){
     alert('값을 입력하세요');
     return;
-} 
-  
+}
   
   const cmyk = rgbToCmyk(r,g,b);
   document.querySelector('.converter-c').value = cmyk[0];
