@@ -1622,6 +1622,7 @@ function cmykToRgb(c, m, y, k) {
 const converterBtn = document.querySelector('.converter-btn');
 
 converterBtn.addEventListener('click', () => {
+  
 let r = Number(document.querySelector('.converter-r').value);
 let g = Number(document.querySelector('.converter-g').value);
 let b = Number(document.querySelector('.converter-b').value);
@@ -1692,6 +1693,7 @@ document.querySelector('.converter-k').value = cmyk[3];
 
 document.querySelector('.results').innerHTML = `
 
+
 <div class="result-card">
 
     <div
@@ -1720,7 +1722,17 @@ Color conversion completed
 </div>
 
 `
+document.querySelector('.converter-r').value = '';
+document.querySelector('.converter-g').value = '';
+document.querySelector('.converter-b').value = '';
+document.querySelector('.converter-c').value = '';
+document.querySelector('.converter-m').value = '';
+document.querySelector('.converter-y').value = '';
+document.querySelector('.converter-k').value = '';
+document.querySelector('.converter-hex').value = '';
 
+
+  
 });
 
 
