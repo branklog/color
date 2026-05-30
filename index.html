@@ -1619,7 +1619,96 @@ function cmykToRgb(c, m, y, k) {
     return [r, g, b];
 }
 
+const converterBtn = document.querySelector('.converter-btn');
 
+converterBtn.addEventListener('click', () => {
+let r = Number(document.querySelector('.converter-r').value);
+let g = Number(document.querySelector('.converter-g').value);
+let b = Number(document.querySelector('.converter-b').value);
+
+let c = Number(document.querySelector('.converter-c').value);
+let m = Number(document.querySelector('.converter-m').value);
+let y = Number(document.querySelector('.converter-y').value);
+let k = Number(document.querySelector('.converter-k').value);
+
+const hex = document.querySelector('.converter-hex').value.trim();
+
+
+  
+
+if(hex){
+
+    const clean = hex.replace('#','');
+
+    if(clean.length === 6){
+
+        r = parseInt(clean.substring(0,2),16);
+        g = parseInt(clean.substring(2,4),16);
+        b = parseInt(clean.substring(4,6),16);
+
+    }
+
+}
+else if(c || m || y || k){
+
+    const rgb = cmykToRgb(c,m,y,k);
+
+    r = rgb[0];
+    g = rgb[1];
+    b = rgb[2];
+
+    document.querySelector('.converter-r').value = r;
+    document.querySelector('.converter-g').value = g;
+    document.querySelector('.converter-b').value = b;
+
+}
+
+  
+   
+ if(!r && !g && !b && !hex){
+    alert('값을 입력하세요');
+    return;
+} 
+  
+  
+  const cmyk = rgbToCmyk(r,g,b);
+  document.querySelector('.converter-c').value = cmyk[0];
+document.querySelector('.converter-m').value = cmyk[1];
+document.querySelector('.converter-y').value = cmyk[2];
+document.querySelector('.converter-k').value = cmyk[3];
+
+document.querySelector('.results').innerHTML = `
+
+<div class="result-card">
+
+    <div
+    class="result-color"
+    style="background:rgb(${r},${g},${b});">
+    </div>
+
+    <div class="result-name">
+        Color Converter
+    </div>
+
+    <div class="result-info">
+
+        <div>HEX #${((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1).toUpperCase()}</div>
+
+        <div>RGB ${r}, ${g}, ${b}</div>
+
+        <div>CMYK ${cmyk[0]}, ${cmyk[1]}, ${cmyk[2]}, ${cmyk[3]}</div>
+
+    </div>
+
+</div>
+
+<div class="result-notice">
+Color conversion completed
+</div>
+
+`
+
+});
 
 
 
