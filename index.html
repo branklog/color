@@ -426,6 +426,7 @@ justify-content:center;
 cursor:pointer;
 transition:.2s;
 margin-bottom:18px;
+  position:relative;
 }
 
 .upload-box:hover{
@@ -447,12 +448,39 @@ margin-bottom:20px;
 width:100%;
 min-height:260px;
 }
-
 .preview-image{
 display:none;
 width:100%;
 height:300px;
 margin-top:15px;
+margin-bottom:25px;
+border-radius:18px;
+object-fit:cover;
+background:#f3f3f3;
+border:1px solid #ececec;
+}
+
+.remove-image-btn{
+display:none;
+position:absolute;
+top:12px;
+right:12px;
+width:34px;
+height:34px;
+border-radius:50%;
+background:#000;
+color:#fff;
+font-size:20px;
+font-weight:700;
+cursor:pointer;
+align-items:center;
+justify-content:center;
+z-index:10;
+}
+
+
+
+  
 
 /* 추가 */
 margin-bottom:25px;
@@ -922,7 +950,9 @@ Drag image or click upload
 </div>
   
 <img class="preview-image" />
-
+<div class="remove-image-btn">
+✕
+</div>
 
   
 </div>
@@ -1356,7 +1386,15 @@ Benjamin Moore®, Pantone® 등의 상표 및 컬러명에 대한 권리는 각 
 `
 
 document.querySelector('.results').innerHTML = html
-   
+document.querySelector('.hex-input').value = ''
+document.querySelector('.rgb-r').value = ''
+document.querySelector('.rgb-g').value = ''
+document.querySelector('.rgb-b').value = ''
+document.querySelector('.c-input').value = ''
+document.querySelector('.m-input').value = ''
+document.querySelector('.y-input').value = ''
+document.querySelector('.k-input').value = ''
+document.querySelector('.lx-input').value = ''   
 
 })
 
@@ -1492,6 +1530,19 @@ const imageInput = document.querySelector('.image-input')
   
 const previewImage =
 document.querySelector('.preview-image')
+  const removeImageBtn =
+document.querySelector('.remove-image-btn')
+
+removeImageBtn.addEventListener('click', () => {
+
+    previewImage.src = ''
+    previewImage.style.display = 'none'
+
+    imageInput.value = ''
+
+    removeImageBtn.style.display = 'none'
+
+})
   
 uploadBox.addEventListener('click', () => {
 
@@ -1510,7 +1561,7 @@ imageInput.addEventListener('change', e => {
     reader.onload = event => {
 previewImage.src = event.target.result
 previewImage.style.display = 'block'
-
+document.querySelector('.remove-image-btn').style.display = 'flex'
         const img = new Image()
 
         img.onload = () => {
@@ -1593,7 +1644,10 @@ previewImage.style.display = 'block'
             `).join('')
 
             document.querySelector('.results').innerHTML = html
-
+previewImage.src = ''
+previewImage.style.display = 'none'
+imageInput.value = ''
+document.querySelector('.remove-image-btn').style.display = 'none'
         }
 
         img.src = event.target.result
