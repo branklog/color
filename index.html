@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -38,32 +39,6 @@ max-width:1200px;
 margin:auto;
 }
 
-#pantone-picker{
-margin-bottom:18px;
-}
-
-.pickr{
-width:100%;
-}
-
-.pcr-app{
-max-width:100% !important;
-}
-
-  
-.pickr button{
-display:none !important;
-}
-
-.pcr-app{
-position:relative !important;
-display:block !important;
-width:100% !important;
-margin-bottom:18px;
-box-shadow:none !important;
-border-radius:18px !important;
-}
- 
 /* =========================
 TOPBAR
 ========================= */
@@ -552,36 +527,14 @@ justify-content:flex-start;
 .convert-btn{
 margin-top:0;
 }
-#pantone-picker{
-overflow:hidden;
-}
 
-.pcr-app{
-width:100% !important;
-max-width:100% !important;
-font-size:12px !important;
-}
-
-.tabs{
-flex-wrap:wrap;
-}
-
-.tab-btn{
-flex:1;
-min-width:120px;
-}
 
 }
+
+
 
 </style>
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
-/>
 
-<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
-
-  
 </head>
 
 <body>
@@ -688,10 +641,7 @@ type="text"
 class="input hex-input"
 placeholder="#073090"
 />
-<div id="pantone-picker"></div>
 
-
-  
 <!-- RGB -->
 
 <label class="label">
@@ -1064,39 +1014,8 @@ fetch('./pantone.json')
 
 })
 
-if(typeof Pickr === 'undefined'){
-    console.error('Pickr Load Failed');
-}  
-  
-  const pantonePicker = Pickr.create({
-
-    el:'#pantone-picker',
-
-    theme:'classic',
-
-    inline:true,
-
-    default:'#073090',
-
-    components:{
-        preview:true,
-        opacity:false,
-        hue:true,
-
-        interaction:{
-            hex:true,
-            input:true
-        }
-    }
-
-});
 
 const button = document.querySelector('.pantone-panel .convert-btn')
-pantonePicker.on('save', (color) => {
-    const hex = color.toHEXA().toString();
-    document.querySelector('.hex-input').value = hex;
-    button.click(); // 선택 즉시 Pantone 검색 실행
-});
 
 button.addEventListener('click', () => {
 
@@ -1704,71 +1623,117 @@ function cmykToRgb(c, m, y, k) {
 const converterBtn = document.querySelector('.converter-btn');
 
 converterBtn.addEventListener('click', () => {
+  
+let r = Number(document.querySelector('.converter-r').value);
+let g = Number(document.querySelector('.converter-g').value);
+let b = Number(document.querySelector('.converter-b').value);
 
-    // 입력값 가져오기
-    let r = Number(document.querySelector('.converter-r').value);
-    let g = Number(document.querySelector('.converter-g').value);
-    let b = Number(document.querySelector('.converter-b').value);
+let c = Number(document.querySelector('.converter-c').value);
+let m = Number(document.querySelector('.converter-m').value);
+let y = Number(document.querySelector('.converter-y').value);
+let k = Number(document.querySelector('.converter-k').value);
 
-    let c = Number(document.querySelector('.converter-c').value);
-    let m = Number(document.querySelector('.converter-m').value);
-    let y = Number(document.querySelector('.converter-y').value);
-    let k = Number(document.querySelector('.converter-k').value);
+const hex = document.querySelector('.converter-hex').value.trim();
 
-    const hex = document.querySelector('.converter-hex').value.trim();
 
-    // HEX 입력 시 RGB 자동 계산
-    if(hex){
-        const clean = hex.replace('#','');
-        if(clean.length === 6){
-            r = parseInt(clean.substring(0,2),16);
-            g = parseInt(clean.substring(2,4),16);
-            b = parseInt(clean.substring(4,6),16);
-        }
-    }
-    // CMYK 입력 시 RGB 자동 계산
-    else if(document.querySelector('.converter-c').value !== '' ||
-            document.querySelector('.converter-m').value !== '' ||
-            document.querySelector('.converter-y').value !== '' ||
-            document.querySelector('.converter-k').value !== ''){
-        const rgb = cmykToRgb(c,m,y,k);
-        r = rgb[0]; g = rgb[1]; b = rgb[2];
+  
+
+if(hex){
+
+    const clean = hex.replace('#','');
+
+    if(clean.length === 6){
+
+        r = parseInt(clean.substring(0,2),16);
+        g = parseInt(clean.substring(2,4),16);
+        b = parseInt(clean.substring(4,6),16);
+
     }
 
-    // 값 입력 안하면 경고
-    if(!hex && r===0 && g===0 && b===0 && c===0 && m===0 && y===0 && k===0){
-        alert('값을 입력하세요');
-        return;
-    }
+}
+else if(
+    document.querySelector('.converter-c').value !== '' ||
+    document.querySelector('.converter-m').value !== '' ||
+    document.querySelector('.converter-y').value !== '' ||
+    document.querySelector('.converter-k').value !== ''
+){
 
-    // 변환
-    const cmyk = rgbToCmyk(r,g,b);
+    const rgb = cmykToRgb(c,m,y,k);
 
-    // 카드 결과 출력
-    document.querySelector('.results').innerHTML = `
+    r = rgb[0];
+    g = rgb[1];
+    b = rgb[2];
+
+    document.querySelector('.converter-r').value = r;
+    document.querySelector('.converter-g').value = g;
+    document.querySelector('.converter-b').value = b;
+
+}
+
+  
+   
+if(
+    !hex &&
+    r === 0 &&
+    g === 0 &&
+    b === 0 &&
+    c === 0 &&
+    m === 0 &&
+    y === 0 &&
+    k === 0
+){
+    alert('값을 입력하세요');
+    return;
+}
+  
+  const cmyk = rgbToCmyk(r,g,b);
+  document.querySelector('.converter-c').value = cmyk[0];
+document.querySelector('.converter-m').value = cmyk[1];
+document.querySelector('.converter-y').value = cmyk[2];
+document.querySelector('.converter-k').value = cmyk[3];
+
+document.querySelector('.results').innerHTML = `
+
+
 <div class="result-card">
-    <div class="result-color" style="background:rgb(${r},${g},${b});"></div>
-    <div class="result-name">Color Converter</div>
-    <div class="result-info">
-        <div>HEX #${((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1).toUpperCase()}</div>
-        <div>RGB ${r}, ${g}, ${b}</div>
-        <div>CMYK ${cmyk[0]}, ${cmyk[1]}, ${cmyk[2]}, ${cmyk[3]}</div>
+
+    <div
+    class="result-color"
+    style="background:rgb(${r},${g},${b});">
     </div>
+
+    <div class="result-name">
+        Color Converter
+    </div>
+
+    <div class="result-info">
+
+        <div>HEX #${((1<<24)+(r<<16)+(g<<8)+b).toString(16).slice(1).toUpperCase()}</div>
+
+        <div>RGB ${r}, ${g}, ${b}</div>
+
+        <div>CMYK ${cmyk[0]}, ${cmyk[1]}, ${cmyk[2]}, ${cmyk[3]}</div>
+
+    </div>
+
 </div>
+
 <div class="result-notice">
 Color conversion completed
 </div>
-`;
 
-    // ✅ 입력칸 초기화는 결과 표시 후에
-    document.querySelector('.converter-r').value = '';
-    document.querySelector('.converter-g').value = '';
-    document.querySelector('.converter-b').value = '';
-    document.querySelector('.converter-c').value = '';
-    document.querySelector('.converter-m').value = '';
-    document.querySelector('.converter-y').value = '';
-    document.querySelector('.converter-k').value = '';
-    document.querySelector('.converter-hex').value = '';
+`
+document.querySelector('.converter-r').value = '';
+document.querySelector('.converter-g').value = '';
+document.querySelector('.converter-b').value = '';
+document.querySelector('.converter-c').value = '';
+document.querySelector('.converter-m').value = '';
+document.querySelector('.converter-y').value = '';
+document.querySelector('.converter-k').value = '';
+document.querySelector('.converter-hex').value = '';
+
+
+  
 });
 
 
@@ -1786,4 +1751,3 @@ Color conversion completed
   
 </body>
 </html>
-
