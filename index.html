@@ -1158,7 +1158,30 @@ button.addEventListener('click', () => {
 .value
 .trim()
 
+const cValue = document.querySelector('.c-input').value
+const mValue = document.querySelector('.m-input').value
+const yValue = document.querySelector('.y-input').value
+const kValue = document.querySelector('.k-input').value
 
+const inputCount = [
+
+hexValue ? 1 : 0,
+
+(rValue && gValue && bValue) ? 1 : 0,
+
+(cValue && mValue && yValue && kValue) ? 1 : 0,
+
+lxValue ? 1 : 0
+
+].reduce((a,b)=>a+b,0)
+
+if(inputCount > 1){
+
+    alert('HEX, RGB, CMYK, LX 중 하나만 입력하세요')
+
+    return
+
+}
 
     let finalResults = []
 
@@ -1646,11 +1669,11 @@ reader.onload = event => {
 
             `).join('')
 
-            document.querySelector('.results').innerHTML = html
-previewImage.src = ''
-previewImage.style.display = 'none'
-imageInput.value = ''
-document.querySelector('.remove-image-btn').style.display = 'none'
+      document.querySelector('.results').innerHTML = html
+
+
+
+      
         }
 
         img.src = event.target.result
