@@ -870,8 +870,12 @@ fetch('./benjamin-starter.json')
 
     benjaminData = data
 
-})
+    console.log(
+      'Benjamin Loaded',
+      benjaminData.length
+    )
 
+})
   
 fetch('./lxsheet.json')
 .then(res => res.json())
@@ -1292,11 +1296,7 @@ imageInput.addEventListener('change', e => {
                         <div>
                             ${c.Code}
                         </div>
-
-                        <div>
-                            ${c.Group}
-                        </div>
-
+                     
                         <div>
                             ${c.Hex}
                         </div>
