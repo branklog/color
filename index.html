@@ -304,6 +304,19 @@ font-weight:700;
 opacity:.7;
 }
 
+.result-notice{
+grid-column:1/-1;
+margin-top:10px;
+padding:14px;
+font-size:12px;
+line-height:1.6;
+color:#777;
+background:#fafafa;
+border-radius:16px;
+text-align:center;
+}
+
+
 /* =========================
 FOOTER
 ========================= */
@@ -1058,39 +1071,38 @@ else if(lxValue){
     }
 
     const html = finalResults.map(c => `
+    <div class="result-card">
 
-        <div class="result-card">
+        <div
+        class="result-color"
+        style="background:${c.Hex}">
+        </div>
 
-            <div
-            class="result-color"
-            style="background:${c.Hex}">
-            </div>
+        <div class="result-name">
+            Pantone ${c.Code}
+        </div>
 
-            <div class="result-name">
-                Pantone ${c.Code}
-            </div>
+        <div class="result-info">
 
-            <div class="result-info">
-
-                <div>
-                    HEX ${c.Hex}
-                </div>
-
-                <div>
-                    RGB ${c.R}, ${c.G}, ${c.B}
-                </div>
-
-                <div>
-                    CMYK ${c.C}, ${c.M}, ${c.Y}, ${c.K}
-                </div>
-
-            </div>
+            <div>HEX ${c.Hex}</div>
+            <div>RGB ${c.R}, ${c.G}, ${c.B}</div>
+            <div>CMYK ${c.C}, ${c.M}, ${c.Y}, ${c.K}</div>
 
         </div>
 
-    `).join('')
+    </div>
 
-    document.querySelector('.results').innerHTML = html
+`).join('') + `
+
+<div class="result-notice">
+※ 본 서비스는 비공식 유사색 추천 서비스입니다.<br>
+Benjamin Moore®, Pantone® 등의 상표 및 컬러명에 대한 권리는 각 권리자에게 있습니다.
+</div>
+
+`
+
+document.querySelector('.results').innerHTML = html
+   
 
 })
 
