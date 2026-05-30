@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -399,6 +398,14 @@ text-align:center;
 line-height:1.5;
 }
   
+#iro-picker{
+display:flex;
+justify-content:center;
+margin-bottom:20px;
+width:100%;
+overflow:hidden;
+}
+
 .preview-image{
 display:none;
 width:100%;
@@ -513,9 +520,9 @@ border-radius:16px;
 /* INPUT */
 
 .three-grid{
-grid-template-columns:1fr;
+grid-template-columns:repeat(3,1fr);
 }
-
+  
 .four-grid{
 grid-template-columns:1fr 1fr;
 }
@@ -534,6 +541,8 @@ margin-top:0;
 
 
 </style>
+
+ <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script> 
 
 </head>
 
@@ -642,6 +651,9 @@ class="input hex-input"
 placeholder="#073090"
 />
 
+<div id="iro-picker"></div>
+
+  
 <!-- RGB -->
 
 <label class="label">
@@ -1013,7 +1025,34 @@ fetch('./pantone.json')
     pantoneData = data
 
 })
+const colorPicker = new iro.ColorPicker("#iro-picker", {
 
+    width:220,
+  layoutDirection:'horizontal',
+    color:"#073090",
+
+    layout:[
+        {
+            component: iro.ui.Box
+        },
+{
+    component: iro.ui.Slider,
+    options:{
+        sliderType:'hue'
+    }
+}
+
+      
+    ]
+
+});
+
+colorPicker.on("color:change", (color) => {
+
+    document.querySelector('.hex-input').value =
+    color.hexString;
+
+});
 
 const button = document.querySelector('.pantone-panel .convert-btn')
 
