@@ -1403,41 +1403,32 @@ uploadBox.addEventListener('drop', e => {
             .slice(0,4)
             .map(item => item.color)
 
-            const html = finalResults.map(c => `
+const html = finalResults.map(c => `
+<div class="result-card">
 
-                <div class="result-card">
+    <div class="result-color" style="background:${c.Hex};"></div>
 
-                    <div
-                    class="result-color"
-                    style="background:${c.Hex}">
-                    </div>
+    <div class="result-name">
+        ${c.Name}
+    </div>
 
-                    <div class="result-name">
-                        ${c.Name}
-                    </div>
+    <div class="result-info">
+        <div>${c.Code}</div>
+        <div>${c.Hex}</div>
+        <div>RGB ${c.R}, ${c.G}, ${c.B}</div>
+    </div>
 
-                    <div class="result-info">
+</div>
+`).join('') + `
+<div class="result-notice">
+※ 본 서비스는 비공식 유사색 추천 서비스입니다.<br>
+Benjamin Moore®, Pantone® 등의 상표 및 컬러명에 대한 권리는 각 권리자에게 있습니다.
+</div>
+`
 
-                        <div>
-                            ${c.Code}
-                        </div>
+document.querySelector('.results').innerHTML = html
 
-                        <div>
-                            ${c.Group}
-                        </div>
-
-                        <div>
-                            ${c.Hex}
-                        </div>
-
-                    </div>
-
-                </div>
-
-            `).join('')
-
-            document.querySelector('.results').innerHTML = html
-
+          
         }
 
         img.src = event.target.result
@@ -1447,10 +1438,6 @@ uploadBox.addEventListener('drop', e => {
     reader.readAsDataURL(file)
 
 })
-
-
-
-
 
 
 
