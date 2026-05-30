@@ -424,7 +424,7 @@ display:flex;
 justify-content:center;
 margin-bottom:20px;
 width:100%;
-overflow:hidden;
+min-height:260px;
 }
 
 .preview-image{
@@ -634,9 +634,9 @@ CHAT
 <!-- TABS -->
 
 <div class="tabs">
-  <button class="tab-btn active" data-tab="pantone">Pantone Finder</button>
-  <button class="tab-btn" data-tab="converter">Color Converter</button>
-  <button class="tab-btn" data-tab="benjamin">Benjamin Finder</button>
+  <button class="tab-btn active" data-tab="pantone">팬톤컬러변환</button>
+  <button class="tab-btn" data-tab="converter">색상 변환</button>
+  <button class="tab-btn" data-tab="benjamin">벤자민컬러변환</button>
 </div>
 
 <!-- =========================
@@ -740,7 +740,7 @@ placeholder="K"
 <!-- LX SHEET -->
 
 <label class="label">
-LX SHEET NUMBER
+LX 하우시스 SHEET NUMBER
 </label>
 
 <input
@@ -754,12 +754,12 @@ SEARCH RANGE
 
 <select class="input distance-select">
 
-<option value="16">16 - 거의 동일</option>
-<option value="32" selected>32 - 매우 유사</option>
-<option value="48">48 - 유사</option>
-<option value="64">64 - 근사색</option>
-<option value="80">80 - 넓은 범위</option>
-<option value="96">96 - 전체 범위</option>
+<option value="40">거의 동일</option>
+<option value="60">매우 유사</option>
+<option value="80">유사</option>
+<option value="110">근사색</option>
+<option value="150">넓은 범위</option>
+<option value="220">전체 범위</option>
 
 </select>
 </div>
@@ -851,7 +851,7 @@ placeholder="K"
 </div>
 
 <button class="convert-btn converter-btn">
-Convert Color
+색상변
 </button>
 
 <div class="result-notice converter-result">
@@ -902,7 +902,7 @@ Drag image or click upload
 
 
 <button class="convert-btn benjamin-btn">
-Find Benjamin
+벤자민컬러변환
 </button>
 
 
@@ -1152,10 +1152,16 @@ results.sort((a,b)=>a.distance-b.distance)
 const distanceLimit =
 Number(document.querySelector('.distance-select').value)
 
-finalResults = results
-.slice(0, Math.max(1, Math.floor(distanceLimit / 4)))
-.map(item => item.color)
+let filtered = results
+.filter(item => item.distance <= distanceLimit)
 
+if(filtered.length === 0){
+    filtered = results.slice(0,1)
+}
+
+finalResults = filtered
+.slice(0,12)
+.map(item => item.color)
         }
 
     }
@@ -1194,13 +1200,18 @@ finalResults = results
 const distanceLimit =
 Number(document.querySelector('.distance-select').value)
 
-finalResults = results
-.slice(0, Math.max(1, Math.floor(distanceLimit / 16)))
+let filtered = results
+.filter(item => item.distance <= distanceLimit)
+
+if(filtered.length === 0){
+    filtered = results.slice(0,1)
+}
+
+finalResults = filtered
+.slice(0,12)
 .map(item => item.color)
 
-    }
-
-
+}
 /* LX SEARCH */
 
 else if(lxValue){
@@ -1251,8 +1262,15 @@ results.sort((a,b)=>a.distance-b.distance)
 const distanceLimit =
 Number(document.querySelector('.distance-select').value)
 
-finalResults = results
-.slice(0, Math.max(1, Math.floor(distanceLimit / 8)))
+let filtered = results
+.filter(item => item.distance <= distanceLimit)
+
+if(filtered.length === 0){
+    filtered = results.slice(0,1)
+}
+
+finalResults = filtered
+.slice(0,12)
 .map(item => item.color)
 
     }
@@ -1267,13 +1285,6 @@ finalResults = results
     
 
 
-    
-    if(finalResults.length === 0){
-
-        alert('검색 결과가 없습니다.')
-        return
-
-    }
 
     const html = finalResults.map(c => `
     <div class="result-card">
