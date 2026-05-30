@@ -1137,6 +1137,16 @@ colorPicker.on("color:change", (color) => {
     document.querySelector('.hex-input').value =
     color.hexString;
 
+    if(window.innerWidth <= 768){
+
+        window.scrollTo({
+            top: document.querySelector('.rgb-r')
+            .getBoundingClientRect().top + window.pageYOffset - 120,
+            behavior:'smooth'
+        })
+
+    }
+
 });
 
 const button = document.querySelector('.pantone-panel .convert-btn')
@@ -1404,15 +1414,14 @@ Benjamin Moore®, Pantone® 등의 상표 및 컬러명에 대한 권리는 각 
 </div>
 
 `
-
 document.querySelector('.results').innerHTML = html
 
 if(window.innerWidth <= 768){
 
-    document.querySelector('.results')
-    .scrollIntoView({
-        behavior:'smooth',
-        block:'start'
+    window.scrollTo({
+        top: document.querySelector('.results')
+        .getBoundingClientRect().top + window.pageYOffset - 80,
+        behavior:'smooth'
     })
 
 }
