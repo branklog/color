@@ -169,9 +169,7 @@ LEFT CARD
 .left-box{
 display:flex;
 flex-direction:column;
-justify-content:space-between;
 }
-
 .left-inner{
 display:flex;
 flex-direction:column;
@@ -292,9 +290,12 @@ font-size:17px;
 font-weight:900;
 cursor:pointer;
 transition:.2s;
-margin-top:auto;
 }
 
+.pantone-panel .convert-btn{
+margin-top:auto;
+}
+  
 .convert-btn:hover{
 transform:translateY(-2px);
 }
@@ -307,7 +308,6 @@ RIGHT CARD
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:18px;
-height:100%;
 }
 
 .result-card{
@@ -568,14 +568,20 @@ grid-template-columns:1fr 1fr;
 }
 
 .left-box{
-justify-content:flex-start;
+display:flex;
+flex-direction:column;
 }
 
-.convert-btn{
-margin-top:0;
+.left-inner{
+display:flex;
+flex-direction:column;
 }
 
 
+
+
+  
+  
 }
 
 
