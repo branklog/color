@@ -851,7 +851,7 @@ placeholder="K"
 </div>
 
 <button class="convert-btn converter-btn">
-색상변
+모드변환
 </button>
 
 <div class="result-notice converter-result">
@@ -1161,9 +1161,14 @@ else if(selectedRange === '110') resultCount = 7
 else if(selectedRange === '150') resultCount = 9
 else if(selectedRange === '220') resultCount = 12
 
+console.log('선택값', selectedRange)
+console.log('개수', resultCount)
+
 finalResults = results
 .slice(0,resultCount)
 .map(item => item.color)
+
+          
         }
 
     }
