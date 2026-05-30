@@ -1145,12 +1145,15 @@ colorPicker.on("color:change", (color) => {
     ){
 
         pickerScrolled = true
+window.scrollTo({
+    top:
+    document.querySelector('.distance-select')
+    .getBoundingClientRect().top
+    + window.pageYOffset
+    - 180,
+    behavior:'smooth'
+})
 
-        document.querySelector('.rgb-r')
-        .scrollIntoView({
-            behavior:'smooth',
-            block:'center'
-        })
 
     }
 
