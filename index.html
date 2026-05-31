@@ -680,7 +680,7 @@ CHAT
 
 <div class="tabs">
   <button class="tab-btn active" data-tab="pantone">팬톤컬러변환</button>
-  <button class="tab-btn" data-tab="converter">색상 변환</button>
+  <button class="tab-btn" data-tab="converter">색상변환</button>
   <button class="tab-btn" data-tab="benjamin">벤자민컬러변환</button>
 </div>
 
@@ -698,11 +698,11 @@ MAIN
 <div class="left-inner">
 
 <div class="tool-title">
-Pantone Finder
+팬톤컬러변환
 </div>
 
 <div class="tool-desc">
-HEX · RGB · CMYK to nearest pantone color
+헥사, RGB, CMYK, LX 하우시스 시트 넘버를<br>유사한 팬톤컬러로 변환해드립니다.
 </div>
 
 <!-- HEX -->
@@ -794,7 +794,7 @@ class="input lx-input"
 placeholder="LT 4063"
 />
 <label class="label">
-SEARCH RANGE
+검색범위
 </label>
 
 <select class="input distance-select">
@@ -822,11 +822,11 @@ SEARCH RANGE
 <div class="left-inner">
 
 <div class="tool-title">
-Color Converter
+색상변환
 </div>
 
 <div class="tool-desc">
-HEX ↔ RGB ↔ CMYK
+헥사를 RGB로, RGB를 CMYK로<br>모든 색상변환
 </div>
 
 <label class="label">HEX</label>
@@ -896,7 +896,7 @@ placeholder="K"
 </div>
 
 <button class="convert-btn converter-btn">
-색상 변환
+색상변환
 </button>
 
 <div class="result-notice converter-result">
@@ -913,15 +913,15 @@ Ready
 <div class="left-inner">
 
 <div class="tool-title">
-Benjamin Finder
+벤자민컬러변환
 </div>
 
 <div class="tool-desc">
-Upload image and find nearest Benjamin Moore color
+업로드한 이미지를 유사한 벤자민컬러로<br>변환해드립니다.
 </div>
 
 <label class="label">
-UPLOAD IMAGE
+업로드 이미지
 </label>
 
 <div class="upload-box">
@@ -934,7 +934,7 @@ hidden
 />
 
 <div class="upload-text">
-Drag image or click upload
+마우스로 이미지를 올려 놓으시거나<br>파일을 찾아서 업로드해주세요.
 </div>
 
 </div>
@@ -1560,7 +1560,7 @@ else if(tab === 'converter'){
             </div>
 
             <div class="result-name">
-                Color Converter
+                색상변환
             </div>
 
             <div class="result-info">
@@ -1596,11 +1596,11 @@ else{
             <div class="result-info">
 
                 <div>
-                    Benjamin Finder Ready
+                   유사한 벤자민 컬러로 
                 </div>
 
                 <div>
-                    Upload image to find color
+                  변환해드립니다. 
                 </div>
 
             </div>
