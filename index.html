@@ -594,8 +594,10 @@ flex-direction:column;
 display:flex;
 flex-direction:column;
 }
-
-
+  
+.pantone-btn{
+position:static;
+}
 
 
   
@@ -1132,30 +1134,13 @@ const colorPicker = new iro.ColorPicker("#iro-picker", {
 
 });
 
-  let pickerScrolled = false
+
 
 colorPicker.on("color:change", (color) => {
 
     document.querySelector('.hex-input').value =
     color.hexString;
 
-    if(
-        window.innerWidth <= 768 &&
-        !pickerScrolled
-    ){
-
-        pickerScrolled = true
-window.scrollTo({
-    top:
-    document.querySelector('.distance-select')
-    .getBoundingClientRect().top
-    + window.pageYOffset
-    - 180,
-    behavior:'smooth'
-})
-
-
-    }
 
 });
   
@@ -1318,6 +1303,62 @@ finalResults = results
 .map(item => item.color)
 
 }
+else if(cValue && mValue && yValue && kValue){
+
+    const c = Number(cValue) / 100
+    const m = Number(mValue) / 100
+    const y = Number(yValue) / 100
+    const k = Number(kValue) / 100
+
+    const r = Math.round(255 * (1-c) * (1-k))
+    const g = Math.round(255 * (1-m) * (1-k))
+    const b = Math.round(255 * (1-y) * (1-k))
+
+    const results = []
+
+    pantoneData.forEach(color => {
+
+        const pr = Number(color.R)
+        const pg = Number(color.G)
+        const pb = Number(color.B)
+
+        const distance = Math.sqrt(
+            (r-pr)**2 +
+            (g-pg)**2 +
+            (b-pb)**2
+        )
+
+        results.push({
+            color,
+            distance
+        })
+
+    })
+
+    results.sort((a,b)=>a.distance-b.distance)
+
+    const selectedRange =
+    document.querySelector('.distance-select').value
+
+    let resultCount = 12
+
+    if(selectedRange === '1') resultCount = 1
+    else if(selectedRange === '3') resultCount = 3
+    else if(selectedRange === '5') resultCount = 5
+    else if(selectedRange === '10') resultCount = 7
+    else if(selectedRange === '20') resultCount = 9
+    else if(selectedRange === '9999') resultCount = 12
+
+    finalResults = results
+    .slice(0,resultCount)
+    .map(item => item.color)
+
+}
+
+
+
+
+      
 /* LX SEARCH */
 
 else if(lxValue){
