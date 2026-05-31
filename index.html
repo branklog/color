@@ -447,6 +447,14 @@ margin-bottom:20px;
 width:100%;
 min-height:260px;
 }
+#benjamin-picker{
+display:flex;
+justify-content:center;
+margin-bottom:20px;
+width:100%;
+min-height:260px;
+}
+  
 .preview-image{
 display:none;
 width:100%;
@@ -917,9 +925,16 @@ Ready
 </div>
 
 <div class="tool-desc">
-업로드한 이미지를 유사한 벤자민컬러로<br>변환해드립니다.
+컬러피커에서 선택한 색상 또는 업로드한 이미지를<br>유사한 벤자민컬러로 변환해드립니다.
 </div>
 
+  <label class="label">
+COLOR PICKER
+</label>
+
+<div id="benjamin-picker"></div>
+  
+  
 <label class="label">
 업로드 이미지
 </label>
@@ -1134,6 +1149,28 @@ const colorPicker = new iro.ColorPicker("#iro-picker", {
 
 });
 
+const benjaminPicker = new iro.ColorPicker("#benjamin-picker", {
+
+    width:220,
+    layoutDirection:'horizontal',
+    color:"#B7A58A",
+
+    layout:[
+        {
+            component: iro.ui.Box
+        },
+        {
+            component: iro.ui.Slider,
+            options:{
+                sliderType:'hue'
+            }
+        }
+    ]
+
+});
+
+
+  
 
 
 colorPicker.on("color:change", (color) => {
