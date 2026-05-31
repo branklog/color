@@ -1945,13 +1945,13 @@ if(window.innerWidth <= 768){
 }
 
 })
-const uploadBox = document.querySelector('.upload-box')
+document.querySelector('.benjamin-panel .upload-box')
 const imageInput = document.querySelector('.image-input')
   
 const previewImage =
-document.querySelector('.preview-image')
-  const removeImageBtn =
-document.querySelector('.remove-image-btn')
+document.querySelector('.benjamin-panel .preview-image')
+const removeImageBtn =
+document.querySelector('.benjamin-panel .remove-image-btn')
 
 removeImageBtn.addEventListener('click', () => {
 
@@ -2158,7 +2158,7 @@ previewImage.style.display = 'block'
 
             const results = []
 
-            benjaminData.forEach(color => {
+       lxData.forEach(color => {
 
                 const pr = Number(color.R)
                 const pg = Number(color.G)
