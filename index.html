@@ -447,6 +447,7 @@ margin-bottom:20px;
 width:100%;
 min-height:260px;
 }
+  
 #benjamin-picker{
 display:flex;
 justify-content:center;
@@ -455,6 +456,14 @@ width:100%;
 min-height:260px;
 }
   
+#lx-picker{
+display:flex;
+justify-content:center;
+margin-bottom:20px;
+width:100%;
+min-height:260px;
+}
+ 
 .preview-image{
 display:none;
 width:100%;
@@ -689,6 +698,7 @@ CHAT
 <div class="tabs">
   <button class="tab-btn active" data-tab="pantone">팬톤컬러변환</button>
   <button class="tab-btn" data-tab="converter">색상변환</button>
+  <button class="tab-btn" data-tab="lx">LX시트검색</button>
   <button class="tab-btn" data-tab="benjamin">벤자민컬러변환</button>
 </div>
 
@@ -913,6 +923,65 @@ Ready
 
 </div> <!-- converter-panel 끝 -->
 
+<div class="box left-box lx-panel" style="display:none;">
+
+<div class="left-inner">
+
+<div class="tool-title">
+LX시트검색
+</div>
+
+<div class="tool-desc">
+컬러피커에서 선택한 색상 또는 업로드한 이미지를<br>
+유사한 LX 시트로 변환해드립니다.
+</div>
+
+<label class="label">
+COLOR PICKER
+</label>
+<div id="lx-picker"></div>
+
+<label class="label">
+업로드 이미지
+</label>
+
+<div class="upload-box lx-upload-box">
+
+<input
+type="file"
+class="lx-image-input"
+accept="image/*"
+hidden
+/>
+
+<div class="upload-text">
+마우스로 이미지를 올려 놓으시거나<br>
+파일을 찾아서 업로드해주세요.
+</div>
+
+</div>
+
+<div style="position:relative;">
+
+<img class="lx-preview-image preview-image" />
+
+<div class="lx-remove-image-btn remove-image-btn">
+✕
+</div>
+
+</div>
+  
+</div>
+ 
+<button class="convert-btn lx-btn">
+LX시트검색
+</button>
+
+</div>
+
+
+
+  
 <!-- BENJAMIN PANEL -->
  
 
@@ -1169,6 +1238,117 @@ const benjaminPicker = new iro.ColorPicker("#benjamin-picker", {
 
 });
 
+const lxPicker = new iro.ColorPicker("#lx-picker", {
+
+    width:220,
+    layoutDirection:'horizontal',
+    color:"#B7A58A",
+
+    layout:[
+        {
+            component: iro.ui.Box
+        },
+        {
+            component: iro.ui.Slider,
+            options:{
+                sliderType:'hue'
+            }
+        }
+    ]
+
+});
+
+let lxHex = '#B7A58A'
+
+lxPicker.on("color:change", (color) => {
+
+    lxHex = color.hexString
+
+})
+
+const lxBtn =
+document.querySelector('.lx-btn')
+
+lxBtn.addEventListener('click', () => {
+
+    const r = parseInt(lxHex.slice(1,3),16)
+    const g = parseInt(lxHex.slice(3,5),16)
+    const b = parseInt(lxHex.slice(5,7),16)
+
+    const results = []
+
+    lxData.forEach(color => {
+
+        const pr = Number(color.R)
+        const pg = Number(color.G)
+        const pb = Number(color.B)
+
+        const distance = Math.sqrt(
+            (r-pr)**2 +
+            (g-pg)**2 +
+            (b-pb)**2
+        )
+
+        results.push({
+            color,
+            distance
+        })
+
+    })
+
+    results.sort((a,b)=>a.distance-b.distance)
+
+    const finalResults = results
+    .slice(0,4)
+    .map(item => item.color)
+
+    const html = finalResults.map(c => `
+
+<div class="result-card">
+
+    <div
+    class="result-color"
+    style="background:${c.Hex}">
+    </div>
+
+    <div class="result-name">
+        ${c.SheetNumber}
+    </div>
+
+    <div class="result-info">
+
+        <div>${c.SheetNumber}</div>
+
+        <div>${c.Hex}</div>
+
+        <div>RGB ${c.R}, ${c.G}, ${c.B}</div>
+
+    </div>
+
+</div>
+
+`).join('')
+
+document.querySelector('.results').innerHTML = html
+
+if(window.innerWidth <= 768){
+
+    setTimeout(() => {
+
+        document.querySelector('.results')
+        .scrollIntoView({
+            behavior:'smooth'
+        })
+
+    },100)
+
+}
+
+})
+
+
+
+  
 let benjaminHex = '#B7A58A'
 
 benjaminPicker.on("color:change", (color) => {
@@ -1530,7 +1710,7 @@ const tabBtns = document.querySelectorAll('.tab-btn')
 const pantonePanel = document.querySelector('.pantone-panel')
 const converterPanel = document.querySelector('.converter-panel')
 const benjaminPanel = document.querySelector('.benjamin-panel')
-
+const lxPanel = document.querySelector('.lx-panel')
 tabBtns.forEach(btn => {
 
     btn.addEventListener('click', () => {
@@ -1551,7 +1731,7 @@ if(tab === 'pantone'){
     pantonePanel.style.display = 'flex'
     converterPanel.style.display = 'none'
     benjaminPanel.style.display = 'none'
-
+lxPanel.style.display = 'none'
     document.querySelector('.results').innerHTML = `
 
         <div class="result-card">
@@ -1584,7 +1764,7 @@ else if(tab === 'converter'){
     pantonePanel.style.display = 'none'
     converterPanel.style.display = 'flex'
     benjaminPanel.style.display = 'none'
-
+lxPanel.style.display = 'none'
     document.querySelector('.results').innerHTML = `
 
         <div class="result-card">
@@ -1611,11 +1791,13 @@ else if(tab === 'converter'){
 
 }
 
-else{
+else if(tab === 'benjamin'){
+
     pantonePanel.style.display = 'none'
     converterPanel.style.display = 'none'
     benjaminPanel.style.display = 'flex'
-
+    lxPanel.style.display = 'none'
+  
     document.querySelector('.results').innerHTML = `
 
         <div class="result-card">
@@ -1646,7 +1828,43 @@ else{
 
 }
 
+else if(tab === 'lx'){
 
+    pantonePanel.style.display = 'none'
+    converterPanel.style.display = 'none'
+    benjaminPanel.style.display = 'none'
+    lxPanel.style.display = 'flex'
+
+    document.querySelector('.results').innerHTML = `
+
+        <div class="result-card">
+
+            <div
+            class="result-color"
+            style="background:#f3f3f3;">
+            </div>
+
+            <div class="result-name">
+                LX 시트검색
+            </div>
+
+            <div class="result-info">
+
+                <div>
+                    컬러피커 색상을
+                </div>
+
+                <div>
+                    LX 시트로 변환합니다.
+                </div>
+
+            </div>
+
+        </div>
+
+    `
+
+}
 
     })
 
