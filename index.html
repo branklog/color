@@ -2053,12 +2053,12 @@ reader.onload = event => {
                     </div>
 
                     <div class="result-name">
-                        ${c.Name}
+                        ${c.SheetNumber}
                     </div>
 
 <div class="result-info">
 
-    <div>${c.Code}</div>
+  <div>${c.SheetNumber}</div>
 
     <div>${c.Hex}</div>
 
@@ -2189,11 +2189,11 @@ const html = finalResults.map(c => `
     <div class="result-color" style="background:${c.Hex};"></div>
 
     <div class="result-name">
-        ${c.Name}
+    ${c.SheetNumber}
     </div>
 
     <div class="result-info">
-        <div>${c.Code}</div>
+<div>${c.SheetNumber}</div>
         <div>${c.Hex}</div>
         <div>RGB ${c.R}, ${c.G}, ${c.B}</div>
     </div>
