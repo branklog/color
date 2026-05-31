@@ -1713,6 +1713,19 @@ Benjamin Moore®, Pantone® 등의 상표 및 컬러명에 대한 권리는 각 
 
 document.querySelector('.results').innerHTML = html
 
+if(window.innerWidth <= 768){
+
+    setTimeout(() => {
+
+        document.querySelector('.results')
+        .scrollIntoView({
+            behavior:'smooth'
+        })
+
+    },100)
+
+}
+
 })
 const uploadBox = document.querySelector('.upload-box')
 const imageInput = document.querySelector('.image-input')
