@@ -1955,7 +1955,16 @@ document.querySelector('.lx-preview-image')
 
 const lxRemoveImageBtn =
 document.querySelector('.lx-remove-image-btn')
-  
+  lxRemoveImageBtn.addEventListener('click', () => {
+
+    lxPreviewImage.src = ''
+    lxPreviewImage.style.display = 'none'
+
+    lxImageInput.value = ''
+
+    lxRemoveImageBtn.style.display = 'none'
+
+})
   const uploadBox =
 document.querySelector('.benjamin-panel .upload-box')
 
