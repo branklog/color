@@ -1968,7 +1968,7 @@ document.querySelector('.lx-preview-image')
 
 const lxRemoveImageBtn =
 document.querySelector('.lx-remove-image-btn')
-  lxRemoveImageBtn.addEventListener('click', () => {
+lxRemoveImageBtn.addEventListener('click', () => {
 
     lxPreviewImage.src = ''
     lxPreviewImage.style.display = 'none'
@@ -1976,6 +1976,8 @@ document.querySelector('.lx-remove-image-btn')
     lxImageInput.value = ''
 
     lxRemoveImageBtn.style.display = 'none'
+
+    lxImageRGB = null
 
 })
   const uploadBox =
