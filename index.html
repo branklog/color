@@ -1472,11 +1472,11 @@ if(inputCount > 1){
                 const pg = Number(color.G)
                 const pb = Number(color.B)
 
-            const distance =
-    Math.abs(r-pr) * 0.3 +
-    Math.abs(g-pg) * 0.59 +
-    Math.abs(b-pb) * 0.11
-           
+                const distance = Math.sqrt(
+                    (r-pr)**2 +
+                    (g-pg)**2 +
+                    (b-pb)**2
+                )
 
                 results.push({
                     color,
@@ -1530,11 +1530,12 @@ finalResults = results
             const pg = Number(color.G)
             const pb = Number(color.B)
 
-        const distance =
-    Math.abs(r-pr) * 0.3 +
-    Math.abs(g-pg) * 0.59 +
-    Math.abs(b-pb) * 0.11
-      
+            const distance = Math.sqrt(
+                (r-pr)**2 +
+                (g-pg)**2 +
+                (b-pb)**2
+            )
+
             results.push({
                 color,
                 distance
@@ -1583,11 +1584,11 @@ else if(cValue && mValue && yValue && kValue){
         const pg = Number(color.G)
         const pb = Number(color.B)
 
-    const distance =
-    Math.abs(r-pr) * 0.3 +
-    Math.abs(g-pg) * 0.59 +
-    Math.abs(b-pb) * 0.11
-      
+        const distance = Math.sqrt(
+            (r-pr)**2 +
+            (g-pg)**2 +
+            (b-pb)**2
+        )
 
         results.push({
             color,
@@ -1653,11 +1654,11 @@ else if(lxValue){
             const pg = Number(color.G)
             const pb = Number(color.B)
 
-           const distance =
-    Math.abs(r-pr) * 0.3 +
-    Math.abs(g-pg) * 0.59 +
-    Math.abs(b-pb) * 0.11
-         
+            const distance = Math.sqrt(
+                (r-pr)**2 +
+                (g-pg)**2 +
+                (b-pb)**2
+            )
 
             results.push({
                 color,
@@ -1731,7 +1732,6 @@ if(window.innerWidth <= 768){
 
 }
   
-
 
 })
 
