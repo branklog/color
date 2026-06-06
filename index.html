@@ -1182,55 +1182,6 @@ let pantoneData = []
 let lxData = []
 
 let benjaminData = []
-    function rgbToHsv(r, g, b){
-
-    r /= 255
-    g /= 255
-    b /= 255
-
-    const max = Math.max(r,g,b)
-    const min = Math.min(r,g,b)
-
-    let h,s,v = max
-
-    const d = max - min
-
-    s = max === 0 ? 0 : d / max
-
-    if(max === min){
-
-        h = 0
-
-    }else{
-
-        switch(max){
-
-            case r:
-                h = (g - b) / d + (g < b ? 6 : 0)
-                break
-
-            case g:
-                h = (b - r) / d + 2
-                break
-
-            case b:
-                h = (r - g) / d + 4
-                break
-
-        }
-
-        h /= 6
-
-    }
-
-    return {
-        h:h*360,
-        s:s*100,
-        v:v*100
-    }
-
-}
-
 
 fetch('./benjamin-starter.json')
 .then(res => res.json())
@@ -1521,18 +1472,11 @@ if(inputCount > 1){
                 const pg = Number(color.G)
                 const pb = Number(color.B)
 
-              const hsv1 = rgbToHsv(r,g,b)
-const hsv2 = rgbToHsv(pr,pg,pb)
-
-const hueDiff = Math.min(
-    Math.abs(hsv1.h - hsv2.h),
-    360 - Math.abs(hsv1.h - hsv2.h)
-)
-
-const distance =
-    hueDiff * 5 +
-    Math.abs(hsv1.s - hsv2.s) * 0.3 +
-    Math.abs(hsv1.v - hsv2.v) * 0.2
+                const distance = Math.sqrt(
+                    (r-pr)**2 +
+                    (g-pg)**2 +
+                    (b-pb)**2
+                )
 
                 results.push({
                     color,
@@ -1586,18 +1530,11 @@ finalResults = results
             const pg = Number(color.G)
             const pb = Number(color.B)
 
-         const hsv1 = rgbToHsv(r,g,b)
-const hsv2 = rgbToHsv(pr,pg,pb)
-
-const hueDiff = Math.min(
-    Math.abs(hsv1.h - hsv2.h),
-    360 - Math.abs(hsv1.h - hsv2.h)
-)
-
-const distance =
-    hueDiff * 5 +
-    Math.abs(hsv1.s - hsv2.s) * 0.3 +
-    Math.abs(hsv1.v - hsv2.v) * 0.2
+            const distance = Math.sqrt(
+                (r-pr)**2 +
+                (g-pg)**2 +
+                (b-pb)**2
+            )
 
             results.push({
                 color,
@@ -1717,18 +1654,11 @@ else if(lxValue){
             const pg = Number(color.G)
             const pb = Number(color.B)
 
-     const hsv1 = rgbToHsv(r,g,b)
-const hsv2 = rgbToHsv(pr,pg,pb)
-
-const hueDiff = Math.min(
-    Math.abs(hsv1.h - hsv2.h),
-    360 - Math.abs(hsv1.h - hsv2.h)
-)
-
-const distance =
-    hueDiff * 5 +
-    Math.abs(hsv1.s - hsv2.s) * 0.3 +
-    Math.abs(hsv1.v - hsv2.v) * 0.2
+            const distance = Math.sqrt(
+                (r-pr)**2 +
+                (g-pg)**2 +
+                (b-pb)**2
+            )
 
             results.push({
                 color,
@@ -1802,6 +1732,15 @@ if(window.innerWidth <= 768){
 
 }
   
+document.querySelector('.hex-input').value = ''
+document.querySelector('.rgb-r').value = ''
+document.querySelector('.rgb-g').value = ''
+document.querySelector('.rgb-b').value = ''
+document.querySelector('.c-input').value = ''
+document.querySelector('.m-input').value = ''
+document.querySelector('.y-input').value = ''
+document.querySelector('.k-input').value = ''
+document.querySelector('.lx-input').value = ''   
 
 })
 
@@ -2535,14 +2474,6 @@ Color conversion completed
 </div>
 
 `
-document.querySelector('.converter-r').value = '';
-document.querySelector('.converter-g').value = '';
-document.querySelector('.converter-b').value = '';
-document.querySelector('.converter-c').value = '';
-document.querySelector('.converter-m').value = '';
-document.querySelector('.converter-y').value = '';
-document.querySelector('.converter-k').value = '';
-document.querySelector('.converter-hex').value = '';
 
 
   
