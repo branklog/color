@@ -1205,6 +1205,54 @@ fetch('./lxsheet.json')
 })
     
 fetch('./pantone.json')
+  function rgbToHsv(r, g, b){
+
+    r /= 255
+    g /= 255
+    b /= 255
+
+    const max = Math.max(r,g,b)
+    const min = Math.min(r,g,b)
+
+    let h,s,v = max
+
+    const d = max - min
+
+    s = max === 0 ? 0 : d / max
+
+    if(max === min){
+
+        h = 0
+
+    }else{
+
+        switch(max){
+
+            case r:
+                h = (g - b) / d + (g < b ? 6 : 0)
+                break
+
+            case g:
+                h = (b - r) / d + 2
+                break
+
+            case b:
+                h = (r - g) / d + 4
+                break
+
+        }
+
+        h /= 6
+
+    }
+
+    return {
+        h:h*360,
+        s:s*100,
+        v:v*100
+    }
+
+}
 .then(res => res.json())
 .then(data => {
 
@@ -1472,11 +1520,13 @@ if(inputCount > 1){
                 const pg = Number(color.G)
                 const pb = Number(color.B)
 
-                const distance = Math.sqrt(
-                    (r-pr)**2 +
-                    (g-pg)**2 +
-                    (b-pb)**2
-                )
+              const hsv1 = rgbToHsv(r,g,b)
+const hsv2 = rgbToHsv(pr,pg,pb)
+
+const distance =
+    Math.abs(hsv1.h - hsv2.h) * 3 +
+    Math.abs(hsv1.s - hsv2.s) * 0.5 +
+    Math.abs(hsv1.v - hsv2.v) * 0.5
 
                 results.push({
                     color,
@@ -1530,11 +1580,13 @@ finalResults = results
             const pg = Number(color.G)
             const pb = Number(color.B)
 
-            const distance = Math.sqrt(
-                (r-pr)**2 +
-                (g-pg)**2 +
-                (b-pb)**2
-            )
+         const hsv1 = rgbToHsv(r,g,b)
+const hsv2 = rgbToHsv(pr,pg,pb)
+
+const distance =
+    Math.abs(hsv1.h - hsv2.h) * 3 +
+    Math.abs(hsv1.s - hsv2.s) * 0.5 +
+    Math.abs(hsv1.v - hsv2.v) * 0.5
 
             results.push({
                 color,
@@ -1654,11 +1706,13 @@ else if(lxValue){
             const pg = Number(color.G)
             const pb = Number(color.B)
 
-            const distance = Math.sqrt(
-                (r-pr)**2 +
-                (g-pg)**2 +
-                (b-pb)**2
-            )
+     const hsv1 = rgbToHsv(r,g,b)
+const hsv2 = rgbToHsv(pr,pg,pb)
+
+const distance =
+    Math.abs(hsv1.h - hsv2.h) * 3 +
+    Math.abs(hsv1.s - hsv2.s) * 0.5 +
+    Math.abs(hsv1.v - hsv2.v) * 0.5
 
             results.push({
                 color,
